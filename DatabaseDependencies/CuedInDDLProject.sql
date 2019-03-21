@@ -14,23 +14,27 @@ drop table Password
 drop table UserEntity
 
 create table UserEntity (
-UserEntityID int  identity(1,1) not null,
+UserEntityID int identity(1,1) not null,
 UserName varchar(50) not null,
 EmailAddress varchar (255) not null,
 EntityType varchar (10) not null,
 Primary Key (UserEntityID)
 );
 
+--PasswordTable
 create table Password (
 PasswordID int not null,
-PasswordHash varchar(50) not null,
-PasswordSalt varchar(50) not null,
+PasswordHash varchar(100) not null,
+PasswordSalt varchar(75) not null,
 UserEntityID int not null,
 LastUpdated datetime,
 Primary Key (PasswordID),
 Foreign Key (UserEntityID) references UserEntity (UserEntityID)
 ); 
 
+--SchoolTable Inherits from the UserEntity Table
+--This table will not be randomly generated, but 
+--Hardcoded with good information on 3 schools cuedIn uses
 Create table School(
 SchoolEntityID int not null,
 SchoolName varchar (50) not null,
@@ -39,10 +43,12 @@ Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
+--insert a school image here possibly!
 primary key (SchoolEntityID),
 Foreign key (SchoolEntityID) references UserEntity (UserEntityID)
 );
 
+--References the SchoolTable. 
 Create table SchoolEmployee(
 SchoolEmployeeEntityID int identity (1,1) not null,
 FirstName varchar (50),
@@ -53,7 +59,7 @@ Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
-SchoolEmployeeEntityType varchar (3) not null,
+SchoolEmployeeEntityType varchar (5) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
 UserEntityID int not null,
 primary key (SchoolEmployeeEntityID),
@@ -74,6 +80,7 @@ ZipCode int not null,
 primary key (ParentEntityID)
 );
 
+--References the userEntity, and 
 Create table Student (
 StudentEntityID int not null,
 FirstName varchar (50) not null,
@@ -88,6 +95,10 @@ StudentGradeLevel varchar (25) not null,
 StudentGPA decimal not null,
 StudentACTScore int null,
 StudentSATScore int null,
+StudentEthnicity varchar (30) null, --PC datafield
+StudentGender varchar (30) null, --PC datafield
+IncomeLevel varchar (50) null, --PC datafield 
+DaysAbsent int not null,
 ParentEntityID int null, --parent might not be associated with anything
 SchoolEntityID int not null, --student needs to be associated with a school 
 primary key (StudentEntityID),
@@ -95,6 +106,23 @@ Foreign key (StudentEntityID) references UserEntity (UserEntityID),
 Foreign key (ParentEntityID) references Parent (ParentEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID)
 );
+
+Create table InterestGroups(
+InterestGroupID int identity(1,1),
+InterestGroupName varchar (90),
+primary key (InterestGroupID)
+);
+
+create table StudentInterestGroups(
+InterestGroupID int,
+StudentEntityID int,
+primary key (InterestGroupID),
+primary key (StudentEntityID),
+Foreign key (InterestID) references InterestGroups,
+Foreign key (StudentEntityID) references Student
+)
+
+
 
 Create table Organization (
 OrganizationEntityID int not null,
@@ -190,4 +218,3 @@ Foreign Key (TechnicalSchoolID) references EducationInstitution (HigherEducation
 );
 
 
-insert into OpportunityEntity values ('hi')
