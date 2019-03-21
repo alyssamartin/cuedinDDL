@@ -1,3 +1,4 @@
+drop table OpportunityInterestGroups
 drop table TechnicalSchool
 drop table University
 drop table EducationInstitution
@@ -7,11 +8,14 @@ drop table UserInterest
 drop table OpportunityEntity
 drop table Organization
 drop table Student
+drop table StudentInterestGroups
+drop table InterestGroups
 drop table Parent
 drop table SchoolEmployee
 drop table School
 drop table Password
 drop table UserEntity
+
 
 create table UserEntity (
 UserEntityID int identity(1,1) not null,
@@ -107,12 +111,14 @@ Foreign key (ParentEntityID) references Parent (ParentEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID)
 );
 
+--InterestGroup Table
 Create table InterestGroups(
 InterestGroupID int identity(1,1),
 InterestGroupName varchar (90),
 primary key (InterestGroupID)
 );
 
+--Interest Groups where it links students and interest groups 
 create table StudentInterestGroups(
 InterestGroupID int,
 StudentEntityID int,
@@ -122,8 +128,7 @@ Foreign key (InterestID) references InterestGroups,
 Foreign key (StudentEntityID) references Student
 )
 
-
-
+--Creates a org/business
 Create table Organization (
 OrganizationEntityID int not null,
 OrganizationName varchar (50) not null,
@@ -137,20 +142,20 @@ primary key (OrganizationEntityID),
 Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 );
 
-
-Create table UserInterest (
-UserInterestID int not null,
+--
+Create table UserChecklist (
 UserEntityID int not null,
-OpportunityID int not null,
-Primary Key (UserInterestID),
+OpportunityEntityID int not null,
+Primary Key (UserEntityID),
+Primary Key (OpportunityEntityID),
 Foreign Key (UserEntityID) references UserEntity (UserEntityID),
-Foreign Key (OpportunityID) references OpportunityEntity (OpportunityID),
+Foreign Key (OpportunityEntityID) references OpportunityEntity (OpportunityEntityID),
 );
 
 Create table OpportunityEntity (
-OpportunityID int identity(1,1) not null,
+OpportunityEntityID int identity(1,1) not null,
 OpportunityType varchar(6) not null, --JOB HE SCHOL
-Primary Key (OpportunityID),
+Primary Key (OpportunityEntityID),
 );
 
 Create Table JobListing (
@@ -165,7 +170,7 @@ Approved varchar(3) not null,
 NumOfApplicants int not null,
 OrganizationID int not null,
 Primary Key (JobListingID),
-Foreign Key (JobListingID) references OpportunityEntity (OpportunityID),
+Foreign Key (JobListingID) references OpportunityEntity (OpportunityEntityID),
 Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 );
 
@@ -181,7 +186,7 @@ OrganizationID int not null,
 Approved varchar(3) not null,
 LastUpdated datetime not null,
 Primary key (ScholarshipID),
-foreign Key (ScholarshipID) references OpportunityEntity(OpportunityID),
+foreign Key (ScholarshipID) references OpportunityEntity(OpportunityEntityID),
 Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 ) ;
 
@@ -198,7 +203,7 @@ InstateTutition money not null,
 OutOfStateTutition money not null,
 UnversityType varchar(10), --This will be a subtype discriminator TS or UNIV
 Primary Key (HigherEducationID),
-Foreign Key (HigherEducationID) references OpportunityEntity (OpportunityID)
+Foreign Key (HigherEducationID) references OpportunityEntity (OpportunityEntityID)
 );
 
 Create Table University (
@@ -223,7 +228,7 @@ Create table OpportunityInterestGroups (
 InterestGroupsID int,
 OpportunityEntityID int,
 primary key (InterestID),
-primary key (opportunityID),
+primary key (OpportunityEntityID),
 Foreign key (InterestGroupsID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
 );
