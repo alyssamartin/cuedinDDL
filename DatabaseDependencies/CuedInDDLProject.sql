@@ -138,12 +138,6 @@ Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 );
 
 
-Create table OpportunityEntity (
-OpportunityID int identity(1,1) not null,
-OpportunityType varchar(3) not null,
-Primary Key (OpportunityID),
-);
-
 Create table UserInterest (
 UserInterestID int not null,
 UserEntityID int not null,
@@ -151,6 +145,12 @@ OpportunityID int not null,
 Primary Key (UserInterestID),
 Foreign Key (UserEntityID) references UserEntity (UserEntityID),
 Foreign Key (OpportunityID) references OpportunityEntity (OpportunityID),
+);
+
+Create table OpportunityEntity (
+OpportunityID int identity(1,1) not null,
+OpportunityType varchar(3) not null,
+Primary Key (OpportunityID),
 );
 
 Create Table JobListing (
@@ -195,8 +195,9 @@ State varchar (50) not null,
 ZipCode int not null,
 InstateTutition money not null,
 OutOfStateTutition money not null,
-UnversityType varchar(10),
+UnversityType varchar(10), --This will be a subtype discriminator TS or UNIV
 Primary Key (HigherEducationID)
+Foreign Key ()
 );
 
 Create Table University (
