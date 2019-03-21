@@ -71,6 +71,7 @@ Foreign key (SchoolEntityID) references School (SchoolEntityID),
 Foreign key (UserEntityID) references UserEntity (UserEntityID)
 );
 
+--References the UserEntity Table
 Create table Parent (
 ParentEntityID int not null,
 FirstName varchar (50),
@@ -81,7 +82,8 @@ Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
-primary key (ParentEntityID)
+primary key (ParentEntityID),
+Foreign key (ParentEntityID) references UserEntity (UserEntityID)
 );
 
 --References the userEntity, and 
@@ -158,6 +160,7 @@ OpportunityType varchar(6) not null, --JOB HE SCHOL
 Primary Key (OpportunityEntityID),
 );
 
+--JobListing Table references the OpportunityEntity Table
 Create Table JobListing (
 JobListingID int not null,
 JobTitle varchar(255) not null,
@@ -190,6 +193,7 @@ foreign Key (ScholarshipID) references OpportunityEntity(OpportunityEntityID),
 Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 ) ;
 
+--References the OpportunityEntity Table
 Create table HigherEducation (
 HigherEducationID int not null,
 EducationInsitutionName varchar(50) not null,
@@ -215,7 +219,7 @@ Primary Key (UnversityID),
 Foreign Key (UnversityID) references HigherEducation (HigherEducationID),
 ) ;
  
-
+--Technical school table references the HigherEducation Table
 Create Table TechnicalSchool (
 TechnicalSchoolID int not null,
 TechnicalSchoolSkill varchar(50) not null,
