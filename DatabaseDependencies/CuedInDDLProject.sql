@@ -149,24 +149,24 @@ Foreign Key (OpportunityID) references OpportunityEntity (OpportunityID),
 
 Create table OpportunityEntity (
 OpportunityID int identity(1,1) not null,
-OpportunityType varchar(3) not null,
+OpportunityType varchar(6) not null, --JOB HE SCHOL
 Primary Key (OpportunityID),
 );
 
 Create Table JobListing (
-JobListingID int identity(1,1) not null,
+JobListingID int not null,
 JobTitle varchar(255) not null,
 JobDescription varchar(255) not null,
 JobType varchar(255) not null,
 Location varchar(255) not null,
-PostingDate datetime not null,
 Deadline datetime not null,
 LastUpdated datetime not null,
 Approved varchar(3) not null,
 NumOfApplicants int not null,
 OrganizationID int not null,
 Primary Key (JobListingID),
-Foreign Key (OrganizationID) references Organization (OrganizationEntityID),
+Foreign Key (JobListingID) references OpportunityEntity (OpportunityID),
+Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 );
 
 Create Table Scholarship (
@@ -180,8 +180,9 @@ ScholarshipDueDate datetime not null,
 OrganizationID int not null,
 Approved varchar(3) not null,
 LastUpdated datetime not null,
-Primary Key (ScholarshipID),
-Foreign Key (OrganizationID) references Organization (OrganizationEntityID),
+Primary key (ScholarshipID),
+foreign Key (ScholarshipID) references OpportunityEntity(OpportunityID),
+Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 ) ;
 
 Create table EducationInstitution (
@@ -196,8 +197,8 @@ ZipCode int not null,
 InstateTutition money not null,
 OutOfStateTutition money not null,
 UnversityType varchar(10), --This will be a subtype discriminator TS or UNIV
-Primary Key (HigherEducationID)
-Foreign Key ()
+Primary Key (HigherEducationID),
+Foreign Key (HigherEducationID) references OpportunityEntity (OpportunityID)
 );
 
 Create Table University (
@@ -216,6 +217,15 @@ TechnicalSchoolSkill varchar(50) not null,
 Description varchar(50) not null,
 Primary Key (TechnicalSchoolID),
 Foreign Key (TechnicalSchoolID) references EducationInstitution (HigherEducationID),
+);
+
+Create table OpportunityInterestGroups (
+InterestGroupsID int,
+OpportunityEntityID int,
+primary key (InterestID),
+primary key (opportunityID),
+Foreign key (InterestGroupsID) references InterestGroups,
+Foreign key (OpportunityEntityID) references OpportunityEntity
 );
 
 
