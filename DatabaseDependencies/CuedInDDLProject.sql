@@ -1,7 +1,7 @@
 drop table OpportunityInterestGroups
 drop table TechnicalSchool
 drop table University
-drop table EducationInstitution
+drop table HigherEducation
 drop table Scholarship
 drop table JobListing
 drop table UserInterest
@@ -190,7 +190,7 @@ foreign Key (ScholarshipID) references OpportunityEntity(OpportunityEntityID),
 Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 ) ;
 
-Create table EducationInstitution (
+Create table HigherEducation (
 HigherEducationID int not null,
 EducationInsitutionName varchar(50) not null,
 ApplicationDueDate datetime not null,
@@ -212,7 +212,7 @@ GPARequirement decimal not null,
 SATRequirement int not null,
 ACTRequirement int not null,
 Primary Key (UnversityID),
-Foreign Key (UnversityID) references EducationInstitution (HigherEducationID),
+Foreign Key (UnversityID) references HigherEducation (HigherEducationID),
 ) ;
  
 
@@ -221,7 +221,7 @@ TechnicalSchoolID int not null,
 TechnicalSchoolSkill varchar(50) not null,
 Description varchar(50) not null,
 Primary Key (TechnicalSchoolID),
-Foreign Key (TechnicalSchoolID) references EducationInstitution (HigherEducationID),
+Foreign Key (TechnicalSchoolID) references HigherEducation (HigherEducationID),
 );
 
 Create table OpportunityInterestGroups (
