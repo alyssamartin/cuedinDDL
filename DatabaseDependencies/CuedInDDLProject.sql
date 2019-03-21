@@ -91,7 +91,7 @@ Create table Student (
 StudentEntityID int not null,
 FirstName varchar (50) not null,
 LastName varchar (50) not null,
-MiddleName varchar (50) not null,
+MiddleInitial varchar (1) not null,
 StreetAddress varchar (50) not null,
 Country varchar (50) not null,
 City varchar (50) not null,
