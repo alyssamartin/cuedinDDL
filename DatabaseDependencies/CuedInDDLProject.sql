@@ -4,15 +4,15 @@ drop table University
 drop table HigherEducation
 drop table Scholarship
 drop table JobListing
-drop table UserInterest
+drop table UserChecklist
 drop table OpportunityEntity
 drop table Organization
-drop table Student
 drop table StudentInterestGroups
+drop table Student
 drop table InterestGroups
-drop table Parent
 drop table SchoolEmployee
 drop table School
+drop table Parent
 drop table Password
 drop table UserEntity
 
@@ -124,9 +124,8 @@ primary key (InterestGroupID)
 create table StudentInterestGroups(
 InterestGroupID int,
 StudentEntityID int,
-primary key (InterestGroupID),
-primary key (StudentEntityID),
-Foreign key (InterestID) references InterestGroups,
+primary key (InterestGroupID, StudentEntityID),
+Foreign key (InterestGroupID) references InterestGroups (InterestGroupID),
 Foreign key (StudentEntityID) references Student
 )
 
@@ -144,21 +143,23 @@ primary key (OrganizationEntityID),
 Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 );
 
---
-Create table UserChecklist (
-UserEntityID int not null,
-OpportunityEntityID int not null,
-Primary Key (UserEntityID),
-Primary Key (OpportunityEntityID),
-Foreign Key (UserEntityID) references UserEntity (UserEntityID),
-Foreign Key (OpportunityEntityID) references OpportunityEntity (OpportunityEntityID),
-);
-
 Create table OpportunityEntity (
 OpportunityEntityID int identity(1,1) not null,
 OpportunityType varchar(6) not null, --JOB HE SCHOL
 Primary Key (OpportunityEntityID),
 );
+
+
+--
+Create table UserChecklist (
+UserEntityID int not null,
+OpportunityEntityID int not null,
+Primary Key (UserEntityID, OpportunityEntityID),
+Foreign Key (UserEntityID) references UserEntity (UserEntityID),
+Foreign Key (OpportunityEntityID) references OpportunityEntity (OpportunityEntityID),
+);
+
+
 
 --JobListing Table references the OpportunityEntity Table
 Create Table JobListing (
@@ -231,10 +232,7 @@ Foreign Key (TechnicalSchoolID) references HigherEducation (HigherEducationID),
 Create table OpportunityInterestGroups (
 InterestGroupsID int,
 OpportunityEntityID int,
-primary key (InterestID),
-primary key (OpportunityEntityID),
+primary key (InterestGroupsID, OpportunityEntityID),
 Foreign key (InterestGroupsID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
 );
-
-
