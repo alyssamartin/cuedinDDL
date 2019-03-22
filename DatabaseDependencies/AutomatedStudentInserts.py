@@ -1,15 +1,39 @@
 import random
 import names 
-import faker
+from faker import Faker
 import string
 
+def sat_scores_generator (student_gpa):
+      ### on a 1600 scale, ball parking stuff gauging
+    if student_gpa >= 3.5 and student_gpa <= 4.0:
+        sat_score = random.randint(1150,1600)
+    
+    elif student_gpa < 3.0 and student_gpa >= 2.5:
+        sat_score = random.randint(900,1550)
+    
+    elif student_gpa < 2.5 and student_gpa >= 2.0:
+        sat_score = random.randint(800,1400)
 
+    elif student_gpa < 2.0 and student_gpa >= 1.5:
+        sat_score = random.randint(700,1300)
+    
+    elif student_gpa < 1.5 and student_gpa >= 1.0:
+        sat_score = random.randint(600,1250)
+
+    return sat_score
+
+def act_scores_generator (student_gpa):
+    
 
 #Inserts for UserEntity for School HardCoding this
 #School Inserts should be hardcoded in a pristine way
 #List of schools we are going to use 
 #parallel array!
 #parallell arrays for hs and their emails for UserEntity
+
+###fake information generator 
+fake = Faker()
+
 school_list = ["Louisa County High School", "East Rockingham County High School", "Spotswood High School", "Turner Ashby High School", "Broadway High School" , "Harrisonburg High School"]
 school_email_list = ["Louisa@Louisa.edu" , "erhsattendance@rockingham.k12.va.us", "SpotsWood@spotswood.edu" , "TurnerAshby@turnerAshby.edu", "Broadway@broadway.edu" ,"Harrisonburg@harrisonburg.edu"]
 school_street_address_list = ["757 Davis Hwy", "250 Eagle Rock Road", "368 Blazer Drive","800 N Main St","269 Gobbler Drive", "1001 Garber Church Rd" ]
@@ -32,7 +56,7 @@ for i in range (6):
 
     school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode) values (" + str(userEntityID)+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','" + school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ")"
 
-    print(school_insert)
+    #print(school_insert)
 
 
     with open('generatedinserts.txt', 'a') as input_file:
@@ -43,13 +67,13 @@ for i in range (6):
 #this is the amount of schools there are 
 amount_of_schools = userEntityID 
 
-
-
-
+###Array of grade levels students can be
+student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 
 #Student Inserts 
-amount_of_students = 20
+amount_of_students = 1
 for i in range (amount_of_students):
+    userEntityID = userEntityID + 1
     ###Determining Gender over here
     ###Determining names based off of genders
     ###kids will have boy or girl names. but 10% chance someone is a third party gender
@@ -57,7 +81,7 @@ for i in range (amount_of_students):
     third_party_gender_flag = random.randint(1,100)
 
     ###0 means female 
-    if gender_flag = 0:
+    if gender_flag == 0:
 
         ##The if block that determines if they want to be a third gender (no choice, it's python's choice)
         if third_party_gender_flag <= 10:
@@ -69,16 +93,17 @@ for i in range (amount_of_students):
         student_last_name = names.get_last_name()
 
     ###1 means male
-    elif gender_flag = 1:
+    elif gender_flag == 1:
 
         ##The if block that determines if they want to be a third gender
         if third_party_gender_flag <= 10:
-            student_gender "third party"
+            student_gender = "third party"
         else:
             student_gender  = "male"
 
         student_first_name = names.get_first_name(gender='male')
         student_last_name = names.get_last_name()
+
 
     student_middle_initial = random.choice(string.ascii_uppercase)
     
@@ -86,7 +111,7 @@ for i in range (amount_of_students):
     ##Generate student username
     student_user_name = student_full_name + student_middle_initial + str(random.randint(0,1000))
 
-    print(student_user_name)
+    #print(student_user_name)
     #Generate student's school for email and further use...
     school_list_id = list(range(0,amount_of_schools + 1)) ##foreign key
     student_school_id = random.randint(0,amount_of_schools -1)
@@ -97,16 +122,30 @@ for i in range (amount_of_students):
     student_email = student_user_name + "@" + student_email_domain
 
     ###Generate student Address
-    student_street_address = fake.StreetAddress
-    student_country = USA 
-    student_
+    #disregard the red lines. took me 30 minutes to figure it dynamically goes away hahahahahahaha
+    student_street_address = fake.street_address()
+    student_city = fake.city()
+    student_state = "VA"
+    student_zip = fake.postcode_in_state(state_abbr="VA")
+
+    ###dynamically assigns grade level
+    student_grade_level = student_grade_level_list[random.randint(0,3)]
+
+    #Generate GPA, This is going to be a key metric for a lot of test scores, and absences.
+    student_gpa = round(random.uniform(1.0,4.0), 2)
+
+    student_sat = sat_scores_generator(student_gpa)
+  
+
+
     
 
 
 
+    
 
 
-
+    
 # Create table Student (
 # StudentEntityID int not null, done
 # FirstName varchar (50) not null, done
