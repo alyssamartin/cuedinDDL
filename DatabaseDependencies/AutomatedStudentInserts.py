@@ -41,6 +41,19 @@ def act_scores_generator (student_gpa):
     
     return act_score
 
+def student_income_generator(student_income_flag):
+
+    if student_income_flag == 1 and student_income_flag < 30:
+        student_income = "Lower Income"
+    
+    if student_income_flag == 30 and student_income_flag <= 30:
+        student_income = "Middle Income"
+
+    if student_income_flag == 1 and student_income_flag <=30:
+        student_income = "Higher Income"
+
+    return student_income
+
 
 #Inserts for UserEntity for School HardCoding this
 #School Inserts should be hardcoded in a pristine way
@@ -86,6 +99,14 @@ amount_of_schools = userEntityID
 
 ###Array of grade levels students can be
 student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
+
+###Array of the student income levels
+student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
+
+###Array of Ethnicity
+student_ethnicity_list  = ["African American", "Hispanic", "Asian", "Pacific Islander", "Caucasian" , "Not Selected", "Native American", ]
+
+
 
 #Student Inserts 
 amount_of_students = 1
@@ -169,13 +190,37 @@ for i in range (amount_of_students):
         student_act = 0
         student_act = 0
         
+    ##
+    ##In terms of the system, I don't know if income is in our scope
+    ##I'll add it anyways! just in case!
+
+
+    ### Assigns student income level
+    ### do we want to just do it randomly? 
+    ### majority are going to be middle 50%
+    ### lower going to be around 30%
+    ### higher going to be around 20%
+    student_income_flag = random.randint(1,100)
+
+    ###student income suprisingly not correlated in HS.
+    ###http://educationalpolicy.org/publications/EPIGraph/150114_EPIGraph.html
+    ### i was stoked when i saw this data lol 
+    student_income_level = student_income_generator(student_income_flag)
+
+    
+
+
+
 
 
     
 
 
 
+
+
     
+
 
 
     
