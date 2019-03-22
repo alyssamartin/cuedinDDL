@@ -155,10 +155,20 @@ for i in range (amount_of_students):
         ###generate student SAT scores
         student_sat = sat_scores_generator(student_gpa)
 
-
-        ###generate student act scores
-        student_act = act_scores_generator(student_gpa)
+        take_act_flag = random.randint(1,100)
+        
+        if take_act_flag >=1 or take_act_flag <=75:
+            ###generate student act scores
+            student_act = act_scores_generator(student_gpa)
+        
+        else:
+            #### do a nullif if it is 0
+            student_act = 0
     
+    else:
+        student_act = 0
+        student_act = 0
+        
 
 
     
