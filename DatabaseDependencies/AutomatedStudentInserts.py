@@ -3,7 +3,11 @@ import names
 from faker import Faker
 import string
 
+
+
 def sat_scores_generator (student_gpa):
+    sat_score = 0
+    
       ### on a 1600 scale, ball parking stuff gauging
     if student_gpa >= 3.5 and student_gpa <= 4.0:
         sat_score = random.randint(1150,1600)
@@ -24,6 +28,9 @@ def sat_scores_generator (student_gpa):
 
 ###Generates act Scores
 def act_scores_generator (student_gpa):
+    
+    act_score = 0
+
     if student_gpa >= 3.5 and student_gpa <= 4.0:
         act_score = random.randint(25,35)
     
@@ -43,16 +50,46 @@ def act_scores_generator (student_gpa):
 
 def student_income_generator(student_income_flag):
 
-    if student_income_flag == 1 and student_income_flag < 30:
+    student_income = " "
+    
+    if student_income_flag >= 1 and student_income_flag < 30:
         student_income = "Lower Income"
     
-    if student_income_flag == 30 and student_income_flag <= 30:
+    elif student_income_flag >= 30 and student_income_flag < 80:
         student_income = "Middle Income"
 
-    if student_income_flag == 1 and student_income_flag <=30:
+    elif student_income_flag >= 80 and student_income_flag <=100:
         student_income = "Higher Income"
 
     return student_income
+
+def student_ethnicity_generator(student_ethnicity_flag):
+    
+    student_ethnicity = " "
+
+    if student_ethnicity_flag >=1 and student_ethnicity_flag < 65:
+        student_ethnicity = "Caucasian"
+    
+    elif student_ethnicity_flag >=65 and student_ethnicity_flag <75:
+        student_ethnicity = "African American"
+    
+    elif student_ethnicity_flag >= 75 and student_athlete_flag < 85:
+        student_ethnicity = "Hispanic"
+    
+    elif student_ethnicity_flag >= 85 and student_athlete_flag < 90:
+        student_ethnicity = "Asian"
+    
+    elif student_ethnicity_flag >= 90 and student_athlete_flag < 95:
+        student_ethnicity = "Pacific Islander"
+    
+    elif student_ethnicity_flag >= 95 and student_ethnicity_flag <= 100:
+        student_ethnicity = "Not selected or Other"
+    
+    return student_ethnicity
+
+
+
+
 
 
 #Inserts for UserEntity for School HardCoding this
@@ -80,7 +117,7 @@ userEntityID = 0
 for i in range (6): 
     #primary keys are 1,2,3 for userentity
     school_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType) values  ('"+ school_list[i].replace(" ","") +"', '"+school_email_list[i] + "'" + "SCHL" + "')"
-    print (school_entity_insert)
+    #print (school_entity_insert)
 
     userEntityID = userEntityID + 1
 
@@ -89,9 +126,9 @@ for i in range (6):
     #print(school_insert)
 
 
-    with open('generatedinserts.txt', 'a') as input_file:
-        input_file.write(school_entity_insert + "\n")
-        input_file.write(school_insert + "\n")
+    #with open('generatedinserts.txt', 'a') as input_file:
+        #input_file.write(school_entity_insert + "\n")
+        #input_file.write(school_insert + "\n")
 
 #Whatever the amount of userEntity ID's there are
 #this is the amount of schools there are 
@@ -103,13 +140,19 @@ student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 ###Array of the student income levels
 student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
-###Array of Ethnicity
-student_ethnicity_list  = ["African American", "Hispanic", "Asian", "Pacific Islander", "Caucasian" , "Not Selected", "Native American", ]
+###Array of student Interest
+student_interest_list = ["Agreculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
+student_interest_list.extend (["Architecture and Construction", "Education and Training", "Information Technology", "STEM"])
+student_interest_list.extend(["Arts, A/V, Technology, and Communications", "Health Science", "Manufacturing", "Transportation"])
+student_interest_list_id = list(range(1, 13))
 
 
+
+# for i in student_interest_list:
+#     print(i)
 
 #Student Inserts 
-amount_of_students = 1
+amount_of_students = 600
 for i in range (amount_of_students):
     userEntityID = userEntityID + 1
     ###Determining Gender over here
@@ -149,14 +192,18 @@ for i in range (amount_of_students):
     ##Generate student username
     student_user_name = student_full_name + student_middle_initial + str(random.randint(0,1000))
 
-    #print(student_user_name)
-    #Generate student's school for email and further use...
+    ###Generate student's school for email and further use...
     school_list_id = list(range(0,amount_of_schools + 1)) ##foreign key
-    student_school_id = random.randint(0,amount_of_schools -1)
-    student_school = school_list[student_school_id]
+    student_school_index = random.randint(0,amount_of_schools -1)
+    student_school = school_list[student_school_index]
+
+    ###foreign key for student school. have to add 1 because
+    student_school_id = student_school_index +1 
+    
+
     
     ##generate student emailAddress
-    student_email_domain = school_email_list[student_school_id].split("@")[1]
+    student_email_domain = school_email_list[student_school_index].split("@")[1]
     student_email = student_user_name + "@" + student_email_domain
 
     ###Generate student Address
@@ -187,7 +234,7 @@ for i in range (amount_of_students):
             student_act = 0
     
     else:
-        student_act = 0
+        student_sat = 0
         student_act = 0
         
     ##
@@ -198,56 +245,81 @@ for i in range (amount_of_students):
     ### Assigns student income level
     ### do we want to just do it randomly? 
     ### majority are going to be middle 50%
-    ### lower going to be around 30%
+    ### lower going to be  30%
     ### higher going to be around 20%
     student_income_flag = random.randint(1,100)
-
-    ###student income suprisingly not correlated in HS.
-    ###http://educationalpolicy.org/publications/EPIGraph/150114_EPIGraph.html
-    ### i was stoked when i saw this data lol 
     student_income_level = student_income_generator(student_income_flag)
 
+    student_athlete_flag = random.randint (1,100)
+    
+
+    if student_athlete_flag >= 1 and student_athlete_flag <=62:
+        student_athlete_status = "Y"
+    
+    else:
+        student_athlete_status = "N"
+        
+    student_ethnicity_flag = random.randint(1,100) 
+    student_ethnicity = student_ethnicity_generator(student_ethnicity_flag)
+
+
+###Interest Group data
+    ###Shuffle the list of interest groups
+    random.shuffle(student_interest_list_id)
+
+    ###initialize an empty list of potential primary keys
+    student_interest_group_linkages = []
+
+    ###random number of how many groups they wanna be apart of
+    student_amount_of_interested = random.randint(1,8)
+
+    for i in range (0,student_amount_of_interested):
+        student_interest_group_linkages.append(student_interest_list_id[i])
+    
+    
+
+
+    
+
+
+    ###primary keys of interest groups
+    
+
     
 
 
 
+    # print("student gpa: " + str(student_gpa))
+    # print("student grade level: " + student_grade_level)
+    # print("student actScore:" + str(student_act))
+    # print("student satscore: "+ str(student_sat))
+    # print("student income level: " + student_income_level)
+    # print("student street address: " + student_street_address)
+    # print("student city: "+ student_city)
+    # print("student zipcode: "+ student_zip)
+    # print("student state: " + student_state)
+    # print("student full name " + student_first_name + " " + student_last_name)
+    # print("student gender " + student_gender)
+    # print("student school name " + student_school)
+    # print("student school ID " + str(student_school_id))
+    # print ("student athlete: " +  student_athlete_status)
+    # print("student ethnicity: " + student_ethnicity)
+
+
+
 
 
     
-
-
-
-
-
     
 
+#Student Interest 
+# Hours of workplace learning experience. 
+# each individual student
+# By grade
+# school level
+# county levlel
 
 
-    
-# Create table Student (
-# StudentEntityID int not null, done
-# FirstName varchar (50) not null, done
-# LastName varchar (50) not null, done 
-# MiddleInitial varchar (1) not null,done 
-# StreetAddress varchar (50) not null,
-# Country varchar (50) not null,
-# City varchar (50) not null,
-# State varchar (50) not null,
-# ZipCode int not null,
-# StudentGradeLevel varchar (25) not null,
-# StudentGPA decimal not null,
-# StudentACTScore int null,
-# StudentSATScore int null,
-# StudentEthnicity varchar (30) null, --PC datafield
-# StudentGender varchar (30) null, --PC datafield
-# IncomeLevel varchar (50) null, --PC datafield 
-# DaysAbsent int not null,
-# ParentEntityID int null, --parent might not be associated with anything
-# SchoolEntityID int not null, --student needs to be associated with a school 
-# primary key (StudentEntityID),
-# Foreign key (StudentEntityID) references UserEntity (UserEntityID),
-# Foreign key (ParentEntityID) references Parent (ParentEntityID),
-# Foreign key (SchoolEntityID) references School (SchoolEntityID)
 # );
 
 

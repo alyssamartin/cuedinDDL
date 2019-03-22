@@ -105,6 +105,7 @@ StudentEthnicity varchar (30) null, --PC datafield
 StudentGender varchar (30) null, --PC datafield
 IncomeLevel varchar (50) null, --PC datafield 
 DaysAbsent int not null,
+HoursOfWorkPlaceExp int not null, --possible stored trigger on update of our new tables
 ParentEntityID int null, --parent might not be associated with anything
 SchoolEntityID int not null, --student needs to be associated with a school 
 primary key (StudentEntityID),
