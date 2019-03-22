@@ -22,8 +22,25 @@ def sat_scores_generator (student_gpa):
 
     return sat_score
 
+###Generates act Scores
 def act_scores_generator (student_gpa):
+    if student_gpa >= 3.5 and student_gpa <= 4.0:
+        act_score = random.randint(25,35)
     
+    elif student_gpa < 3.0 and student_gpa >= 2.5:
+        act_score = random.randint(20,35)
+    
+    elif student_gpa < 2.5 and student_gpa >= 2.0:
+        act_score = random.randint(15,30)
+
+    elif student_gpa < 2.0 and student_gpa >= 1.5:
+        act_score = random.randint(15,25)
+    
+    elif student_gpa < 1.5 and student_gpa >= 1.0:
+        act_score = random.randint(10,20)
+    
+    return act_score
+
 
 #Inserts for UserEntity for School HardCoding this
 #School Inserts should be hardcoded in a pristine way
@@ -131,11 +148,17 @@ for i in range (amount_of_students):
     ###dynamically assigns grade level
     student_grade_level = student_grade_level_list[random.randint(0,3)]
 
-    #Generate GPA, This is going to be a key metric for a lot of test scores, and absences.
+    ###Generate GPA, This is going to be a key metric for a lot of test scores, and absences.
     student_gpa = round(random.uniform(1.0,4.0), 2)
 
-    student_sat = sat_scores_generator(student_gpa)
-  
+    if student_grade_level == "Senior" or student_grade_level == "Junior":
+        ###generate student SAT scores
+        student_sat = sat_scores_generator(student_gpa)
+
+
+        ###generate student act scores
+        student_act = act_scores_generator(student_gpa)
+    
 
 
     
