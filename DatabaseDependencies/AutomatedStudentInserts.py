@@ -73,13 +73,13 @@ def student_ethnicity_generator(student_ethnicity_flag):
     elif student_ethnicity_flag >=65 and student_ethnicity_flag <75:
         student_ethnicity = "African American"
     
-    elif student_ethnicity_flag >= 75 and student_athlete_flag < 85:
+    elif student_ethnicity_flag >= 75 and student_ethnicity_flag < 85:
         student_ethnicity = "Hispanic"
     
-    elif student_ethnicity_flag >= 85 and student_athlete_flag < 90:
+    elif student_ethnicity_flag >= 85 and student_ethnicity_flag < 90:
         student_ethnicity = "Asian"
     
-    elif student_ethnicity_flag >= 90 and student_athlete_flag < 95:
+    elif student_ethnicity_flag >= 90 and student_ethnicity_flag < 95:
         student_ethnicity = "Pacific Islander"
     
     elif student_ethnicity_flag >= 95 and student_ethnicity_flag <= 100:
@@ -152,7 +152,7 @@ student_interest_list_id = list(range(1, 13))
 #     print(i)
 
 #Student Inserts 
-amount_of_students = 600
+amount_of_students = 1
 for i in range (amount_of_students):
     userEntityID = userEntityID + 1
     ###Determining Gender over here
@@ -276,7 +276,9 @@ for i in range (amount_of_students):
     for i in range (0,student_amount_of_interested):
         student_interest_group_linkages.append(student_interest_list_id[i])
     
+
     
+
 
 
     
@@ -289,21 +291,21 @@ for i in range (amount_of_students):
 
 
 
-    # print("student gpa: " + str(student_gpa))
-    # print("student grade level: " + student_grade_level)
-    # print("student actScore:" + str(student_act))
-    # print("student satscore: "+ str(student_sat))
-    # print("student income level: " + student_income_level)
-    # print("student street address: " + student_street_address)
-    # print("student city: "+ student_city)
-    # print("student zipcode: "+ student_zip)
-    # print("student state: " + student_state)
-    # print("student full name " + student_first_name + " " + student_last_name)
-    # print("student gender " + student_gender)
-    # print("student school name " + student_school)
-    # print("student school ID " + str(student_school_id))
-    # print ("student athlete: " +  student_athlete_status)
-    # print("student ethnicity: " + student_ethnicity)
+    print("student gpa: " + str(student_gpa))
+    print("student grade level: " + student_grade_level)
+    print("student actScore:" + str(student_act))
+    print("student satscore: "+ str(student_sat))
+    print("student income level: " + student_income_level)
+    print("student street address: " + student_street_address)
+    print("student city: "+ student_city)
+    print("student zipcode: "+ student_zip)
+    print("student state: " + student_state)
+    print("student full name " + student_first_name + " " + student_last_name)
+    print("student gender " + student_gender)
+    print("student school name " + student_school)
+    print("student school ID " + str(student_school_id))
+    print ("student athlete: " +  student_athlete_status)
+    print("student ethnicity: " + student_ethnicity)
 
 
 
