@@ -270,7 +270,8 @@ for i in range (len(interest_list_id)):
     interest_group_insert = "insert into InterestGroups (InterestGroupName)\n"
     interest_group_insert += "values ('" + interest_list[i] + "')"
 
-    print(interest_group_insert)
+    with open('generatedinserts.txt', 'a') as input_file:
+        input_file.write(interest_group_insert + "\n")
 
 
 
