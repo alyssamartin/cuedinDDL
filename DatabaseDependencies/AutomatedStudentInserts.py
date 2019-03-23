@@ -3,6 +3,7 @@ import names
 from faker import Faker
 import string
 
+
 def user_entity_insert (entity_username, entity_email, entity_type):
 
     user_entity_insert = " "
@@ -428,7 +429,7 @@ for i in range (amount_of_students):
         "MiddleInitial": student_middle_initial,
         "StreetAddress": student_street_address,
         "Country": "USA",
-        "City": student_state, 
+        "City": student_city, 
         "State": "VA",
         "ZipCode": student_zip,
         "StudentGradeLevel":student_grade_level,
@@ -452,14 +453,25 @@ for i in range (amount_of_students):
 
     print(student_entity_insert)
     ###student Insert 
-
-    # student_insert
-
-
-
-        ####student Interest Group Insert
     
+    student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State"
+    student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, SchoolEntityID)\n"
+    student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
+    student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
+    student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
+    student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
+    student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + str(student_dict["SchoolEntityID"]) + ")"
 
+    print(student_insert)
+
+    for i in range (len(student_interest_group_linkages)):
+        ####student Interest Group Insert
+        student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
+        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ")"
+
+        print(student_interest_insert)
 ###student comments and org comment insert
 ###going to utilize a list of student ID's and all that stuff 
 ###all by chance

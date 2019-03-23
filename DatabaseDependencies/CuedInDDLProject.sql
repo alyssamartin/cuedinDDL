@@ -127,8 +127,8 @@ InterestGroupID int,
 StudentEntityID int,
 primary key (InterestGroupID, StudentEntityID),
 Foreign key (InterestGroupID) references InterestGroups (InterestGroupID),
-Foreign key (StudentEntityID) references Student
-)
+Foreign key (StudentEntityID) references Student (StudentEntityID)
+);
 
 --Creates a org/business
 Create table Organization (
