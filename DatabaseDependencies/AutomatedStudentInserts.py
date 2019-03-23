@@ -3,6 +3,14 @@ import names
 from faker import Faker
 import string
 
+def user_entity_insert (entity_username, entity_email, entity_type):
+
+    user_entity_insert = " "
+
+    user_entity_insert = "insert into userEntity (UserName, Email, EntityType)\n"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "')"
+
+    return user_entity_insert
 def days_absent_generator (student_gpa):
     days_absent = 0 
 
@@ -190,8 +198,12 @@ for i in range (len(org_primary_keys)):
     print(org_name_list[i])
 
 for i in range(len(org_primary_keys)):
-    org_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
-    org_entity_insert += " values ('" + org_name_list[i].replace(" ", "")+ str(random.randint(1,100)) + "', '" + org_name_list[i].replace(" ", "") + "@gmail.com, 'ORG')"
+    # org_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
+    # org_entity_insert += " values ('" + org_name_list[i].replace(" ", "")+ str(random.randint(1,100)) + "', '" + org_name_list[i].replace(" ", "") + "@gmail.com, 'ORG')"
+
+    org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG")
+
+
 
     org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode)\n"
     org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + fake.street_address() + "', '"
@@ -238,6 +250,7 @@ for i in range (len(school_list)):
     school_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n" 
     school_entity_insert += " values  ('"+ school_list[i].replace(" ","") +"', '"+school_email_list[i] + "'" + "SCHL" + "')"
   
+    school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL")
     ###inserting into the school entity
     school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
@@ -433,3 +446,23 @@ for i in range (amount_of_students):
     }
 
     print(student_dict)
+
+    ###student/user Entity Insert
+    student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD")
+
+    print(student_entity_insert)
+    ###student Insert 
+
+    # student_insert
+
+
+
+        ####student Interest Group Insert
+    
+
+###student comments and org comment insert
+###going to utilize a list of student ID's and all that stuff 
+###all by chance
+
+    
+
