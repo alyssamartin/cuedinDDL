@@ -3,7 +3,94 @@ import names
 from faker import Faker
 import string
 
+def days_absent_generator (student_gpa):
+    days_absent = 0 
 
+    if student_gpa >= 3.5 and student_gpa <= 4.0:
+        days_absent = random.randint(0,5)
+    
+    elif student_gpa < 3.0 and student_gpa >= 2.5:
+        days_absent = random.randint(0,7)
+    
+    elif student_gpa < 2.5 and student_gpa >= 2.0:
+        days_absent = random.randint(3,15)
+
+    elif student_gpa < 2.0 and student_gpa >= 1.5:
+        days_absent = random.randint(8,15)
+    
+    elif student_gpa < 1.5 and student_gpa >= 1.0:
+        days_absent = random.randint(13,15)
+    
+    return days_absent
+
+def hours_tracked_generator (student_grade_level, student_gpa):
+    hours_tracked = 0
+
+    if student_grade_level == "Freshmen":
+        if student_gpa >= 3.5 and student_gpa <= 4.0:
+            hours_tracked = random.randint(15,20)
+        
+        elif student_gpa < 3.0 and student_gpa >= 2.5:
+            hours_tracked = random.randint(10,20)
+        
+        elif student_gpa < 2.5 and student_gpa >= 2.0:
+            hours_tracked = random.randint(5,15)
+
+        elif student_gpa < 2.0 and student_gpa >= 1.5:
+            hours_tracked = random.randint(0,15)
+        
+        elif student_gpa < 1.5 and student_gpa >= 1.0:
+            hours_tracked = random.randint(0,5)
+    
+    if student_grade_level == "Sophomore":
+        if student_gpa >= 3.5 and student_gpa <= 4.0:
+            hours_tracked = random.randint(20,25)
+        
+        elif student_gpa < 3.0 and student_gpa >= 2.5:
+            hours_tracked = random.randint(15,25)
+        
+        elif student_gpa < 2.5 and student_gpa >= 2.0:
+            hours_tracked = random.randint(10,20)
+
+        elif student_gpa < 2.0 and student_gpa >= 1.5:
+            hours_tracked = random.randint(5,10)
+        
+        elif student_gpa < 1.5 and student_gpa >= 1.0:
+            hours_tracked = random.randint(0,10)
+
+    if student_grade_level == "Junior":
+        if student_gpa >= 3.5 and student_gpa <= 4.0:
+            hours_tracked = random.randint(25,35)
+        
+        elif student_gpa < 3.0 and student_gpa >= 2.5:
+            hours_tracked = random.randint(20,35)
+        
+        elif student_gpa < 2.5 and student_gpa >= 2.0:
+            hours_tracked = random.randint(20,30)
+
+        elif student_gpa < 2.0 and student_gpa >= 1.5:
+            hours_tracked = random.randint(15,25)
+        
+        elif student_gpa < 1.5 and student_gpa >= 1.0:
+            hours_tracked = random.randint(10,20)
+    
+    if student_grade_level == "Senior":
+        if student_gpa >= 3.5 and student_gpa <= 4.0:
+            hours_tracked = random.randint(35,45)
+        
+        elif student_gpa < 3.0 and student_gpa >= 2.5:
+            hours_tracked = random.randint(30,45)
+        
+        elif student_gpa < 2.5 and student_gpa >= 2.0:
+            hours_tracked = random.randint(25,40)
+
+        elif student_gpa < 2.0 and student_gpa >= 1.5:
+            hours_tracked = random.randint(20,35)
+        
+        elif student_gpa < 1.5 and student_gpa >= 1.0:
+            hours_tracked = random.randint(15,30)
+
+    return hours_tracked
 
 def sat_scores_generator (student_gpa):
     sat_score = 0
@@ -87,9 +174,38 @@ def student_ethnicity_generator(student_ethnicity_flag):
     
     return student_ethnicity
 
+fake = Faker()
+
+### This is where organization, and job inserts are going to be
+org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter"]
+###primarykeys for opportunities 
+org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store'", "Hamburger Restaurant", "Department Store"]
+# org_street_address_list[] fuck it do random address
+org_city_list = ["Harrisonburg", "Elkton", "Staunton", "Bridgewater", "Edinburg", "Mineral"]
+org_state = "VA"
+org_primary_keys = list(range(1,len(org_name_list) + 1))
+
+for i in range (len(org_primary_keys)):
+    print(org_primary_keys[i])
+    print(org_name_list[i])
+
+for i in range(len(org_primary_keys)):
+    org_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
+    org_entity_insert += " values ('" + org_name_list[i].replace(" ", "")+ str(random.randint(1,100)) + "', '" + org_name_list[i].replace(" ", "") + "@gmail.com, 'ORG')"
+
+    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode)\n"
+    org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + fake.street_address() + "', '"
+    org_insert += "USA', '" + fake.city() + "', 'VA', " + fake.zipcode() + ")"
+
+    print(org_entity_insert)
+    print(org_insert)
+
+    with open('generatedinserts.txt', 'a') as input_file:
+        input_file.write(org_entity_insert + "\n")
+        input_file.write(org_insert + "\n")
 
 
-
+# zip is going to be random
 
 
 #Inserts for UserEntity for School HardCoding this
@@ -99,7 +215,6 @@ def student_ethnicity_generator(student_ethnicity_flag):
 #parallell arrays for hs and their emails for UserEntity
 
 ###fake information generator 
-fake = Faker()
 
 school_list = ["Louisa County High School", "East Rockingham County High School", "Spotswood High School", "Turner Ashby High School", "Broadway High School" , "Harrisonburg High School"]
 school_email_list = ["Louisa@Louisa.edu" , "erhsattendance@rockingham.k12.va.us", "SpotsWood@spotswood.edu" , "TurnerAshby@turnerAshby.edu", "Broadway@broadway.edu" ,"Harrisonburg@harrisonburg.edu"]
@@ -109,30 +224,32 @@ school_city_list = ["Mineral", "Elkton", "Penn Laird", "Bridgewater", "Broadway"
 school_state = "VA"
 school_county_list = ["Louisa County", "Rockingham County", "Rockingham County", "Rockingham County", "Rockingham County", "Harrisonburg City Public Schools"]
 school_zipcode_list = ["23117","22827","22846","22812","22815", "22801"]
+school_primary_key_list = list(range(len(org_primary_keys) + 1, len(org_primary_keys) + len(school_list) + 1))
+
+for i in range (0,len(school_primary_key_list)):
+    print(school_primary_key_list[i])
+    print(school_list[i])
 
 #No password for these guys. just here for associations
 #only the schoolemployees should have thier own passwords
-userEntityID = 0
 
-for i in range (6): 
-    #primary keys are 1,2,3 for userentity
-    school_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType) values  ('"+ school_list[i].replace(" ","") +"', '"+school_email_list[i] + "'" + "SCHL" + "')"
-    #print (school_entity_insert)
+for i in range (len(school_list)): 
+    ###insert into user entity first then we can go into school
+    school_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n" 
+    school_entity_insert += " values  ('"+ school_list[i].replace(" ","") +"', '"+school_email_list[i] + "'" + "SCHL" + "')"
+  
+    ###inserting into the school entity
+    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
+    school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
+    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ")"
 
-    userEntityID = userEntityID + 1
-
-    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode) values (" + str(userEntityID)+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','" + school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ")"
-
-    #print(school_insert)
-
-
-    #with open('generatedinserts.txt', 'a') as input_file:
-        #input_file.write(school_entity_insert + "\n")
-        #input_file.write(school_insert + "\n")
+    with open('generatedinserts.txt', 'a') as input_file:
+        input_file.write(school_entity_insert + "\n")
+        input_file.write(school_insert + "\n")
 
 #Whatever the amount of userEntity ID's there are
 #this is the amount of schools there are 
-amount_of_schools = userEntityID 
+#amount_of_schools = userEntityID 
 
 ###Array of grade levels students can be
 student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
@@ -140,21 +257,31 @@ student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 ###Array of the student income levels
 student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
-###Array of student Interest
-student_interest_list = ["Agreculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
-student_interest_list.extend (["Architecture and Construction", "Education and Training", "Information Technology", "STEM"])
-student_interest_list.extend(["Arts, A/V, Technology, and Communications", "Health Science", "Manufacturing", "Transportation"])
-student_interest_list_id = list(range(1, 13))
+###Array of Interest
+interest_list = ["Agreculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
+interest_list.extend (["Architecture and Construction", "Education and Training", "Information Technology", "STEM"])
+interest_list.extend(["Arts, A/V, Technology, and Communications", "Health Science", "Manufacturing", "Transportation"])
+interest_list_id = list(range(1, 13))
+
+### insert into list
+
+for i in range (len(interest_list_id)):
+
+    interest_group_insert = "insert into InterestGroups (InterestGroupName)\n"
+    interest_group_insert += "values ('" + interest_list[i] + "')"
+
+    print(interest_group_insert)
 
 
 
-# for i in student_interest_list:
-#     print(i)
+
 
 #Student Inserts 
-amount_of_students = 1
+amount_of_students = 5
+studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
-    userEntityID = userEntityID + 1
+    studentID = studentID + 1
+    print(studentID)
     ###Determining Gender over here
     ###Determining names based off of genders
     ###kids will have boy or girl names. but 10% chance someone is a third party gender
@@ -193,14 +320,11 @@ for i in range (amount_of_students):
     student_user_name = student_full_name + student_middle_initial + str(random.randint(0,1000))
 
     ###Generate student's school for email and further use...
-    school_list_id = list(range(0,amount_of_schools + 1)) ##foreign key
-    student_school_index = random.randint(0,amount_of_schools -1)
+    student_school_index = random.randint(0,len(school_list) -1)
     student_school = school_list[student_school_index]
 
     ###foreign key for student school. have to add 1 because
-    student_school_id = student_school_index +1 
-    
-
+    student_school_id = school_primary_key_list[student_school_index]
     
     ##generate student emailAddress
     student_email_domain = school_email_list[student_school_index].split("@")[1]
@@ -265,7 +389,7 @@ for i in range (amount_of_students):
 
 ###Interest Group data
     ###Shuffle the list of interest groups
-    random.shuffle(student_interest_list_id)
+    random.shuffle(interest_list_id)
 
     ###initialize an empty list of potential primary keys
     student_interest_group_linkages = []
@@ -274,64 +398,37 @@ for i in range (amount_of_students):
     student_amount_of_interested = random.randint(1,8)
 
     for i in range (0,student_amount_of_interested):
-        student_interest_group_linkages.append(student_interest_list_id[i])
+        student_interest_group_linkages.append(interest_list_id[i])
+
+    hours_tracked = hours_tracked_generator (student_grade_level,student_gpa)
+
+    days_absent = days_absent_generator(student_gpa)
     
+    student_dict = {
+        
+        "StudentEmailAddress": student_email,
+        "StudentUserName": student_user_name,
+        "StudentEntityID": studentID,
+        "FirstName": student_first_name,
+        "LastName": student_last_name,
+        "MiddleInitial": student_middle_initial,
+        "StreetAddress": student_street_address,
+        "Country": "USA",
+        "City": student_state, 
+        "State": "VA",
+        "ZipCode": student_zip,
+        "StudentGradeLevel":student_grade_level,
+        "StudentGPA": student_gpa,
+        "StudentACTScore": student_act,
+        "StudentSATScore": student_sat,
+        "StudentEthnicity": student_ethnicity,
+        "StudentGender": student_gender,
+        "IncomeLevel": student_income_level,
+        "DaysAbsent": days_absent,
+        "HoursOfWorkPlaceExp": hours_tracked,
+        "SchoolEntityID": student_school_id,
+        "StudentInterest": student_interest_group_linkages
 
-    
+    }
 
-
-
-    
-
-
-    ###primary keys of interest groups
-    
-
-    
-
-
-
-    print("student gpa: " + str(student_gpa))
-    print("student grade level: " + student_grade_level)
-    print("student actScore:" + str(student_act))
-    print("student satscore: "+ str(student_sat))
-    print("student income level: " + student_income_level)
-    print("student street address: " + student_street_address)
-    print("student city: "+ student_city)
-    print("student zipcode: "+ student_zip)
-    print("student state: " + student_state)
-    print("student full name " + student_first_name + " " + student_last_name)
-    print("student gender " + student_gender)
-    print("student school name " + student_school)
-    print("student school ID " + str(student_school_id))
-    print ("student athlete: " +  student_athlete_status)
-    print("student ethnicity: " + student_ethnicity)
-
-
-
-
-
-    
-    
-
-#Student Interest 
-# Hours of workplace learning experience. 
-# each individual student
-# By grade
-# school level
-# county levlel
-
-
-# );
-
-
-
-
-
-
-
-
-
-
-
-
+    print(student_dict)
