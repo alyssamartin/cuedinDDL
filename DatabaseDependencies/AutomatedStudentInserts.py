@@ -9,7 +9,7 @@ def user_entity_insert (entity_username, entity_email, entity_type):
     user_entity_insert = " "
 
     user_entity_insert = "insert into userEntity (UserName, Email, EntityType)\n"
-    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "')"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "');"
 
     return user_entity_insert
 def days_absent_generator (student_gpa):
@@ -208,7 +208,7 @@ for i in range(len(org_primary_keys)):
 
     org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode)\n"
     org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + fake.street_address() + "', '"
-    org_insert += "USA', '" + fake.city() + "', 'VA', " + fake.zipcode() + ")"
+    org_insert += "USA', '" + fake.city() + "', 'VA', " + fake.zipcode() + ");"
 
     print(org_entity_insert)
     print(org_insert)
@@ -248,14 +248,12 @@ for i in range (0,len(school_primary_key_list)):
 
 for i in range (len(school_list)): 
     ###insert into user entity first then we can go into school
-    school_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n" 
-    school_entity_insert += " values  ('"+ school_list[i].replace(" ","") +"', '"+school_email_list[i] + "'" + "SCHL" + "')"
-  
+    
     school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL")
     ###inserting into the school entity
     school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
-    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ")"
+    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ");"
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(school_entity_insert + "\n")
@@ -275,7 +273,7 @@ interest_list_id = list(range(1, 13))
 for i in range (len(interest_list_id)):
 
     interest_group_insert = "insert into InterestGroups (InterestGroupName)\n"
-    interest_group_insert += "values ('" + interest_list[i] + "')"
+    interest_group_insert += "values ('" + interest_list[i] + "');"
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(interest_group_insert + "\n")
@@ -289,11 +287,15 @@ student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 ###Array of the student income levels
 student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
+student_id_list = [] 
+
 #Student Inserts 
 amount_of_students = 1000
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
+    student_id_list.append(studentID)
+
     print(studentID)
     ###Determining Gender over here
     ###Determining names based off of genders
@@ -444,6 +446,9 @@ for i in range (amount_of_students):
     ###student/user Entity Insert
     student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD")
 
+    with open('generatedinserts.txt', 'a') as input_file:
+        input_file.write(student_entity_insert + "\n")
+
     print(student_entity_insert)
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State"
@@ -454,7 +459,7 @@ for i in range (amount_of_students):
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + "'" + student_dict["StudentAthleteFlag"] + "', "+str(student_dict["SchoolEntityID"]) + ")"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + "'" + student_dict["StudentAthleteFlag"] + "', "+str(student_dict["SchoolEntityID"]) + ");"
 
     print(student_insert)
 
@@ -466,7 +471,7 @@ for i in range (amount_of_students):
     for i in range (len(student_interest_group_linkages)):
         
         student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
-        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ")"
+        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ");"
 
         print(student_interest_insert)
 
@@ -477,6 +482,7 @@ for i in range (amount_of_students):
 ###student comments and org comment insert
 ###going to utilize a list of student ID's and all that stuff 
 ###all by chance
+
 
 
 ###Array of possible student comments
@@ -495,10 +501,64 @@ organization_comments.append("This particular student was on their phone too lon
 organization_comments.append("Average student, did the necessary requirements to complete this task")
 organization_comments.append("Good student, and a very quick learner! I can see the potential from this student!")
 
-
 ###Array of "Hours Logged Req"
 hours_requested_hours = list(range(1,6))
 
+###list of primary keys from organizations
+print(org_primary_keys)
+print(student_id_list)
+logID = 0
+for i in range (0,amount_of_students,3):
+    ##studentID of I will be requesting log hours
+
+    ###log id for comment tables
+    logID += 1
+
+    org_id_loghrs = org_primary_keys[random.randint(0,len(org_primary_keys)-1)]
+    student_id_loghrs = student_id_list[i]
+    req_hours = hours_requested_hours[random.randint(0,len(hours_requested_hours) -1)]
+    ###orgCommentTable
+    student_comment = student_comments[random.randint(0,len(student_comments)-1)]
+    ###Org comment table
+    organization_comment = organization_comments[random.randint(0,len(organization_comments)-1)]
+
+
+
+    log_dict = {
+        "LogID" : logID,
+        "OrganizationEntityID": org_id_loghrs,
+        "StudentEntityID": student_id_loghrs,
+        "HoursRequested": req_hours,
+        "ApprovedFlag": "Pending",
+        "OrganizationComment": organization_comment,
+        "StudentComment": student_comment
+    }
+
+    log_hours_insert = "insert into LogHours (OrganizationEntityID, StudentEntityID, HoursRequested, ApprovedFlag)\n"
+    log_hours_insert += "values(" + str(log_dict["OrganizationEntityID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", '"
+    log_hours_insert += log_dict["ApprovedFlag"] + "');"
+
+    print(log_hours_insert)
+
+    student_comment_insert = "insert into Student Comment (LogID, StudentEntityID, Comment)\n"
+    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "');"
+
+    organization_comment_insert = "insert into Student Comment (LogID, OrganizationEntityID, Comment)\n"
+    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "');"
+
+    with open('generatedinserts.txt', 'a') as input_file:
+            input_file.write(log_hours_insert + "\n")
+            input_file.write(student_comment_insert + "\n")
+            input_file.write(organization_comment_insert + "\n")
 
     
 
+
+
+
+
+
+
+
+
+    
