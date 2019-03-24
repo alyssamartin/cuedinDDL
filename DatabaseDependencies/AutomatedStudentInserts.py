@@ -8,7 +8,7 @@ def user_entity_insert (entity_username, entity_email, entity_type):
 
     user_entity_insert = " "
 
-    user_entity_insert = "insert into userEntity (UserName, EmailAdress, EntityType)\n"
+    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
     user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "');"
 
     return user_entity_insert
