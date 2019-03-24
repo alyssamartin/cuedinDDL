@@ -1,3 +1,6 @@
+drop table OrganizationComment
+drop table StudentComment
+drop table LogHours
 drop table OpportunityInterestGroups
 drop table TechnicalSchool
 drop table University
@@ -28,8 +31,8 @@ Primary Key (UserEntityID)
 --PasswordTable
 create table Password (
 PasswordID int not null,
-PasswordHash varchar(100) not null,
-PasswordSalt varchar(75) not null,
+PasswordHash varchar(255) not null,
+PasswordSalt varchar(100) not null,
 UserEntityID int not null,
 LastUpdated datetime,
 Primary Key (PasswordID),
@@ -106,6 +109,7 @@ StudentGender varchar (30) null, --PC datafield
 IncomeLevel varchar (50) null, --PC datafield 
 DaysAbsent int not null,
 HoursOfWorkPlaceExp int not null, --possible stored trigger on update of our new tables
+StudentAthleteFlag varchar (3) not null,
 ParentEntityID int null, --parent might not be associated with anything
 SchoolEntityID int not null, --student needs to be associated with a school 
 primary key (StudentEntityID),
@@ -236,4 +240,34 @@ OpportunityEntityID int,
 primary key (InterestGroupsID, OpportunityEntityID),
 Foreign key (InterestGroupsID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
+);
+
+Create Table LogHours (
+LogID int identity(1,1),
+OrganizationEntityID int, 
+StudentEntityID int,
+HoursRequested int,
+ApprovedFlag varchar (10),
+Primary key (LogID),
+Foreign key (OrganizationEntityID) references Organization (OrganizationEntityID),
+Foreign key (StudentEntityID) references Student (StudentEntityID)
+
+);
+
+Create Table StudentComment (
+LogID int,
+StudentEntityID int,
+Comment varchar (255),
+primary Key(LogID, StudentEntityID),
+Foreign Key (LogID) references LogHours (LogID),
+Foreign Key (StudentEntityID) references student (StudentEntityID)
+);
+
+Create Table OrganizationComment (
+LogID int,
+OrganizationEntityID int,
+Comment varchar (255),
+primary Key(LogID, OrganizationEntityID),
+Foreign Key (LogID) references LogHours (LogID),
+Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
 );

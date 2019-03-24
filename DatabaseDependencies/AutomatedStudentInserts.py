@@ -261,15 +261,8 @@ for i in range (len(school_list)):
         input_file.write(school_entity_insert + "\n")
         input_file.write(school_insert + "\n")
 
-#Whatever the amount of userEntity ID's there are
-#this is the amount of schools there are 
-#amount_of_schools = userEntityID 
 
-###Array of grade levels students can be
-student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 
-###Array of the student income levels
-student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
 ###Array of Interest
 interest_list = ["Agreculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
@@ -290,9 +283,14 @@ for i in range (len(interest_list_id)):
 
 
 
+###Array of grade levels students can be
+student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
+
+###Array of the student income levels
+student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
 #Student Inserts 
-amount_of_students = 5
+amount_of_students = 1000
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
@@ -376,11 +374,6 @@ for i in range (amount_of_students):
         student_sat = 0
         student_act = 0
         
-    ##
-    ##In terms of the system, I don't know if income is in our scope
-    ##I'll add it anyways! just in case!
-
-
     ### Assigns student income level
     ### do we want to just do it randomly? 
     ### majority are going to be middle 50%
@@ -390,7 +383,6 @@ for i in range (amount_of_students):
     student_income_level = student_income_generator(student_income_flag)
 
     student_athlete_flag = random.randint (1,100)
-    
 
     if student_athlete_flag >= 1 and student_athlete_flag <=62:
         student_athlete_status = "Y"
@@ -419,8 +411,8 @@ for i in range (amount_of_students):
 
     days_absent = days_absent_generator(student_gpa)
     
+    ###putting data into a dictionary for organization and ease of use.
     student_dict = {
-        
         "StudentEmailAddress": student_email,
         "StudentUserName": student_user_name,
         "StudentEntityID": studentID,
@@ -441,6 +433,7 @@ for i in range (amount_of_students):
         "IncomeLevel": student_income_level,
         "DaysAbsent": days_absent,
         "HoursOfWorkPlaceExp": hours_tracked,
+        "StudentAthleteFlag": student_athlete_status,
         "SchoolEntityID": student_school_id,
         "StudentInterest": student_interest_group_linkages
 
@@ -453,28 +446,59 @@ for i in range (amount_of_students):
 
     print(student_entity_insert)
     ###student Insert 
-    
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
-    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, SchoolEntityID)\n"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, SchoolEntityID)\n"
     student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
     student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + str(student_dict["SchoolEntityID"]) + ")"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + "'" + student_dict["StudentAthleteFlag"] + "', "+str(student_dict["SchoolEntityID"]) + ")"
 
     print(student_insert)
 
+    with open('generatedinserts.txt', 'a') as input_file:
+        input_file.write(student_insert + "\n")
+
+
+    ####student Interest Group Insert
     for i in range (len(student_interest_group_linkages)):
-        ####student Interest Group Insert
+        
         student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
         student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ")"
 
         print(student_interest_insert)
+
+        with open('generatedinserts.txt', 'a') as input_file:
+            input_file.write(student_interest_insert + "\n")
+
+
 ###student comments and org comment insert
 ###going to utilize a list of student ID's and all that stuff 
 ###all by chance
+
+
+###Array of possible student comments
+student_comments = ["This was a great work experience, it fit with my goals!"]
+student_comments.append("I had a great time working with this organization")
+student_comments.append("I had a good time with this organization")
+student_comments.append("I wish the organization gave me more work so I could learn and do more")
+student_comments.append("This was an ok experience with this organization, I have been with better")
+student_comments.append("I did not have a good time with this organization, it was all busy work...")
+
+###Array of possible Organization Comments
+organization_comments = ["This student was extrodinary! This student is always welcome back here"]
+organization_comments.append("Great student, and they definetely fit in with this organization!")
+organization_comments.append("Exemplar student! We need more people like this student")
+organization_comments.append("This particular student was on their phone too long.")
+organization_comments.append("Average student, did the necessary requirements to complete this task")
+organization_comments.append("Good student, and a very quick learner! I can see the potential from this student!")
+
+
+###Array of "Hours Logged Req"
+hours_requested_hours = list(range(1,6))
+
 
     
 
