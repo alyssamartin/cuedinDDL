@@ -49,6 +49,7 @@ StreetAddress varchar (50) not null,
 Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
+SchoolCounty varchar (50) not null,
 ZipCode int not null,
 --insert a school image here possibly!
 primary key (SchoolEntityID),
