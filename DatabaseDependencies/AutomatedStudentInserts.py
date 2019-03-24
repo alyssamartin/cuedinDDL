@@ -540,10 +540,10 @@ for i in range (0,amount_of_students,3):
 
     print(log_hours_insert)
 
-    student_comment_insert = "insert into Student Comment (LogID, StudentEntityID, Comment)\n"
+    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment)\n"
     student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "');"
 
-    organization_comment_insert = "insert into Student Comment (LogID, OrganizationEntityID, Comment)\n"
+    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment)\n"
     organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "');"
 
     with open('generatedinserts.txt', 'a') as input_file:
