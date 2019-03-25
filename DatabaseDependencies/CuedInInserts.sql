@@ -1102,7 +1102,7 @@ INSERT INTO [dbo].[JobListing]
            ,[OrganizationID])
      VALUES
            ('Part Time Sales Associate'
-           ,'Sales Associate for Fair Trade Clothing'
+           ,'Sales Associate'
            ,'Retail Industry'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
@@ -1126,7 +1126,7 @@ INSERT INTO [dbo].[JobListing]
            ,[OrganizationID])
      VALUES
            ('Part Time Server'
-           ,'Hostess/Server Duties at Jack Browns'
+           ,'Hostess/Server Duties'
            ,'Food Service'
            ,'Harrisonburg, VA'
            ,'03-15-2019'

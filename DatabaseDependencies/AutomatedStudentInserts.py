@@ -186,9 +186,9 @@ def student_ethnicity_generator(student_ethnicity_flag):
 fake = Faker()
 
 ### This is where organization, and job inserts are going to be
-org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter"]
+org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter","ConvergentAI, Inc.", "Health & Rehabilitation Center"]
 ###primarykeys for opportunities 
-org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store"]
+org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store", "Software Company", "Rehabilitation Center"]
 # org_street_address_list[] fuck it do random address
 org_city_list = ["Harrisonburg", "Elkton", "Staunton", "Bridgewater", "Edinburg", "Mineral"]
 org_state = "VA"
@@ -562,11 +562,6 @@ def opportunity_entity_insert (opp_type):
 
 ### list of job listings:
 
-job_listings_id = []
-job_listing_titles = []
-job_listing_address = []
-job_listing_descriptions = []
-job_listing_job_types = []
 
 
 ### list of universities
