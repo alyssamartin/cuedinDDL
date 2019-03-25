@@ -263,7 +263,7 @@ for i in range (len(school_list)):
 
 
 ###Array of Interest
-interest_list = ["Agreculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
+interest_list = ["Agriculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
 interest_list.extend (["Architecture and Construction", "Education and Training", "Information Technology", "STEM"])
 interest_list.extend(["Arts, A/V, Technology, and Communications", "Health Science", "Manufacturing", "Transportation"])
 interest_list_id = list(range(1, 13))
@@ -551,7 +551,31 @@ for i in range (0,amount_of_students,3):
             input_file.write(student_comment_insert + "\n")
             input_file.write(organization_comment_insert + "\n")
 
-    
+
+####opportunities Inserts :) im tired!!!!
+
+def opportunity_entity_insert (opp_type):
+
+    opprunity_insert_string = "Insert into OpportunityEntity (OpporunityType) values "
+    opprunity_insert_string += "values('"+ opp_type +"');"
+
+
+### list of job listings:
+
+job_listings_id = []
+job_listing_titles = []
+job_listing_address = []
+job_listing_descriptions = []
+job_listing_job_types = []
+
+
+### list of universities
+
+
+###list of scholarships
+
+
+
 
 
 

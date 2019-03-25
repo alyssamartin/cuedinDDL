@@ -145,6 +145,8 @@ Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
+Image varchar(50),
+ExternalLink varchar (100),
 primary key (OrganizationEntityID),
 Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 );
@@ -213,6 +215,8 @@ ZipCode int not null,
 InstateTutition money not null,
 OutOfStateTutition money not null,
 UnversityType varchar(10), --This will be a subtype discriminator TS or UNIV
+Image varchar (100),
+ExternalLink varchar (100),
 Primary Key (HigherEducationID),
 Foreign Key (HigherEducationID) references OpportunityEntity (OpportunityEntityID)
 );
@@ -271,4 +275,14 @@ Comment varchar (255),
 primary Key(LogID, OrganizationEntityID),
 Foreign Key (LogID) references LogHours (LogID),
 Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
+);
+
+Create table ApplicationRequest (
+ApplicationID int Identity (1,1),
+StudentEntityID int,
+JobListingID int,
+ApprovedFlag varchar (10),
+primary key (ApplicationID),
+Foreign key (StudentEntityID) references Student (StudentEntityID),
+Foreign key (JobListingID) references JobListing (JobListingID)
 );
