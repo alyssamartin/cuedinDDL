@@ -118,17 +118,3 @@ insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (4,11),
 (10,11);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
