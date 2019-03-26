@@ -1,3 +1,4 @@
+drop table ApplicationRequest
 drop table OrganizationComment
 drop table StudentComment
 drop table LogHours
@@ -241,10 +242,10 @@ Foreign Key (TechnicalSchoolID) references HigherEducation (HigherEducationID),
 );
 
 Create table OpportunityInterestGroups (
-InterestGroupsID int,
+InterestGroupID int,
 OpportunityEntityID int,
-primary key (InterestGroupsID, OpportunityEntityID),
-Foreign key (InterestGroupsID) references InterestGroups,
+primary key (InterestGroupID, OpportunityEntityID),
+Foreign key (InterestGroupID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
 );
 
