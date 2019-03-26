@@ -147,16 +147,13 @@ INSERT INTO [dbo].[JobListing]
            ,'1')
 GO
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
-(3,12),
-(4,12),
-(10,12);
+(10,12),
+(3,12);
 
 
 
 
 insert into OpportunityEntity (OpportunityType) values ('JOB');
-
-
 
 --13
 INSERT INTO [dbo].[JobListing]
@@ -184,6 +181,8 @@ INSERT INTO [dbo].[JobListing]
            ,'7'
            ,'2')
 GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(1,13);
 
 --14
 insert into OpportunityEntity (OpportunityType) values ('JOB');
@@ -212,6 +211,9 @@ INSERT INTO [dbo].[JobListing]
            ,'5'
            ,'3')
 GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(5,14),
+(8,14);
 
 --15
 insert into OpportunityEntity (OpportunityType) values ('JOB');
@@ -241,6 +243,10 @@ INSERT INTO [dbo].[JobListing]
            ,'4')
 GO
 
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(2,15),
+(9,15);
+
 --16
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 INSERT INTO [dbo].[JobListing]
@@ -268,6 +274,9 @@ INSERT INTO [dbo].[JobListing]
            ,'16'
            ,'5')
 GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(1,16),
+(3,16);
 
 --17
 insert into OpportunityEntity (OpportunityType) values ('JOB');
@@ -284,7 +293,7 @@ INSERT INTO [dbo].[JobListing]
            ,[NumOfApplicants]
            ,[OrganizationID])
      VALUES
-           ( 16
+           ( 17
             ,'Walmart Job Shadowing'
            ,'Shadow District Manager for Harrisonburg Walmarts'
            ,'Department Store'
@@ -295,3 +304,97 @@ INSERT INTO [dbo].[JobListing]
            ,'pen'
            ,'21'
            ,'6')
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(2,17),
+(3,17);
+
+
+
+--18
+
+insert into OpportunityEntity (OpportunityType) values ('SCHOL');
+INSERT INTO [dbo].[Scholarship]
+           ([ScholarshipID]
+           ,[ScholarshipName]
+           ,[ScholarshipDescription]
+           ,[ScholarshipMin]
+           ,[ScholarshipMax]
+           ,[ScholarshipQuantity]
+           ,[ScholarshipDueDate]
+           ,[OrganizationID]
+           ,[Approved]
+           ,[LastUpdated])
+     VALUES
+           (18
+           ,'Walmart Scholarship'
+           ,'Scholarship for working through Walmart Internship at Walmart SuperCenter'
+           ,'5000'
+           ,'20000'
+           ,'3'
+           ,'10-15-2019'
+           ,'6'
+           ,'pen'
+           ,GETDATE())
+GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(3,18),
+(2,18);
+
+
+--19
+insert into OpportunityEntity (OpportunityType) values ('SCHOL');
+INSERT INTO [dbo].[Scholarship]
+           ([ScholarshipID]
+           ,[ScholarshipName]
+           ,[ScholarshipDescription]
+           ,[ScholarshipMin]
+           ,[ScholarshipMax]
+           ,[ScholarshipQuantity]
+           ,[ScholarshipDueDate]
+           ,[OrganizationID]
+           ,[Approved]
+           ,[LastUpdated])
+     VALUES
+           (19
+           ,'Jack Browns Scholarship'
+           ,'Scholarship for most pivotal community member'
+           ,'1000'
+           ,'2000'
+           ,'1'
+           ,'10-01-2019'
+           ,'5'
+           ,'pen'
+           ,GETDATE())
+GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(1,19),
+(3,19);
+
+--20
+insert into OpportunityEntity (OpportunityType) values ('SCHOL');
+INSERT INTO [dbo].[Scholarship]
+           ([ScholarshipID]
+           ,[ScholarshipName]
+           ,[ScholarshipDescription]
+           ,[ScholarshipMin]
+           ,[ScholarshipMax]
+           ,[ScholarshipQuantity]
+           ,[ScholarshipDueDate]
+           ,[OrganizationID]
+           ,[Approved]
+           ,[LastUpdated])
+     VALUES
+           (20
+           ,'Arconic Scholarship'
+           ,'Scholarship for future engineers'
+           ,'10000'
+           ,'10000'
+           ,'2'
+           ,'12-15-2019'
+           ,'3'
+           ,'pen'
+           ,GETDATE())
+GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(8,20),
+(5,20);
