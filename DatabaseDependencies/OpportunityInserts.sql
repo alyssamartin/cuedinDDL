@@ -14,7 +14,7 @@ insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (2,'Administrative Assisant', 'Handling office tasks', 'Job Shadowing', 'Harrisonburg VA', '9/3/2019', '1/3/2019', getDate(),'P',17,4);
+values (2,'Administrative Assisant', 'Handling office tasks', 'Job Shadowing', 'Harrisonburg VA', '9/3/2019', '1/3/2019', getDate(),'pen',17,4);
 
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (3,2),
@@ -25,7 +25,7 @@ insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (3,'Assistant Baker', 'Assisting head baker with day-to-day baking', 'Apprenticeship', 'Harrisonburg VA', '4/5/2019', '2/14/2019', getDate(),'P',7, 2);
+values (3,'Assistant Baker', 'Assisting head baker with day-to-day baking', 'Apprenticeship', 'Harrisonburg VA', '4/5/2019', '2/14/2019', getDate(),'pen',7, 2);
 
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (1,3);
@@ -88,7 +88,7 @@ insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (9,'ED Technician', 'Assist doctors in treating patients', 'Clinical', 'Harrisonburg, VA', '6/4/2019', '3/22/2019', getDate(),'P',21, 8);
+values (9,'ED Technician', 'Assist doctors in treating patients', 'Clinical', 'Harrisonburg, VA', '6/4/2019', '3/22/2019', getDate(),'pen',21, 8);
 
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (3,9),
@@ -100,7 +100,7 @@ insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (10,'Psych Technician', 'Performs treatment following instructions', 'Clinical', 'Harrisonburg, VA', '5/4/2019', '3/25/2019', getDate(),'P',10, 8);
+values (10,'Psych Technician', 'Performs treatment following instructions', 'Clinical', 'Harrisonburg, VA', '5/4/2019', '3/25/2019', getDate(),'pen',10, 8);
 
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (3,10),
@@ -111,10 +111,187 @@ insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 --11
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (11,'Cardiology Department Shadow', 'Shadow head of cardiology', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/22/2019', getDate(),'P',15, 8);
+values (11,'Cardiology Department Shadow', 'Shadow head of cardiology', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/22/2019', getDate(),'pen',15, 8);
 
 insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
 (3,11),
 (4,11),
 (10,11);
 
+--12
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+INSERT INTO [dbo].[JobListing]
+           ( JoblistingID
+           , JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           (12
+            ,'Full Time Sales'
+           ,'Cosmetics Salesperson'
+           ,'Sales'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'2'
+           ,'1')
+GO
+insert into OpportunityInterestGroups (InterestID, OpportunityID) VALUES
+(3,12),
+(4,12),
+(10,12);
+
+
+
+
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+
+
+
+--13
+INSERT INTO [dbo].[JobListing]
+           (JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           (13
+            ,'Part Time Baker'
+           ,'Baking Mediterranean Foods'
+           ,'Food Service'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'7'
+           ,'2')
+GO
+
+--14
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+INSERT INTO [dbo].[JobListing]
+           (JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           (14
+            ,'Job Shadowing'
+           ,'Shadow an Engineer of Building Products'
+           ,'Civil Engineering'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'5'
+           ,'3')
+GO
+
+--15
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+INSERT INTO [dbo].[JobListing]
+           (JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           (15
+            ,'Part Time Sales Associate'
+           ,'Sales Associate'
+           ,'Retail Industry'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'3'
+           ,'4')
+GO
+
+--16
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+INSERT INTO [dbo].[JobListing]
+           (JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           (16
+            ,'Part Time Server'
+           ,'Hostess/Server Duties'
+           ,'Food Service'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'16'
+           ,'5')
+GO
+
+--17
+insert into OpportunityEntity (OpportunityType) values ('JOB');
+INSERT INTO [dbo].[JobListing]
+           (JobListingID
+           ,[JobTitle]
+           ,[JobDescription]
+           ,[JobType]
+           ,[Location]
+           ,[PostingDate]
+           ,[Deadline]
+           ,[LastUpdated]
+           ,[Approved]
+           ,[NumOfApplicants]
+           ,[OrganizationID])
+     VALUES
+           ( 16
+            ,'Walmart Job Shadowing'
+           ,'Shadow District Manager for Harrisonburg Walmarts'
+           ,'Department Store'
+           ,'Harrisonburg, VA'
+           ,'03-15-2019'
+           ,'12-31-2019'
+           ,getdate()
+           ,'pen'
+           ,'21'
+           ,'6')
