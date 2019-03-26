@@ -122,7 +122,6 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 INSERT INTO [dbo].[JobListing]
            ( JoblistingID
-           , JobListingID
            ,[JobTitle]
            ,[JobDescription]
            ,[JobType]
@@ -137,14 +136,14 @@ INSERT INTO [dbo].[JobListing]
            (12
             ,'Full Time Sales'
            ,'Cosmetics Salesperson'
-           ,'Sales'
+           ,'Shadowing'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'2'
-           ,'1')
+           ,2
+           ,1)
 GO
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (10,12),
@@ -172,14 +171,14 @@ INSERT INTO [dbo].[JobListing]
            (13
             ,'Part Time Baker'
            ,'Baking Mediterranean Foods'
-           ,'Food Service'
+		   ,'Mentorship'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'7'
-           ,'2')
+           ,7
+           ,2)
 GO
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,13);
@@ -201,15 +200,15 @@ INSERT INTO [dbo].[JobListing]
      VALUES
            (14
             ,'Job Shadowing'
-           ,'Shadow an Engineer of Building Products'
-           ,'Civil Engineering'
+           ,'Engineer of Building Products'
+           ,'Internship'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'5'
-           ,'3')
+           ,5
+           ,3)
 GO
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (5,14),
@@ -232,15 +231,15 @@ INSERT INTO [dbo].[JobListing]
      VALUES
            (15
             ,'Part Time Sales Associate'
-           ,'Sales Associate'
-           ,'Retail Industry'
+           ,'Sales Associate, shadow the manager associate'
+           ,'Mentorship'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'3'
-           ,'4')
+           ,3
+           ,4)
 GO
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
@@ -263,16 +262,16 @@ INSERT INTO [dbo].[JobListing]
            ,[OrganizationID])
      VALUES
            (16
-            ,'Part Time Server'
-           ,'Hostess/Server Duties'
-           ,'Food Service'
+            ,'Part Time Resturaunt Employee'
+           ,'Follow the Owner, and learn what it takes to own a business'
+		   ,'Extended Internship'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'16'
-           ,'5')
+           ,16
+           ,5)
 GO
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,16),
@@ -296,14 +295,14 @@ INSERT INTO [dbo].[JobListing]
            ( 17
             ,'Walmart Job Shadowing'
            ,'Shadow District Manager for Harrisonburg Walmarts'
-           ,'Department Store'
+		   ,'Shadowing'
            ,'Harrisonburg, VA'
            ,'03-15-2019'
            ,'12-31-2019'
            ,getdate()
            ,'pen'
-           ,'21'
-           ,'6')
+           ,21
+           ,6)
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (2,17),
 (3,17);
@@ -328,11 +327,11 @@ INSERT INTO [dbo].[Scholarship]
            (18
            ,'Walmart Scholarship'
            ,'Scholarship for working through Walmart Internship at Walmart SuperCenter'
-           ,'5000'
-           ,'20000'
-           ,'3'
+           ,5000
+           ,20000
+           ,3
            ,'10-15-2019'
-           ,'6'
+           ,6
            ,'pen'
            ,GETDATE())
 GO
@@ -358,11 +357,11 @@ INSERT INTO [dbo].[Scholarship]
            (19
            ,'Jack Browns Scholarship'
            ,'Scholarship for most pivotal community member'
-           ,'1000'
-           ,'2000'
-           ,'1'
+           ,1000
+           ,2000
+           ,1
            ,'10-01-2019'
-           ,'5'
+           ,5
            ,'pen'
            ,GETDATE())
 GO
@@ -387,11 +386,11 @@ INSERT INTO [dbo].[Scholarship]
            (20
            ,'Arconic Scholarship'
            ,'Scholarship for future engineers'
-           ,'10000'
-           ,'10000'
-           ,'2'
+           ,10000
+           ,10000
+           ,2
            ,'12-15-2019'
-           ,'3'
+           ,3
            ,'pen'
            ,GETDATE())
 GO
