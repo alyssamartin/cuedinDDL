@@ -250,33 +250,31 @@ Foreign key (OpportunityEntityID) references OpportunityEntity
 );
 
 Create Table StudentComment (
-StudentCommentID int,
+LogID int,
 StudentEntityID int,
 Comment varchar (255),
-primary Key(StudentCommentID),
+primary Key(LogID, StudentEntityID),
 Foreign Key (StudentEntityID) references student (StudentEntityID)
 );
 
 Create Table OrganizationComment (
-OrganizationCommentID int,
+LogID int,
 OrganizationEntityID int,
 Comment varchar (255),
-primary Key(OrganizationCommentID),
+primary Key(LogID, OrganizationEntityID),
 Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
 );
 
 Create Table LogHours (
 LogID int identity(1,1),
 JobListingID int, 
-StudentCommentID int,
-OrganizationCommentID int,
 HoursRequested int,
 CounselorApproval varchar (10),
 OrganizationApproval varchar(10),
+StudentEntityID int,
 Primary key (LogID),
 Foreign key (JobListingID) references JobListing (JobListingID),
-Foreign key (StudentCommentID) references StudentComment (StudentCommentID),
-Foreign key (OrganizationCommentID) references OrganizationComment
+Foreign key (StudentEntityID) references Student (StudentEntityID)
 );
 
 
