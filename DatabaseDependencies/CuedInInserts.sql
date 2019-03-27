@@ -904,7 +904,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('1'
            ,'withSimplicity'
@@ -913,7 +915,9 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/withSimplicity.jpg'
+	   ,'www.withsimplicityllc.com')
 GO
 
 INSERT INTO [dbo].[Organization]
@@ -924,7 +928,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('2'
            ,'Kanis Bakery & Catering'
@@ -933,7 +939,9 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/kanis.jpg'
+	   ,'https://www.kandiscakesandbakeshop.com/')
 GO
 
 INSERT INTO [dbo].[Organization]
@@ -944,7 +952,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('3'
            ,'Arconic'
@@ -953,7 +963,9 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/arconic.jpg'
+	   ,'https://www.arconic.com/global/en/home.asp')
 GO
 
 INSERT INTO [dbo].[Organization]
@@ -964,7 +976,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('4'
            ,'Green Hummingbird'
@@ -973,7 +987,9 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/greenhummingbird.jpg'
+	   ,'http://www.greenhummingbird.net/')
 GO
 
 INSERT INTO [dbo].[Organization]
@@ -984,7 +1000,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('5'
            ,'Jack Browns'
@@ -993,7 +1011,9 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/jackbrowns.jpg'
+	   ,'https://www.jackbrownsjoint.com/')
 GO
 
 INSERT INTO [dbo].[Organization]
@@ -1004,7 +1024,9 @@ INSERT INTO [dbo].[Organization]
            ,[Country]
            ,[City]
            ,[State]
-           ,[ZipCode])
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
      VALUES
            ('6'
            ,'Walmart Supercenter'
@@ -1013,10 +1035,106 @@ INSERT INTO [dbo].[Organization]
            ,'United States'
            ,'Harrisonburg'
            ,'Virginia'
-           ,'22801')
+           ,'22801'
+	   ,'img/walmart.jpg'
+	   ,'https://www.walmart.com/')
+GO
+	     
+	   INSERT INTO [dbo].[Organization]
+           ([OrganizationEntityID]
+           ,[OrganizationName]
+           ,[OrganizationDescription]
+           ,[StreetAddress]
+           ,[Country]
+           ,[City]
+           ,[State]
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
+     VALUES
+           ('7'
+           ,'James Madison University'
+           ,'College'
+           ,'800 S Main'
+           ,'United States'
+           ,'Harrisonburg'
+           ,'Virginia'
+           ,'22807'
+	   ,'img/jamesmadisonuniversity.jpg'
+	   ,'https://www.jmu.edu/')
 GO
 
+	    INSERT INTO [dbo].[Organization]
+           ([OrganizationEntityID]
+           ,[OrganizationName]
+           ,[OrganizationDescription]
+           ,[StreetAddress]
+           ,[Country]
+           ,[City]
+           ,[State]
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
+     VALUES
+           ('8'
+           ,'Food Lion'
+           ,'Grocery Store'
+           ,'1021 Port Republic Rd'
+           ,'United States'
+           ,'Harrisonburg'
+           ,'Virginia'
+           ,'22801'
+	   ,'img/foodlion.jpg'
+	   ,'https://www.foodlion.com/')
+GO
+	  INSERT INTO [dbo].[Organization]
+           ([OrganizationEntityID]
+           ,[OrganizationName]
+           ,[OrganizationDescription]
+           ,[StreetAddress]
+           ,[Country]
+           ,[City]
+           ,[State]
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
+     VALUES
+           ('9'
+           ,'Merck'
+           ,'Pharmaceuticals'
+           ,'2778 SE Side Hwy'
+           ,'United States'
+           ,'Elkton'
+           ,'Virginia'
+           ,'22827'
+	   ,'img/merck.jpg'
+	   ,'https://www.merck.com')
+GO
 
+	    INSERT INTO [dbo].[Organization]
+           ([OrganizationEntityID]
+           ,[OrganizationName]
+           ,[OrganizationDescription]
+           ,[StreetAddress]
+           ,[Country]
+           ,[City]
+           ,[State]
+           ,[ZipCode]
+	   ,[Image]
+	   ,[ExternalLink])
+     VALUES
+           ('10'
+           ,'Jenzabar'
+           ,'Software Development'
+           ,'181 S Liberty St'
+           ,'United States'
+           ,'Harrisonburg'
+           ,'Virginia'
+           ,'22801'
+	   ,'img/jenzabar.jpg'
+	   ,'https://www.jenzabar.com')
+GO
+	     
 INSERT INTO [dbo].[JobListing]
            ([JobTitle]
            ,[JobDescription]
