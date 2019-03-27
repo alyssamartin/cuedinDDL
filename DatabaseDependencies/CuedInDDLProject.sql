@@ -249,20 +249,6 @@ Foreign key (InterestGroupID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
 );
 
-Create Table LogHours (
-LogID int identity(1,1),
-JobListingID int, 
-StudentCommentID int,
-OrganizationCommentID int,
-HoursRequested int,
-CounselorApprovalFlag varchar (10),
-OrganizationApprovalFlag varchar(10),
-Primary key (LogID),
-Foreign key (JobListingID) references JobListing (JobListingID),
-Foreign key (StudentCommentID) references StudentComment (StudentCommentID)
-Foreign key (OrganizationCommentID) references OrganizationComment
-);
-
 Create Table StudentComment (
 StudentCommentID int,
 StudentEntityID int,
@@ -278,6 +264,21 @@ Comment varchar (255),
 primary Key(OrganizationCommentID),
 Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
 );
+
+Create Table LogHours (
+LogID int identity(1,1),
+JobListingID int, 
+StudentCommentID int,
+OrganizationCommentID int,
+HoursRequested int,
+CounselorApprovalFlag varchar (10),
+OrganizationApprovalFlag varchar(10),
+Primary key (LogID),
+Foreign key (JobListingID) references JobListing (JobListingID),
+Foreign key (StudentCommentID) references StudentComment (StudentCommentID),
+Foreign key (OrganizationCommentID) references OrganizationComment
+);
+
 
 Create table ApplicationRequest (
 ApplicationID int Identity (1,1),
