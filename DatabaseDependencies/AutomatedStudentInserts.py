@@ -186,29 +186,28 @@ def student_ethnicity_generator(student_ethnicity_flag):
 fake = Faker()
 
 ### This is where organization, and job inserts are going to be
-org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter","ConvergentAI, Inc.", "Health & Rehabilitation Center"]
+org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter", "Food Lion", "Merck", "Jenzabar", "Health and Rehabilitation Center", "ConvergentAI"]
 ###primarykeys for opportunities 
-org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store", "Software Company", "Rehabilitation Center"]
-# org_street_address_list[] fuck it do random address
-org_city_list = ["Harrisonburg", "Elkton", "Staunton", "Bridgewater", "Edinburg", "Mineral"]
+org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store", "Software Company", "Rehabilitation Center", "Grocery Store", "Pharmaceuticals", "Software Development", "Rehabilitation Center", "Software Company"]
+org_street_address_list = ["108 South Main Street","182 Neff Avenue","2031 Dyerle Ave", "320 South Main Street", "80 South Main Street", "171 Burgess Road", "1021 Port Republic Rd", "2778 SE Side Hwy", "181 S Liberty St","1225 Reservoir St", "2 S Main St #501"]
 org_state = "VA"
+org_zip_code_list = ["22801", "22801", "22801", "22801", "22801", "22801", "22801", "22827","22801","22801","22802"] 
+org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "Harrisonburg", "Harrisonburg", "Harrisonburg", "Elkton", "Harrisonburg", "Harrisonburg", "Harrisonburg"] 
+org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.img", "img/convergentAI.img"]
+org_url_list = ["www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
+
 org_primary_keys = list(range(1,len(org_name_list) + 1))
 
-for i in range (len(org_primary_keys)):
-    print(org_primary_keys[i])
-    print(org_name_list[i])
+
 
 for i in range(len(org_primary_keys)):
-    # org_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
-    # org_entity_insert += " values ('" + org_name_list[i].replace(" ", "")+ str(random.randint(1,100)) + "', '" + org_name_list[i].replace(" ", "") + "@gmail.com, 'ORG')"
-
     org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG")
+    print(org_entity_insert)
 
 
-
-    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode)\n"
-    org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + fake.street_address() + "', '"
-    org_insert += "USA', '" + fake.city() + "', 'VA', " + fake.zipcode() + ");"
+    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)\n"
+    org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + org_street_address_list[i] + "', '"
+    org_insert += "USA', '" + org_city_list[i]+ "', 'VA', " + str(org_zip_code_list[i]) + ",'"+org_image_list[i] +"','"+org_url_list[i]+"');"
 
     print(org_entity_insert)
     print(org_insert)
@@ -290,7 +289,7 @@ student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 student_id_list = [] 
 
 #Student Inserts 
-amount_of_students = 1000
+amount_of_students = 1
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
@@ -478,10 +477,29 @@ for i in range (amount_of_students):
         with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_interest_insert + "\n")
 
+### job listing stuff here
+def opporunitiy_entity_insert (opp_type):
 
-###student comments and org comment insert
-###going to utilize a list of student ID's and all that stuff 
-###all by chance
+    opportunity_insert = "insert into OpportunityEntity (OpportunityType) values ('"+ opp_type+ "')"
+
+    return opportunity_insert
+
+
+
+
+
+OrganizationID = ["8","4","2","1","7","3","7","7","8","8","8","1","2","3","4","5","6"]
+job_listing_id_list = list(range(1,18))
+
+
+with open('OpportunityInserts.txt', 'r') as inserts:
+    with open('generatedinserts.txt', 'a') as generator:
+        for line in inserts:
+            generator.write(line)
+
+
+
+
 
 
 
@@ -514,29 +532,31 @@ for i in range (0,amount_of_students,3):
     ###log id for comment tables
     logID += 1
 
-    org_id_loghrs = org_primary_keys[random.randint(0,len(org_primary_keys)-1)]
+    index = random.randint(0,len(job_listing_id_list) -1) 
+    job_id_loghrs = job_listing_id_list[index]
     student_id_loghrs = student_id_list[i]
-    req_hours = hours_requested_hours[random.randint(0,len(hours_requested_hours) -1)]
+    req_hours = hours_requested_hours[random.randint(0,len(hours_requested_hours)-1) ]
     ###orgCommentTable
-    student_comment = student_comments[random.randint(0,len(student_comments)-1)]
+    student_comment = student_comments[random.randint(0,len(student_comments) -1) ]
     ###Org comment table
-    organization_comment = organization_comments[random.randint(0,len(organization_comments)-1)]
+    organization_comment = organization_comments[random.randint(0,len(organization_comments) -1) ]
 
 
 
     log_dict = {
         "LogID" : logID,
-        "OrganizationEntityID": org_id_loghrs,
+        "JobListingID": job_id_loghrs,
         "StudentEntityID": student_id_loghrs,
         "HoursRequested": req_hours,
         "ApprovedFlag": "Pending",
         "OrganizationComment": organization_comment,
-        "StudentComment": student_comment
+        "StudentComment": student_comment,
+        "OrganizationEntityID": OrganizationID[index]
     }
 
-    log_hours_insert = "insert into LogHours (OrganizationEntityID, StudentEntityID, HoursRequested, ApprovedFlag)\n"
-    log_hours_insert += "values(" + str(log_dict["OrganizationEntityID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", '"
-    log_hours_insert += log_dict["ApprovedFlag"] + "');"
+    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)\n"
+    log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
+    log_hours_insert += "'PEN', 'Y');"
 
     print(log_hours_insert)
 
@@ -552,22 +572,10 @@ for i in range (0,amount_of_students,3):
             input_file.write(organization_comment_insert + "\n")
 
 
-####opportunities Inserts :) im tired!!!!
-
-def opportunity_entity_insert (opp_type):
-
-    opprunity_insert_string = "Insert into OpportunityEntity (OpporunityType) values "
-    opprunity_insert_string += "values('"+ opp_type +"');"
-
-
-### list of job listings:
+# ####opportunities Inserts :) im tired!!!!
 
 
 
-### list of universities
-
-
-###list of scholarships
 
 
 
