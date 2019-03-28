@@ -411,6 +411,16 @@ for i in range (amount_of_students):
     hours_tracked = hours_tracked_generator (student_grade_level,student_gpa)
 
     days_absent = days_absent_generator(student_gpa)
+
+
+    student_employment_flag = random.randint(1,100)
+    student_employement = " "
+
+    if student_employment_flag <=40:
+        student_employement = "Y"
+    else:
+        student_employment = "N"
+
     
     ###putting data into a dictionary for organization and ease of use.
     student_dict = {
@@ -435,6 +445,7 @@ for i in range (amount_of_students):
         "DaysAbsent": days_absent,
         "HoursOfWorkPlaceExp": hours_tracked,
         "StudentAthleteFlag": student_athlete_status,
+        "StudentEmploymentFlag": student_employment,
         "SchoolEntityID": student_school_id,
         "StudentImage" : "img/student.jpg",
         "StudentInterest": student_interest_group_linkages
@@ -453,13 +464,13 @@ for i in range (amount_of_students):
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
-    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentImage,SchoolEntityID)\n"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)\n"
     student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
     student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] + "', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '" + student_dict["StudentEmploymentFlag"]+"', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
 
     print(student_insert)
 

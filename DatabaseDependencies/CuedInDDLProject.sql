@@ -111,6 +111,7 @@ StudentGender varchar (30) null, --PC datafield
 IncomeLevel varchar (50) null, --PC datafield 
 DaysAbsent int not null,
 HoursOfWorkPlaceExp int not null, --possible stored trigger on update of our new tables
+StudentEmploymentFlag varchar (1) not null,
 StudentAthleteFlag varchar (3) not null,
 ParentEntityID int null, --parent might not be associated with anything
 StudentImage varchar (100),
