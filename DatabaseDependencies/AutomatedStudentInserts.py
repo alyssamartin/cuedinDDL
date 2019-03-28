@@ -414,10 +414,10 @@ for i in range (amount_of_students):
 
 
     student_employment_flag = random.randint(1,100)
-    student_employement = " "
+    student_employment = " "
 
     if student_employment_flag <=40:
-        student_employement = "Y"
+        student_employment = "Y"
     else:
         student_employment = "N"
 
