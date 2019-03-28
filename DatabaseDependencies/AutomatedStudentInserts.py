@@ -289,7 +289,7 @@ student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 student_id_list = [] 
 
 #Student Inserts 
-amount_of_students = 100
+amount_of_students = 1000
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
@@ -534,7 +534,7 @@ hours_requested_hours = list(range(1,6))
 print(org_primary_keys)
 print(student_id_list)
 logID = 0
-for i in range (0,amount_of_students,3):
+for i in range (0,amount_of_students,5):
     ##studentID of I will be requesting log hours
 
     ###log id for comment tables
