@@ -188,7 +188,7 @@ fake = Faker()
 ### This is where organization, and job inserts are going to be
 org_name_list = ["withSimplicity", "Kanis Bakery & Catering", "Arconic", "Green Hummingbird", "Jack Browns", "Walmart Supercenter", "Food Lion", "Merck", "Jenzabar", "Health and Rehabilitation Center", "ConvergentAI"]
 ###primarykeys for opportunities 
-org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store", "Software Company", "Rehabilitation Center", "Grocery Store", "Pharmaceuticals", "Software Development", "Rehabilitation Center", "Software Company"]
+org_description_list = ["All Natural, Organic Makeup and Skincare", "Mediterranean Restaurant", "Materials Sciences for Building Products", "Clothing Store", "Hamburger Restaurant", "Department Store", "Grocery Store", "Pharmaceuticals", "Software Development", "Rehabilitation Center", "Software Company"]
 org_street_address_list = ["108 South Main Street","182 Neff Avenue","2031 Dyerle Ave", "320 South Main Street", "80 South Main Street", "171 Burgess Road", "1021 Port Republic Rd", "2778 SE Side Hwy", "181 S Liberty St","1225 Reservoir St", "2 S Main St #501"]
 org_state = "VA"
 org_zip_code_list = ["22801", "22801", "22801", "22801", "22801", "22801", "22801", "22827","22801","22801","22802"] 
@@ -500,10 +500,6 @@ with open('OpportunityInserts.txt', 'r') as inserts:
 
 
 
-
-
-
-
 ###Array of possible student comments
 student_comments = ["This was a great work experience, it fit with my goals!"]
 student_comments.append("I had a great time working with this organization")
@@ -549,7 +545,7 @@ for i in range (0,amount_of_students,3):
         "JobListingID": job_id_loghrs,
         "StudentEntityID": student_id_loghrs,
         "HoursRequested": req_hours,
-        "ApprovedFlag": "Pending",
+        "ApprovedFlag": "P",
         "OrganizationComment": organization_comment,
         "StudentComment": student_comment,
         "OrganizationEntityID": OrganizationID[index]
@@ -557,7 +553,7 @@ for i in range (0,amount_of_students,3):
 
     log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'PEN', 'Y');"
+    log_hours_insert += "'P', 'Y');"
 
     print(log_hours_insert)
 
@@ -574,19 +570,3 @@ for i in range (0,amount_of_students,3):
 
 
 # ####opportunities Inserts :) im tired!!!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
