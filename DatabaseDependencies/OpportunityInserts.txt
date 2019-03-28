@@ -43,7 +43,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (5,'Automation Engineer Shadow', 'Shadow lead engineer to design, program, simulate, and test automated machinery', 'Job Shadowing', 'Elkton, VA', '5/6/2019', '3/4/2019', getDate(),'Y',30, 7);
+values (5,'Automation Engineer Shadow', 'Shadow lead engineer to design, program, simulate, and test automated machinery', 'Job Shadowing', 'Elkton, VA', '5/6/2019', '3/4/2019', getDate(),'Y',30, 11);
 
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
@@ -65,7 +65,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (7,'Help Desk Associate', 'Provide customer support and help customers solve problems', 'Apprenticeship', 'Harrisonburg, VA', '8/4/2019', '2/2/2019', getDate(),'Y',27, 7);
+values (7,'Help Desk Associate', 'Provide customer support and help customers solve problems', 'Apprenticeship', 'Harrisonburg, VA', '8/4/2019', '2/2/2019', getDate(),'Y',27, 8);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,7),
@@ -76,7 +76,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (8,'Software Engineer', 'Perform analysis and problem definition and propose solutions', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/20/2019', getDate(),'Y',30, 7);
+values (8,'Software Engineer', 'Perform analysis and problem definition and propose solutions', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/20/2019', getDate(),'Y',30, 8);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (7,8),
