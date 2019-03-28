@@ -1,69 +1,69 @@
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('withSimplicity69', 'withSimplicity@gmail.com', 'ORG');
+values ('withSimplicity61', 'withSimplicity@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (1, 'withSimplicity', 'All Natural, Organic Makeup and Skincare', '108 South Main Street', 'USA', 'Harrisonburg', 'VA', 22801,'img/withSimplicity.jpg','www.withsimplicityllc.com');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('KanisBakery&Catering61', 'KanisBakery&Catering@gmail.com', 'ORG');
+values ('KanisBakery&Catering30', 'KanisBakery&Catering@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (2, 'Kanis Bakery & Catering', 'Mediterranean Restaurant', '182 Neff Avenue', 'USA', 'Harrisonburg', 'VA', 22801,'img/kanis.jpg','https://www.kandiscakesandbakeshop.com/');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('Arconic54', 'Arconic@gmail.com', 'ORG');
+values ('Arconic98', 'Arconic@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (3, 'Arconic', 'Materials Sciences for Building Products', '2031 Dyerle Ave', 'USA', 'Harrisonburg', 'VA', 22801,'img/arconic.jpg','https://www.arconic.com/global/en/home.asp');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('GreenHummingbird78', 'GreenHummingbird@gmail.com', 'ORG');
+values ('GreenHummingbird87', 'GreenHummingbird@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (4, 'Green Hummingbird', 'Clothing Store', '320 South Main Street', 'USA', 'Harrisonburg', 'VA', 22801,'img/greenhummingbird.jpg','http://www.greenhummingbird.net/');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JackBrowns8', 'JackBrowns@gmail.com', 'ORG');
+values ('JackBrowns24', 'JackBrowns@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (5, 'Jack Browns', 'Hamburger Restaurant', '80 South Main Street', 'USA', 'Harrisonburg', 'VA', 22801,'img/jackbrowns.jpg','https://www.jackbrownsjoint.com/');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('WalmartSupercenter71', 'WalmartSupercenter@gmail.com', 'ORG');
+values ('WalmartSupercenter76', 'WalmartSupercenter@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (6, 'Walmart Supercenter', 'Department Store', '171 Burgess Road', 'USA', 'Harrisonburg', 'VA', 22801,'img/walmart.jpg','https://www.walmart.com/');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('FoodLion40', 'FoodLion@gmail.com', 'ORG');
+values ('FoodLion43', 'FoodLion@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (7, 'Food Lion', 'Grocery Store', '1021 Port Republic Rd', 'USA', 'Harrisonburg', 'VA', 22801,'img/foodlion.jpg','https://foodlion.com');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('Merck59', 'Merck@gmail.com', 'ORG');
+values ('Merck1', 'Merck@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (8, 'Merck', 'Pharmaceuticals', '2778 SE Side Hwy', 'USA', 'Elkton', 'VA', 22827,'img/merck.jpg','https://www.merck.com');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('Jenzabar76', 'Jenzabar@gmail.com', 'ORG');
+values ('Jenzabar21', 'Jenzabar@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (9, 'Jenzabar', 'Software Development', '181 S Liberty St', 'USA', 'Harrisonburg', 'VA', 22801,'img/jenzabar.jpg','https://jenzabar.com');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('HealthandRehabilitationCenter84', 'HealthandRehabilitationCenter@gmail.com', 'ORG');
+values ('HealthandRehabilitationCenter18', 'HealthandRehabilitationCenter@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (10, 'Health and Rehabilitation Center', 'Rehabilitation Center', '1225 Reservoir St', 'USA', 'Harrisonburg', 'VA', 22801,'img/healthandrehab.img','https://www.mfa.net/center/harrisonburg-health-rehabilitation-center');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ConvergentAI4', 'ConvergentAI@gmail.com', 'ORG');
+values ('ConvergentAI79', 'ConvergentAI@gmail.com', 'ORG');
 insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)
  values (11, 'ConvergentAI', 'Software Company', '2 S Main St #501', 'USA', 'Harrisonburg', 'VA', 22802,'img/convergentAI.img','http://convergentai.com/');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('LouisaCountyHighSchool88', 'Louisa@Louisa.edu', 'SCHL');
+values ('LouisaCountyHighSchool64', 'Louisa@Louisa.edu', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (12, 'Louisa County High School','757 Davis Hwy','United States','Mineral','VA','Louisa County',23117);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('EastRockinghamCountyHighSchool45', 'erhsattendance@rockingham.k12.va.us', 'SCHL');
+values ('EastRockinghamCountyHighSchool92', 'erhsattendance@rockingham.k12.va.us', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (13, 'East Rockingham County High School','250 Eagle Rock Road','United States','Elkton','VA','Rockingham County',22827);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('SpotswoodHighSchool52', 'SpotsWood@spotswood.edu', 'SCHL');
+values ('SpotswoodHighSchool77', 'SpotsWood@spotswood.edu', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (14, 'Spotswood High School','368 Blazer Drive','United States','Penn Laird','VA','Rockingham County',22846);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('TurnerAshbyHighSchool74', 'TurnerAshby@turnerAshby.edu', 'SCHL');
+values ('TurnerAshbyHighSchool51', 'TurnerAshby@turnerAshby.edu', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (15, 'Turner Ashby High School','800 N Main St','United States','Bridgewater','VA','Rockingham County',22812);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('BroadwayHighSchool23', 'Broadway@broadway.edu', 'SCHL');
+values ('BroadwayHighSchool13', 'Broadway@broadway.edu', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (16, 'Broadway High School','269 Gobbler Drive','United States','Broadway','VA','Rockingham County',22815);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('HarrisonburgHighSchool56', 'Harrisonburg@harrisonburg.edu', 'SCHL');
+values ('HarrisonburgHighSchool1', 'Harrisonburg@harrisonburg.edu', 'SCHL');
 insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)
  values (17, 'Harrisonburg High School','1001 Garber Church Rd','United States','Harrisonburg','VA','Harrisonburg City Public Schools',22801);
 insert into InterestGroups (InterestGroupName)
@@ -91,1319 +91,1261 @@ values ('Manufacturing');
 insert into InterestGroups (InterestGroupName)
 values ('Transportation');
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RonaldBarkerH448', 'RonaldBarkerH448@Louisa.edu', 'STUD');
+values ('JerryMichelC678', 'JerryMichelC678@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (18, 'Ronald', 'Barker', 'H', '54980 Cochran Street', 'USA','East Patriciafurt','VA','20040','Senior', 1.82, 17, 975,'Caucasian','male','Higher Income',14,32, 'N', 'N', 'img/student.jpg', 12);
+values (18, 'Jerry', 'Michel', 'C', '824 Monique Forest', 'USA','Pattersonside','VA','20040','Junior', 1.68, 15, 721,'Caucasian','male','Higher Income',8,23, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,18);
+values (1,18);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,18);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,18);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,18);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,18);
+values (9,18);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ShirleyWeathersZ434', 'ShirleyWeathersZ434@spotswood.edu', 'STUD');
+values ('LouiseDunsonO745', 'LouiseDunsonO745@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (19, 'Shirley', 'Weathers', 'Z', '17239 Flores Highway', 'USA','Lake Brandy','VA','20040','Sophomore', 1.58, 0, 0,'Not selected or Other','female','Lower Income',11,5, 'Y', 'N', 'img/student.jpg', 14);
+values (19, 'Louise', 'Dunson', 'O', '98261 Clark Flat Suite 488', 'USA','Michaelburgh','VA','20041','Sophomore', 2.59, 0, 0,'Hispanic','female','Middle Income',2,20, 'N', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,19);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,19);
+values (6,19);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,19);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,19);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MargaretPetersB505', 'MargaretPetersB505@harrisonburg.edu', 'STUD');
+values ('RaymondWilliamsW638', 'RaymondWilliamsW638@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (20, 'Margaret', 'Peters', 'B', '98893 Hill Lodge Apt. 187', 'USA','Port Brittanyborough','VA','20041','Junior', 3.16, 0, 0,'Caucasian','female','Middle Income',0,0, 'N', 'Y', 'img/student.jpg', 17);
+values (20, 'Raymond', 'Williams', 'W', '9548 Parker Bridge Suite 888', 'USA','Stevenstad','VA','20040','Junior', 3.59, 27, 1368,'Caucasian','male','Middle Income',5,34, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,20);
+values (5,20);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,20);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,20);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CharlesMillerW447', 'CharlesMillerW447@turnerAshby.edu', 'STUD');
+values ('AdaVeithP481', 'AdaVeithP481@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (21, 'Charles', 'Miller', 'W', '4185 Alicia Station', 'USA','Lake Amy','VA','20041','Freshmen', 3.69, 0, 0,'Caucasian','male','Lower Income',2,20, 'N', 'N', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,21);
+values (21, 'Ada', 'Veith', 'P', '578 Johnston Ways', 'USA','Christopherstad','VA','20040','Senior', 1.35, 20, 1190,'Caucasian','female','Lower Income',13,27, 'Y', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,21);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,21);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('PeterWalD13', 'PeterWalD13@spotswood.edu', 'STUD');
+values ('JamieRuffinF429', 'JamieRuffinF429@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (22, 'Peter', 'Wal', 'D', '3465 Cline Valleys', 'USA','Lake Christian','VA','20041','Freshmen', 3.15, 0, 0,'Caucasian','male','Middle Income',0,0, 'Y', 'N', 'img/student.jpg', 14);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,22);
+values (22, 'Jamie', 'Ruffin', 'F', '3216 Carlson Groves', 'USA','North Leah','VA','20040','Sophomore', 1.21, 0, 0,'Caucasian','male','Middle Income',13,6, 'N', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,22);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,22);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,22);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,22);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,22);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,22);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('WallaceSumnerZ924', 'WallaceSumnerZ924@Louisa.edu', 'STUD');
+values ('MichaelBravoS430', 'MichaelBravoS430@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (23, 'Wallace', 'Sumner', 'Z', '247 Nicholas Courts', 'USA','North Loriburgh','VA','20041','Junior', 3.84, 27, 1567,'African American','male','Middle Income',3,26, 'N', 'Y', 'img/student.jpg', 12);
+values (23, 'Michael', 'Bravo', 'S', '16703 Howard Route', 'USA','Tommyton','VA','20040','Senior', 2.53, 21, 956,'African American','male','Lower Income',6,40, 'Y', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,23);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,23);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,23);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,23);
+values (5,23);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnHarrisF845', 'JohnHarrisF845@harrisonburg.edu', 'STUD');
+values ('MarkRobinsonB857', 'MarkRobinsonB857@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (24, 'John', 'Harris', 'F', '15661 Roberts Crossing', 'USA','Port Peter','VA','20041','Freshmen', 3.38, 0, 0,'Caucasian','male','Lower Income',0,0, 'Y', 'N', 'img/student.jpg', 17);
+values (24, 'Mark', 'Robinson', 'B', '553 Barajas Cliff', 'USA','South Rebeccamouth','VA','20041','Junior', 1.26, 20, 758,'Caucasian','male','Lower Income',15,12, 'N', 'Y', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,24);
+values (6,24);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,24);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,24);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,24);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DonnaPeckP18', 'DonnaPeckP18@rockingham.k12.va.us', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (25, 'Donna', 'Peck', 'P', '222 Young Wells', 'USA','Carrside','VA','20040','Senior', 1.21, 20, 804,'African American','female','Middle Income',13,23, 'Y', 'N', 'img/student.jpg', 13);
+values (12,24);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,25);
+values (1,24);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('TwandaSparkmanH592', 'TwandaSparkmanH592@harrisonburg.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (25, 'Twanda', 'Sparkman', 'H', '1260 Tran Loop Apt. 775', 'USA','Joshuamouth','VA','20041','Freshmen', 2.07, 0, 0,'Caucasian','female','Middle Income',8,15, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,25);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,25);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,25);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,25);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,25);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,25);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,25);
+values (11,25);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('GeoffreyStrubbeG744', 'GeoffreyStrubbeG744@rockingham.k12.va.us', 'STUD');
+values ('JoeRawsonR832', 'JoeRawsonR832@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (26, 'Geoffrey', 'Strubbe', 'G', '8329 Kenneth Wall', 'USA','New Ryanhaven','VA','20040','Sophomore', 3.2, 0, 0,'Caucasian','male','Middle Income',0,0, 'Y', 'N', 'img/student.jpg', 13);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,26);
+values (26, 'Joe', 'Rawson', 'R', '537 Greer Drive', 'USA','Fitzgeraldton','VA','20040','Senior', 2.72, 30, 1451,'Caucasian','male','Lower Income',6,44, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,26);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,26);
+values (8,26);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,26);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,26);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,26);
+values (11,26);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MegZiebarthA78', 'MegZiebarthA78@turnerAshby.edu', 'STUD');
+values ('KevinDeveraA786', 'KevinDeveraA786@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (27, 'Meg', 'Ziebarth', 'A', '874 Rebecca Turnpike', 'USA','New Tracyside','VA','20040','Freshmen', 1.38, 0, 0,'Caucasian','female','Middle Income',15,3, 'Y', 'Y', 'img/student.jpg', 15);
+values (27, 'Kevin', 'Devera', 'A', '088 Burke Place Apt. 539', 'USA','Stewartview','VA','20041','Sophomore', 3.27, 0, 0,'Caucasian','third party','Middle Income',0,0, 'Y', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,27);
+values (1,27);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,27);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,27);
+values (4,27);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,27);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,27);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,27);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,27);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RobertBowmanN384', 'RobertBowmanN384@spotswood.edu', 'STUD');
+values ('MichaelMillerC249', 'MichaelMillerC249@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (28, 'Robert', 'Bowman', 'N', '653 Cody Canyon', 'USA','Joshuaview','VA','20041','Sophomore', 2.19, 0, 0,'African American','male','Middle Income',9,13, 'Y', 'N', 'img/student.jpg', 14);
+values (28, 'Michael', 'Miller', 'C', '4610 Mitchell Islands Apt. 807', 'USA','Guerreroview','VA','20040','Freshmen', 1.35, 0, 0,'Caucasian','male','Middle Income',13,0, 'N', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,28);
+values (6,28);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,28);
+values (8,28);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,28);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,28);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,28);
+values (3,28);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,28);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,28);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,28);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('AnnaColliniI620', 'AnnaColliniI620@turnerAshby.edu', 'STUD');
+values ('CurtisBennettP870', 'CurtisBennettP870@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (29, 'Anna', 'Collini', 'I', '02193 Lynn Row Suite 283', 'USA','Tinastad','VA','20040','Senior', 2.1, 15, 1179,'Hispanic','female','Middle Income',14,35, 'N', 'Y', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,29);
+values (29, 'Curtis', 'Bennett', 'P', '67987 Christopher Garden', 'USA','New Sarah','VA','20040','Senior', 3.29, 0, 0,'Caucasian','male','Lower Income',0,0, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,29);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,29);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,29);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,29);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DebraBestM686', 'DebraBestM686@Louisa.edu', 'STUD');
+values ('ChiHaleH98', 'ChiHaleH98@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (30, 'Debra', 'Best', 'M', '823 Sara Camp Apt. 844', 'USA','Port Cassandra','VA','20040','Sophomore', 2.74, 0, 0,'African American','female','Lower Income',7,21, 'N', 'N', 'img/student.jpg', 12);
+values (30, 'Chi', 'Hale', 'H', '26419 Jeffrey Lights', 'USA','New Chris','VA','20041','Sophomore', 1.69, 0, 0,'Caucasian','male','Middle Income',14,9, 'N', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,30);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,30);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,30);
+values (8,30);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('EhtelCornwellU429', 'EhtelCornwellU429@harrisonburg.edu', 'STUD');
+values ('AndrewLinA967', 'AndrewLinA967@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (31, 'Ehtel', 'Cornwell', 'U', '659 Love Skyway', 'USA','East Cherylhaven','VA','20040','Junior', 1.32, 15, 982,'Caucasian','female','Higher Income',15,19, 'Y', 'N', 'img/student.jpg', 17);
+values (31, 'Andrew', 'Lin', 'A', '1365 Silva Radial', 'USA','Jeremyhaven','VA','20040','Senior', 3.61, 32, 1194,'Caucasian','male','Lower Income',5,45, 'N', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,31);
+values (5,31);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,31);
+values (1,31);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,31);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,31);
+values (9,31);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,31);
+values (6,31);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DorisThompsonW675', 'DorisThompsonW675@Louisa.edu', 'STUD');
+values ('BenjaminDohrmanF603', 'BenjaminDohrmanF603@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (32, 'Doris', 'Thompson', 'W', '65781 Reynolds Turnpike', 'USA','New Kyleside','VA','20041','Senior', 2.57, 34, 942,'Caucasian','female','Middle Income',1,35, 'Y', 'Y', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,32);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,32);
+values (32, 'Benjamin', 'Dohrman', 'F', '34563 Miller Neck Apt. 992', 'USA','West Loriland','VA','20041','Sophomore', 3.96, 0, 0,'Hispanic','male','Lower Income',5,23, 'N', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,32);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,32);
+values (12,32);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JudyWrightB802', 'JudyWrightB802@Louisa.edu', 'STUD');
+values ('MorrisHoffmanK308', 'MorrisHoffmanK308@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (33, 'Judy', 'Wright', 'B', '523 Calderon Squares', 'USA','South Scott','VA','20040','Sophomore', 1.72, 0, 0,'Hispanic','female','Middle Income',15,9, 'Y', 'N', 'img/student.jpg', 12);
+values (33, 'Morris', 'Hoffman', 'K', '5397 Jacobs Cliff Apt. 077', 'USA','Jessicahaven','VA','20041','Freshmen', 1.08, 0, 0,'Caucasian','male','Middle Income',13,3, 'N', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,33);
+values (4,33);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,33);
+values (5,33);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,33);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,33);
+values (9,33);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,33);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,33);
+values (10,33);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnRiveraC301', 'JohnRiveraC301@spotswood.edu', 'STUD');
+values ('DorothyBeattyJ88', 'DorothyBeattyJ88@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (34, 'John', 'Rivera', 'C', '706 Lane Harbors Apt. 965', 'USA','Lauramouth','VA','20041','Junior', 3.05, 0, 0,'Caucasian','male','Lower Income',0,0, 'Y', 'N', 'img/student.jpg', 14);
+values (34, 'Dorothy', 'Beatty', 'J', '226 Martin Turnpike', 'USA','Johnsonborough','VA','20040','Junior', 2.39, 29, 1003,'African American','female','Lower Income',5,21, 'Y', 'Y', 'img/student.jpg', 16);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,34);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,34);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,34);
+values (5,34);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,34);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,34);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,34);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,34);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CynthiaWhetzelC562', 'CynthiaWhetzelC562@Louisa.edu', 'STUD');
+values ('HazelKeeH353', 'HazelKeeH353@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (35, 'Cynthia', 'Whetzel', 'C', '2558 Ramirez Club', 'USA','Beckyfort','VA','20041','Freshmen', 2.67, 0, 0,'Caucasian','female','Middle Income',3,10, 'Y', 'Y', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,35);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,35);
+values (35, 'Hazel', 'Kee', 'H', '44412 Wilcox Lakes', 'USA','South Maurice','VA','20041','Junior', 3.34, 0, 0,'Caucasian','female','Lower Income',0,0, 'Y', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,35);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,35);
+values (12,35);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,35);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,35);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,35);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,35);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('StanleyDeatonQ577', 'StanleyDeatonQ577@rockingham.k12.va.us', 'STUD');
+values ('HarveyHarrisF350', 'HarveyHarrisF350@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (36, 'Stanley', 'Deaton', 'Q', '95840 Tami Forge', 'USA','Dorisberg','VA','20040','Freshmen', 2.28, 0, 0,'Caucasian','male','Middle Income',8,6, 'Y', 'Y', 'img/student.jpg', 13);
+values (36, 'Harvey', 'Harris', 'F', '354 Mary Cliff Suite 888', 'USA','Johnsonhaven','VA','20040','Freshmen', 1.29, 0, 0,'Caucasian','male','Lower Income',14,0, 'N', 'N', 'img/student.jpg', 13);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,36);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,36);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,36);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,36);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,36);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,36);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,36);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,36);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,36);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,36);
+values (11,36);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JasonJohnsonW312', 'JasonJohnsonW312@harrisonburg.edu', 'STUD');
+values ('DoloresThompsonW654', 'DoloresThompsonW654@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (37, 'Jason', 'Johnson', 'W', '0264 Adams Port', 'USA','Millerbury','VA','20040','Junior', 1.01, 17, 763,'Not selected or Other','third party','Middle Income',13,16, 'Y', 'N', 'img/student.jpg', 17);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,37);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,37);
+values (37, 'Dolores', 'Thompson', 'W', '675 Mcgee Port Apt. 850', 'USA','Josephhaven','VA','20040','Junior', 3.58, 32, 1386,'Caucasian','female','Middle Income',2,34, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,37);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,37);
+values (2,37);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,37);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,37);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,37);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DeborahPughH742', 'DeborahPughH742@rockingham.k12.va.us', 'STUD');
+values ('NellBriganceU735', 'NellBriganceU735@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (38, 'Deborah', 'Pugh', 'H', '451 Gregory Neck', 'USA','North Seanburgh','VA','20040','Sophomore', 1.04, 0, 0,'Pacific Islander','female','Lower Income',15,7, 'Y', 'N', 'img/student.jpg', 13);
+values (38, 'Nell', 'Brigance', 'U', '536 Walker Stream', 'USA','Timothyland','VA','20041','Senior', 3.69, 27, 1208,'Caucasian','female','Middle Income',1,37, 'Y', 'Y', 'img/student.jpg', 14);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,38);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,38);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,38);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,38);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,38);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,38);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RandyBrunsX142', 'RandyBrunsX142@turnerAshby.edu', 'STUD');
+values ('SharonJohnsonX1000', 'SharonJohnsonX1000@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (39, 'Randy', 'Bruns', 'X', '1777 Susan Mountains', 'USA','Welchchester','VA','20041','Junior', 1.59, 22, 1034,'Caucasian','male','Middle Income',13,21, 'Y', 'N', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,39);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,39);
+values (39, 'Sharon', 'Johnson', 'X', '52972 Melissa Mountain', 'USA','Oconnellmouth','VA','20041','Freshmen', 2.46, 0, 0,'Caucasian','female','Higher Income',13,11, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,39);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,39);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,39);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,39);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DouglasPhillipsX487', 'DouglasPhillipsX487@spotswood.edu', 'STUD');
+values ('JesseMcdanielT12', 'JesseMcdanielT12@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (40, 'Douglas', 'Phillips', 'X', '7304 Lopez Mountains', 'USA','Woodston','VA','20040','Junior', 3.23, 0, 0,'Caucasian','male','Middle Income',0,0, 'N', 'N', 'img/student.jpg', 14);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,40);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,40);
+values (40, 'Jesse', 'Mcdaniel', 'T', '643 Hahn Lane Apt. 126', 'USA','Jimenezside','VA','20040','Senior', 2.58, 25, 988,'Asian','female','Higher Income',1,45, 'N', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,40);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,40);
+values (7,40);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,40);
+values (8,40);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,40);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,40);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnnieCappE439', 'JohnnieCappE439@spotswood.edu', 'STUD');
+values ('PaulineJonesF524', 'PaulineJonesF524@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (41, 'Johnnie', 'Capp', 'E', '82298 Cheryl Pines', 'USA','East Curtisside','VA','20041','Sophomore', 2.36, 0, 0,'Asian','female','Lower Income',4,14, 'Y', 'N', 'img/student.jpg', 14);
+values (41, 'Pauline', 'Jones', 'F', '3483 Renee Stravenue Apt. 702', 'USA','East Sara','VA','20041','Sophomore', 3.77, 0, 0,'Caucasian','female','Lower Income',4,21, 'N', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,41);
+values (7,41);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,41);
+values (10,41);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,41);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,41);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,41);
+values (12,41);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,41);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,41);
+values (6,41);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MaribethKingO168', 'MaribethKingO168@spotswood.edu', 'STUD');
+values ('MichaelKozanB635', 'MichaelKozanB635@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (42, 'Maribeth', 'King', 'O', '38833 Jason Island', 'USA','Lake Taylormouth','VA','20040','Freshmen', 2.59, 0, 0,'Hispanic','female','Middle Income',1,16, 'Y', 'Y', 'img/student.jpg', 14);
+values (42, 'Michael', 'Kozan', 'B', '0636 Brittney Shoals Suite 481', 'USA','Port Paige','VA','20041','Sophomore', 1.79, 0, 0,'Caucasian','male','Higher Income',11,7, 'Y', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,42);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('VictorJonesQ503', 'VictorJonesQ503@turnerAshby.edu', 'STUD');
+values ('GeraldHonigQ786', 'GeraldHonigQ786@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (43, 'Victor', 'Jones', 'Q', '98185 Mark Oval Suite 105', 'USA','Allenstad','VA','20040','Junior', 2.67, 33, 1109,'Pacific Islander','male','Middle Income',5,32, 'N', 'Y', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,43);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,43);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,43);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,43);
+values (43, 'Gerald', 'Honig', 'Q', '799 Smith Glen', 'USA','Mccormickchester','VA','20041','Junior', 2.49, 16, 1080,'Hispanic','male','Middle Income',8,23, 'N', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,43);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,43);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnGrenierY177', 'JohnGrenierY177@turnerAshby.edu', 'STUD');
+values ('DouglasVanceR254', 'DouglasVanceR254@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (44, 'John', 'Grenier', 'Y', '2755 Shaffer Row Apt. 966', 'USA','Port Marissaborough','VA','20040','Freshmen', 3.71, 0, 0,'African American','male','Lower Income',5,19, 'N', 'N', 'img/student.jpg', 15);
+values (44, 'Douglas', 'Vance', 'R', '072 Hill View', 'USA','Gillstad','VA','20041','Freshmen', 1.49, 0, 0,'Caucasian','male','Lower Income',14,2, 'Y', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,44);
+values (6,44);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,44);
+values (10,44);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,44);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,44);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,44);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,44);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,44);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,44);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JaninaAzureD724', 'JaninaAzureD724@rockingham.k12.va.us', 'STUD');
+values ('RyanTanB906', 'RyanTanB906@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (45, 'Janina', 'Azure', 'D', '85559 Morales Center', 'USA','Port Ashleyport','VA','20040','Sophomore', 1.98, 0, 0,'Caucasian','female','Lower Income',10,10, 'Y', 'N', 'img/student.jpg', 13);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,45);
+values (45, 'Ryan', 'Tan', 'B', '14884 Meyer Green Apt. 989', 'USA','New Lindachester','VA','20040','Senior', 3.51, 28, 1449,'Hispanic','male','Higher Income',4,37, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,45);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,45);
+values (7,45);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,45);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,45);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,45);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,45);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,45);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,45);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DaleShasteenR430', 'DaleShasteenR430@harrisonburg.edu', 'STUD');
+values ('LyndsayChildersV290', 'LyndsayChildersV290@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (46, 'Dale', 'Shasteen', 'R', '1743 Hill Ports', 'USA','Johnfort','VA','20041','Freshmen', 2.2, 0, 0,'Caucasian','third party','Lower Income',10,10, 'Y', 'N', 'img/student.jpg', 17);
+values (46, 'Lyndsay', 'Childers', 'V', '9822 Ryan Rapids Apt. 573', 'USA','Reedside','VA','20041','Sophomore', 1.01, 0, 0,'Caucasian','female','Lower Income',15,8, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,46);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,46);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,46);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,46);
+values (9,46);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,46);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,46);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DouglasVenableG733', 'DouglasVenableG733@broadway.edu', 'STUD');
+values ('LisaPorterI934', 'LisaPorterI934@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (47, 'Douglas', 'Venable', 'G', '14073 Jessica Lodge Suite 525', 'USA','Juliaport','VA','20040','Senior', 3.02, 0, 0,'Caucasian','male','Higher Income',0,0, 'Y', 'N', 'img/student.jpg', 16);
+values (47, 'Lisa', 'Porter', 'I', '35098 Aguirre Heights', 'USA','West Patriciaberg','VA','20040','Freshmen', 2.54, 0, 0,'African American','third party','Middle Income',2,20, 'Y', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,47);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,47);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,47);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,47);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,47);
+values (7,47);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('KennethClaiborneT338', 'KennethClaiborneT338@harrisonburg.edu', 'STUD');
+values ('CraigPowersN126', 'CraigPowersN126@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (48, 'Kenneth', 'Claiborne', 'T', '6164 Jones Trafficway Suite 105', 'USA','Murrayborough','VA','20040','Senior', 1.69, 24, 790,'Caucasian','male','Lower Income',11,27, 'Y', 'Y', 'img/student.jpg', 17);
+values (48, 'Craig', 'Powers', 'N', '570 George Street Apt. 540', 'USA','Hernandezland','VA','20041','Junior', 1.96, 16, 1091,'Hispanic','male','Middle Income',15,25, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,48);
+values (5,48);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,48);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,48);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,48);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,48);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DeliaStewartB63', 'DeliaStewartB63@broadway.edu', 'STUD');
+values ('LoisPresleyC492', 'LoisPresleyC492@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (49, 'Delia', 'Stewart', 'B', '05258 Matthew Neck Apt. 008', 'USA','Mcguireton','VA','20040','Junior', 3.08, 0, 0,'Caucasian','female','Higher Income',0,0, 'Y', 'N', 'img/student.jpg', 16);
+values (49, 'Lois', 'Presley', 'C', '9483 Allison Groves', 'USA','Port William','VA','20041','Senior', 2.88, 22, 1056,'Caucasian','female','Lower Income',2,36, 'Y', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,49);
+values (9,49);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,49);
+values (5,49);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ValerieCulverK47', 'ValerieCulverK47@spotswood.edu', 'STUD');
+values ('MichaelTorresM904', 'MichaelTorresM904@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (50, 'Valerie', 'Culver', 'K', '5660 Christopher Landing Apt. 972', 'USA','Lake Amyville','VA','20041','Junior', 2.6, 34, 1325,'Caucasian','third party','Lower Income',1,24, 'Y', 'N', 'img/student.jpg', 14);
+values (50, 'Michael', 'Torres', 'M', '408 Morgan Expressway', 'USA','West Jamie','VA','20041','Senior', 3.78, 34, 1363,'Caucasian','male','Middle Income',3,36, 'Y', 'Y', 'img/student.jpg', 14);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,50);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,50);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,50);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,50);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,50);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,50);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,50);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,50);
+values (9,50);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('LeroyTorrisD26', 'LeroyTorrisD26@Louisa.edu', 'STUD');
+values ('ShellyGencoK742', 'ShellyGencoK742@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (51, 'Leroy', 'Torris', 'D', '4994 Jay Track Suite 770', 'USA','Dianeberg','VA','20041','Senior', 2.89, 27, 1163,'Caucasian','male','Higher Income',2,33, 'Y', 'N', 'img/student.jpg', 12);
+values (51, 'Shelly', 'Genco', 'K', '8326 Brown Points Apt. 408', 'USA','Mooreton','VA','20040','Sophomore', 3.87, 0, 0,'Pacific Islander','female','Higher Income',3,23, 'Y', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,51);
+values (7,51);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,51);
+values (10,51);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,51);
+values (1,51);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,51);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,51);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ClaudiaWilliamsT732', 'ClaudiaWilliamsT732@harrisonburg.edu', 'STUD');
+values ('BobbyWoonR810', 'BobbyWoonR810@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (52, 'Claudia', 'Williams', 'T', '594 Tracy Ways Apt. 773', 'USA','Lindamouth','VA','20041','Senior', 1.51, 22, 977,'Caucasian','female','Middle Income',14,24, 'N', 'N', 'img/student.jpg', 17);
+values (52, 'Bobby', 'Woon', 'R', '890 Shepherd Orchard', 'USA','South Jamesfort','VA','20040','Senior', 2.22, 27, 1112,'Pacific Islander','male','Lower Income',13,27, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,52);
+values (10,52);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,52);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,52);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,52);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,52);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,52);
+values (4,52);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DebraSanchezC28', 'DebraSanchezC28@turnerAshby.edu', 'STUD');
+values ('TimHatcherG593', 'TimHatcherG593@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (53, 'Debra', 'Sanchez', 'C', '251 William Hill Apt. 233', 'USA','Julieburgh','VA','20041','Freshmen', 2.84, 0, 0,'Not selected or Other','female','Higher Income',4,10, 'N', 'N', 'img/student.jpg', 15);
+values (53, 'Tim', 'Hatcher', 'G', '81729 Stewart Green', 'USA','Perezfurt','VA','20040','Sophomore', 3.51, 0, 0,'Hispanic','male','Higher Income',1,25, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,53);
+values (5,53);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,53);
+values (4,53);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,53);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,53);
+values (6,53);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('VitoJohnsonS524', 'VitoJohnsonS524@Louisa.edu', 'STUD');
+values ('KelleySargentQ814', 'KelleySargentQ814@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (54, 'Vito', 'Johnson', 'S', '229 Rosales Isle', 'USA','Sarahfurt','VA','20040','Senior', 1.33, 19, 872,'Caucasian','male','Middle Income',15,26, 'Y', 'N', 'img/student.jpg', 12);
+values (54, 'Kelley', 'Sargent', 'Q', '8613 James Place', 'USA','Port Jason','VA','20041','Freshmen', 3.12, 0, 0,'African American','female','Middle Income',0,0, 'N', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,54);
+values (12,54);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,54);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,54);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,54);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,54);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MarilynGibbW387', 'MarilynGibbW387@broadway.edu', 'STUD');
+values ('AnnieCanadaE737', 'AnnieCanadaE737@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (55, 'Marilyn', 'Gibb', 'W', '3946 Benjamin Summit Apt. 575', 'USA','Rachelberg','VA','20041','Senior', 1.03, 20, 672,'Caucasian','female','Lower Income',13,27, 'Y', 'Y', 'img/student.jpg', 16);
+values (55, 'Annie', 'Canada', 'E', '2515 Gutierrez Neck', 'USA','Petersonshire','VA','20041','Junior', 3.39, 0, 0,'Pacific Islander','female','Middle Income',0,0, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,55);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,55);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('BillySturmanJ281', 'BillySturmanJ281@rockingham.k12.va.us', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (56, 'Billy', 'Sturman', 'J', '63957 Kent Loop', 'USA','Leeview','VA','20040','Junior', 2.95, 26, 999,'Caucasian','male','Higher Income',0,33, 'Y', 'N', 'img/student.jpg', 13);
+values (2,55);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,56);
+values (5,55);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,55);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('AnneParksF422', 'AnneParksF422@spotswood.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (56, 'Anne', 'Parks', 'F', '17180 Hendricks Pass', 'USA','Port Randall','VA','20041','Senior', 2.33, 20, 923,'Caucasian','female','Middle Income',10,26, 'Y', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,56);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,56);
+values (9,56);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,56);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,56);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,56);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JanetBayliffS816', 'JanetBayliffS816@rockingham.k12.va.us', 'STUD');
+values ('ClairSimsN650', 'ClairSimsN650@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (57, 'Janet', 'Bayliff', 'S', '439 Hernandez Inlet', 'USA','East Michael','VA','20041','Freshmen', 3.39, 0, 0,'Hispanic','third party','Middle Income',0,0, 'Y', 'Y', 'img/student.jpg', 13);
+values (57, 'Clair', 'Sims', 'N', '931 Amanda Viaduct', 'USA','Danielfort','VA','20040','Freshmen', 1.3, 0, 0,'Caucasian','female','Middle Income',14,1, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,57);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,57);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,57);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,57);
+values (1,57);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnIbrahimG417', 'JohnIbrahimG417@turnerAshby.edu', 'STUD');
+values ('EzraHenriquezO861', 'EzraHenriquezO861@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (58, 'John', 'Ibrahim', 'G', '36931 Brian Drive', 'USA','Matthewtown','VA','20040','Senior', 1.76, 25, 1121,'Caucasian','male','Lower Income',12,34, 'N', 'Y', 'img/student.jpg', 15);
+values (58, 'Ezra', 'Henriquez', 'O', '553 Cynthia Spring', 'USA','Robertbury','VA','20041','Senior', 1.88, 18, 1108,'Caucasian','male','Lower Income',14,32, 'Y', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,58);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,58);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,58);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,58);
+values (9,58);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,58);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,58);
+values (3,58);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('GeorgeSteeleG932', 'GeorgeSteeleG932@Louisa.edu', 'STUD');
+values ('StevenHaywoodN458', 'StevenHaywoodN458@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (59, 'George', 'Steele', 'G', '604 Baker Hill', 'USA','Pamelahaven','VA','20040','Senior', 3.09, 0, 0,'Caucasian','male','Higher Income',0,0, 'Y', 'Y', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,59);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,59);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,59);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,59);
+values (59, 'Steven', 'Haywood', 'N', '75629 Dunn Mews Apt. 556', 'USA','North Deanna','VA','20040','Senior', 3.54, 29, 1154,'Hispanic','male','Lower Income',4,39, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,59);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,59);
+values (2,59);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,59);
+values (11,59);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,59);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,59);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,59);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('HectorWilliamsY176', 'HectorWilliamsY176@rockingham.k12.va.us', 'STUD');
+values ('HenryHunterQ768', 'HenryHunterQ768@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (60, 'Hector', 'Williams', 'Y', '03922 Pennington Expressway Apt. 031', 'USA','New Heather','VA','20040','Senior', 3.88, 30, 1266,'Caucasian','third party','Higher Income',5,37, 'N', 'N', 'img/student.jpg', 13);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,60);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,60);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,60);
+values (60, 'Henry', 'Hunter', 'Q', '9410 Lori Fort Suite 142', 'USA','Tiffanyport','VA','20040','Sophomore', 2.2, 0, 0,'Caucasian','male','Lower Income',7,18, 'N', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,60);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,60);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DexterHagenU321', 'DexterHagenU321@harrisonburg.edu', 'STUD');
+values ('StevenMclaughlinL685', 'StevenMclaughlinL685@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (61, 'Dexter', 'Hagen', 'U', '61530 Michelle Harbor', 'USA','Dawsontown','VA','20041','Sophomore', 3.21, 0, 0,'Caucasian','male','Middle Income',0,0, 'N', 'N', 'img/student.jpg', 17);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,61);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,61);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,61);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,61);
+values (61, 'Steven', 'Mclaughlin', 'L', '302 Garcia Motorway Suite 186', 'USA','East Michaelberg','VA','20041','Junior', 2.21, 19, 1192,'African American','male','Higher Income',7,22, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,61);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,61);
+values (7,61);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,61);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,61);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,61);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,61);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JeanAceV901', 'JeanAceV901@turnerAshby.edu', 'STUD');
+values ('MistyRowlandB138', 'MistyRowlandB138@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (62, 'Jean', 'Ace', 'V', '18132 Steven Turnpike', 'USA','Port John','VA','20041','Junior', 1.79, 19, 959,'Hispanic','female','Middle Income',13,24, 'Y', 'N', 'img/student.jpg', 15);
+values (62, 'Misty', 'Rowland', 'B', '6811 Novak Burg Apt. 819', 'USA','Timothytown','VA','20040','Sophomore', 3.07, 0, 0,'Asian','female','Lower Income',0,0, 'Y', 'Y', 'img/student.jpg', 12);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,62);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,62);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,62);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,62);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,62);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ShirleyQueenN724', 'ShirleyQueenN724@turnerAshby.edu', 'STUD');
+values ('RandyMyersV12', 'RandyMyersV12@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (63, 'Shirley', 'Queen', 'N', '2669 Webster Vista', 'USA','Lake Erika','VA','20040','Freshmen', 1.44, 0, 0,'African American','female','Middle Income',13,3, 'Y', 'N', 'img/student.jpg', 15);
+values (63, 'Randy', 'Myers', 'V', '38714 Ryan Rest', 'USA','Lake Elizabeth','VA','20040','Sophomore', 2.0, 0, 0,'Caucasian','male','Middle Income',12,13, 'N', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,63);
+values (7,63);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,63);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MarthaSevernJ399', 'MarthaSevernJ399@Louisa.edu', 'STUD');
+values ('JessicaCortesT267', 'JessicaCortesT267@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (64, 'Martha', 'Severn', 'J', '640 Jacobs Courts', 'USA','Greenville','VA','20041','Freshmen', 3.73, 0, 0,'Hispanic','female','Lower Income',0,20, 'Y', 'N', 'img/student.jpg', 12);
+values (64, 'Jessica', 'Cortes', 'T', '0197 Wayne Cliff Suite 927', 'USA','Wardtown','VA','20040','Junior', 1.43, 13, 1245,'African American','third party','Middle Income',15,12, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,64);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,64);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,64);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,64);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,64);
+values (9,64);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,64);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,64);
+values (3,64);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,64);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('TimothySellsV10', 'TimothySellsV10@broadway.edu', 'STUD');
+values ('TimothyGreathouseO477', 'TimothyGreathouseO477@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (65, 'Timothy', 'Sells', 'V', '9745 Deborah Drives Apt. 141', 'USA','Richardsonmouth','VA','20041','Senior', 2.63, 22, 1263,'Pacific Islander','male','Lower Income',7,31, 'N', 'N', 'img/student.jpg', 16);
+values (65, 'Timothy', 'Greathouse', 'O', '3973 Patricia Rapids Apt. 746', 'USA','West Sylvia','VA','20040','Freshmen', 3.42, 0, 0,'Not selected or Other','male','Middle Income',0,0, 'Y', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,65);
+values (10,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,65);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,65);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ChristopherWelchZ390', 'ChristopherWelchZ390@turnerAshby.edu', 'STUD');
+values ('TanishaCantuF459', 'TanishaCantuF459@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (66, 'Christopher', 'Welch', 'Z', '014 Sherry Course', 'USA','South Karenstad','VA','20040','Freshmen', 2.88, 0, 0,'African American','third party','Middle Income',5,10, 'Y', 'Y', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,66);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,66);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,66);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,66);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,66);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,66);
+values (66, 'Tanisha', 'Cantu', 'F', '6265 Stacy Isle', 'USA','Johnsonberg','VA','20040','Sophomore', 1.0, 0, 0,'African American','female','Middle Income',13,10, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,66);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,66);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MauriceTorresX616', 'MauriceTorresX616@spotswood.edu', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (67, 'Maurice', 'Torres', 'X', '068 Dana Manors Apt. 597', 'USA','East Aaron','VA','20041','Sophomore', 1.53, 0, 0,'Caucasian','male','Lower Income',15,5, 'Y', 'N', 'img/student.jpg', 14);
+values (3,66);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,67);
+values (7,66);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,66);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,66);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,66);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,66);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,66);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('NanStammW167', 'NanStammW167@spotswood.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (67, 'Nan', 'Stamm', 'W', '04337 Lydia Orchard Suite 178', 'USA','Sherrifort','VA','20041','Junior', 3.31, 0, 0,'Asian','female','Lower Income',0,0, 'N', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,67);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,67);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,67);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,67);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,67);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ShirleyModestoX99', 'ShirleyModestoX99@spotswood.edu', 'STUD');
+values ('DebraSidneyF608', 'DebraSidneyF608@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (68, 'Shirley', 'Modesto', 'X', '1076 Arthur Drive Apt. 341', 'USA','Victorberg','VA','20040','Sophomore', 2.24, 0, 0,'Caucasian','female','Higher Income',11,11, 'Y', 'N', 'img/student.jpg', 14);
+values (68, 'Debra', 'Sidney', 'F', '630 Gross Mountains Suite 856', 'USA','East Stephanie','VA','20040','Freshmen', 2.37, 0, 0,'Not selected or Other','female','Middle Income',5,8, 'N', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,68);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,68);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('SergioAllisonF992', 'SergioAllisonF992@rockingham.k12.va.us', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (69, 'Sergio', 'Allison', 'F', '840 Baker Lock', 'USA','Lake Patricia','VA','20040','Senior', 3.45, 0, 0,'African American','male','Middle Income',0,0, 'N', 'N', 'img/student.jpg', 13);
+values (8,68);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,69);
+values (7,68);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,68);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,68);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,68);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,68);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,68);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('GeorgeFischerL364', 'GeorgeFischerL364@broadway.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (69, 'George', 'Fischer', 'L', '803 Jon Creek Suite 952', 'USA','Lake Vanessa','VA','20040','Sophomore', 3.41, 0, 0,'Caucasian','male','Lower Income',0,0, 'N', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (6,69);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,69);
+values (11,69);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,69);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,69);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,69);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,69);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('SheriBuffordC126', 'SheriBuffordC126@turnerAshby.edu', 'STUD');
+values ('MattieHumphreysA754', 'MattieHumphreysA754@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (70, 'Sheri', 'Bufford', 'C', '1626 Harvey Villages', 'USA','Andersonfort','VA','20040','Sophomore', 2.07, 0, 0,'African American','female','Lower Income',8,15, 'Y', 'Y', 'img/student.jpg', 15);
+values (70, 'Mattie', 'Humphreys', 'A', '5687 Lowe Cove', 'USA','Esteston','VA','20040','Freshmen', 3.8, 0, 0,'Caucasian','female','Middle Income',3,19, 'Y', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,70);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,70);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('DonnaGodwinX875', 'DonnaGodwinX875@turnerAshby.edu', 'STUD');
+values ('JulieMcgonigleJ674', 'JulieMcgonigleJ674@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (71, 'Donna', 'Godwin', 'X', '911 Brown Skyway Apt. 591', 'USA','Lake Brian','VA','20041','Senior', 3.5, 27, 1407,'Caucasian','female','Middle Income',5,43, 'Y', 'N', 'img/student.jpg', 15);
+values (71, 'Julie', 'Mcgonigle', 'J', '272 Katherine Glen', 'USA','West Corey','VA','20041','Sophomore', 1.04, 0, 0,'Hispanic','female','Lower Income',13,5, 'Y', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,71);
+values (7,71);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,71);
+values (8,71);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,71);
+values (5,71);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,71);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,71);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,71);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,71);
+values (12,71);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('TheresaHendersonC250', 'TheresaHendersonC250@spotswood.edu', 'STUD');
+values ('MarthaTorresA962', 'MarthaTorresA962@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (72, 'Theresa', 'Henderson', 'C', '459 Patrick Via Apt. 056', 'USA','Acostabury','VA','20041','Junior', 1.85, 15, 819,'Caucasian','female','Higher Income',12,17, 'N', 'N', 'img/student.jpg', 14);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,72);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,72);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,72);
+values (72, 'Martha', 'Torres', 'A', '788 Justin Ports Suite 034', 'USA','South Jonathanport','VA','20040','Senior', 1.61, 24, 955,'Caucasian','female','Middle Income',9,26, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,72);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,72);
+values (3,72);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,72);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CurtisVegaC917', 'CurtisVegaC917@harrisonburg.edu', 'STUD');
+values ('DoloresKearneyR396', 'DoloresKearneyR396@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (73, 'Curtis', 'Vega', 'C', '1215 Laurie Street', 'USA','New Crystalhaven','VA','20040','Freshmen', 3.39, 0, 0,'Caucasian','male','Middle Income',0,0, 'N', 'N', 'img/student.jpg', 17);
+values (73, 'Dolores', 'Kearney', 'R', '6705 Roberts Harbors Apt. 886', 'USA','Glennland','VA','20041','Freshmen', 3.87, 0, 0,'Caucasian','female','Middle Income',1,16, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,73);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,73);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,73);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,73);
+values (9,73);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('VirginiaEvansD414', 'VirginiaEvansD414@spotswood.edu', 'STUD');
+values ('WayneBrownH215', 'WayneBrownH215@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (74, 'Virginia', 'Evans', 'D', '959 Duncan Shore', 'USA','East Robertshire','VA','20040','Sophomore', 3.23, 0, 0,'Caucasian','female','Higher Income',0,0, 'Y', 'N', 'img/student.jpg', 14);
+values (74, 'Wayne', 'Brown', 'H', '319 Coleman Villages Apt. 813', 'USA','East Heathermouth','VA','20041','Sophomore', 2.54, 0, 0,'Caucasian','male','Middle Income',0,25, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,74);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,74);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,74);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,74);
+values (8,74);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,74);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,74);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,74);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('PriscillaVasquezE449', 'PriscillaVasquezE449@broadway.edu', 'STUD');
+values ('TheresaBartholomewB142', 'TheresaBartholomewB142@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (75, 'Priscilla', 'Vasquez', 'E', '767 Nancy Plaza Apt. 579', 'USA','Beckfort','VA','20041','Freshmen', 1.52, 0, 0,'Caucasian','female','Middle Income',14,9, 'Y', 'N', 'img/student.jpg', 16);
+values (75, 'Theresa', 'Bartholomew', 'B', '259 Hayes Port', 'USA','Robinberg','VA','20040','Senior', 1.69, 24, 1258,'Caucasian','female','Lower Income',14,34, 'N', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,75);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,75);
+values (5,75);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,75);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,75);
+values (6,75);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,75);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,75);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,75);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,75);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,75);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MichaelRodmanF695', 'MichaelRodmanF695@harrisonburg.edu', 'STUD');
+values ('OlaRoarkH358', 'OlaRoarkH358@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (76, 'Michael', 'Rodman', 'F', '1993 Fry Valley', 'USA','Port Chad','VA','20040','Junior', 3.55, 35, 1424,'Caucasian','male','Middle Income',5,26, 'Y', 'N', 'img/student.jpg', 17);
+values (76, 'Ola', 'Roark', 'H', '389 Carpenter Manor', 'USA','Lawrenceside','VA','20041','Sophomore', 3.56, 0, 0,'Asian','female','Middle Income',4,24, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,76);
+values (6,76);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,76);
+values (1,76);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,76);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,76);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,76);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,76);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,76);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('GladysChilcuttK603', 'GladysChilcuttK603@harrisonburg.edu', 'STUD');
+values ('MonicaTatumU51', 'MonicaTatumU51@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (77, 'Gladys', 'Chilcutt', 'K', '19806 Robert Rue', 'USA','South Andrew','VA','20041','Junior', 1.76, 20, 1156,'Pacific Islander','female','Middle Income',12,21, 'Y', 'Y', 'img/student.jpg', 17);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,77);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,77);
+values (77, 'Monica', 'Tatum', 'U', '481 Jennifer Park', 'USA','Erikaview','VA','20041','Sophomore', 1.72, 0, 0,'Caucasian','female','Middle Income',12,6, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (6,77);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,77);
+values (1,77);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,77);
+values (10,77);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,77);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,77);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JohnPassmoreV22', 'JohnPassmoreV22@spotswood.edu', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (78, 'John', 'Passmore', 'V', '0296 Bishop Ramp', 'USA','Caldwellside','VA','20041','Sophomore', 1.02, 0, 0,'Caucasian','male','Lower Income',15,5, 'N', 'N', 'img/student.jpg', 14);
+values (12,77);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,78);
+values (11,77);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,77);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,77);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('PearleneVallejoK346', 'PearleneVallejoK346@Louisa.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (78, 'Pearlene', 'Vallejo', 'K', '860 Golden Lane Suite 632', 'USA','Kimburgh','VA','20040','Junior', 1.11, 10, 1033,'Hispanic','female','Higher Income',15,18, 'N', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,78);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,78);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,78);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,78);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,78);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (6,78);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,78);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,78);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('NathanMyersV906', 'NathanMyersV906@turnerAshby.edu', 'STUD');
+values ('LelandMcgregorR405', 'LelandMcgregorR405@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (79, 'Nathan', 'Myers', 'V', '9258 Luis Wells', 'USA','Burtonchester','VA','20040','Senior', 2.34, 25, 1046,'Caucasian','male','Middle Income',9,26, 'Y', 'Y', 'img/student.jpg', 15);
+values (79, 'Leland', 'Mcgregor', 'R', '79407 Clarke Mall Apt. 755', 'USA','Port Jeff','VA','20041','Junior', 1.18, 13, 788,'Caucasian','male','Lower Income',14,14, 'N', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,79);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,79);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,79);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,79);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MichaelAragonY722', 'MichaelAragonY722@rockingham.k12.va.us', 'STUD');
+values ('KarenDickersonQ364', 'KarenDickersonQ364@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (80, 'Michael', 'Aragon', 'Y', '675 Lee Shores Suite 444', 'USA','Jeffmouth','VA','20041','Senior', 2.23, 25, 938,'Pacific Islander','male','Middle Income',11,28, 'N', 'Y', 'img/student.jpg', 13);
+values (80, 'Karen', 'Dickerson', 'Q', '11753 Richards Keys', 'USA','Solomonchester','VA','20040','Senior', 3.56, 35, 1599,'Caucasian','female','Higher Income',2,45, 'N', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,80);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,80);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,80);
+values (1,80);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,80);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JosephBurtonM491', 'JosephBurtonM491@rockingham.k12.va.us', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (81, 'Joseph', 'Burton', 'M', '23589 Bryant Corner', 'USA','Graymouth','VA','20041','Sophomore', 2.02, 0, 0,'Caucasian','male','Higher Income',5,13, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,81);
+values (3,80);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,80);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('RobertEspinozaO987', 'RobertEspinozaO987@broadway.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (81, 'Robert', 'Espinoza', 'O', '3522 Martin Knolls', 'USA','Mclaughlinfort','VA','20040','Senior', 1.68, 25, 1258,'Caucasian','male','Lower Income',10,22, 'Y', 'Y', 'img/student.jpg', 16);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,81);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,81);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,81);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,81);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,81);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,81);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,81);
+values (9,81);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RoseDexterE393', 'RoseDexterE393@rockingham.k12.va.us', 'STUD');
+values ('JustinLittleQ840', 'JustinLittleQ840@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (82, 'Rose', 'Dexter', 'E', '92659 Stephanie River', 'USA','Lindashire','VA','20040','Senior', 3.19, 0, 0,'African American','female','Middle Income',0,0, 'N', 'Y', 'img/student.jpg', 13);
+values (82, 'Justin', 'Little', 'Q', '3373 Edwards Haven Suite 790', 'USA','Suttonberg','VA','20040','Senior', 2.68, 30, 1318,'Hispanic','third party','Lower Income',7,45, 'N', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,82);
+values (12,82);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,82);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,82);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,82);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,82);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,82);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CynthiaWinstonX775', 'CynthiaWinstonX775@Louisa.edu', 'STUD');
+values ('BobbyDavidsonA203', 'BobbyDavidsonA203@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (83, 'Cynthia', 'Winston', 'X', '036 Karen Prairie', 'USA','East Kristinview','VA','20041','Junior', 3.95, 31, 1190,'Pacific Islander','female','Lower Income',3,29, 'Y', 'Y', 'img/student.jpg', 12);
+values (83, 'Bobby', 'Davidson', 'A', '545 Ronald Ranch', 'USA','Brooksside','VA','20041','Junior', 1.01, 10, 857,'Caucasian','male','Middle Income',15,16, 'N', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,83);
+values (11,83);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,83);
+values (3,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,83);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,83);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ChristopherMachadoI173', 'ChristopherMachadoI173@Louisa.edu', 'STUD');
+values ('RobertSykesD888', 'RobertSykesD888@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (84, 'Christopher', 'Machado', 'I', '85804 Roberts Pines Suite 481', 'USA','New Danielbury','VA','20040','Freshmen', 2.89, 0, 0,'Caucasian','male','Lower Income',6,11, 'Y', 'Y', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,84);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,84);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,84);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,84);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,84);
+values (84, 'Robert', 'Sykes', 'D', '648 Pacheco Locks Apt. 181', 'USA','Lake Erin','VA','20040','Senior', 2.85, 21, 1210,'African American','male','Middle Income',4,31, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,84);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,84);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MarissaAslanianN16', 'MarissaAslanianN16@Louisa.edu', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (85, 'Marissa', 'Aslanian', 'N', '93323 Hess Island', 'USA','Oliviafurt','VA','20041','Junior', 3.6, 30, 1417,'Caucasian','female','Middle Income',4,31, 'N', 'N', 'img/student.jpg', 12);
+values (7,84);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,85);
+values (8,84);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('SueBoeckI441', 'SueBoeckI441@turnerAshby.edu', 'STUD');
+values ('ColinJohnsonO371', 'ColinJohnsonO371@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (86, 'Sue', 'Boeck', 'I', '980 Kim Gateway', 'USA','Port Kimberlyland','VA','20041','Freshmen', 1.72, 0, 0,'Caucasian','female','Middle Income',10,11, 'N', 'Y', 'img/student.jpg', 15);
+values (85, 'Colin', 'Johnson', 'O', '690 Jill Divide', 'USA','Figueroastad','VA','20040','Sophomore', 2.51, 0, 0,'Hispanic','male','Lower Income',1,24, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,86);
+values (7,85);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,85);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,85);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,85);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('KeithRobertsX235', 'KeithRobertsX235@harrisonburg.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (86, 'Keith', 'Roberts', 'X', '3071 Franklin Hill Suite 280', 'USA','Kristinberg','VA','20041','Freshmen', 2.4, 0, 0,'Hispanic','male','Lower Income',15,15, 'N', 'Y', 'img/student.jpg', 17);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,86);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,86);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,86);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,86);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,86);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,86);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,86);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,86);
+values (7,86);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,86);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,86);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,86);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('BradleyWarrenM72', 'BradleyWarrenM72@harrisonburg.edu', 'STUD');
+values ('WilliamRoyseK303', 'WilliamRoyseK303@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (87, 'Bradley', 'Warren', 'M', '0917 Andrews Field', 'USA','Judithland','VA','20041','Senior', 3.73, 25, 1447,'Caucasian','male','Middle Income',1,44, 'N', 'Y', 'img/student.jpg', 17);
+values (87, 'William', 'Royse', 'K', '1372 Figueroa Vista Apt. 705', 'USA','East Elizabeth','VA','20040','Freshmen', 2.44, 0, 0,'Caucasian','third party','Middle Income',8,10, 'Y', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,87);
+values (1,87);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,87);
+values (4,87);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,87);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,87);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,87);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,87);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,87);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('HenrietteJonesZ125', 'HenrietteJonesZ125@spotswood.edu', 'STUD');
+values ('JessicaAcostaB754', 'JessicaAcostaB754@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (88, 'Henriette', 'Jones', 'Z', '8099 Perez Creek Suite 508', 'USA','Johnsonland','VA','20041','Freshmen', 1.64, 0, 0,'Not selected or Other','female','Lower Income',11,13, 'N', 'N', 'img/student.jpg', 14);
+values (88, 'Jessica', 'Acosta', 'B', '65328 Rebecca Circle', 'USA','Lake Heather','VA','20041','Senior', 2.79, 35, 1204,'Caucasian','female','Middle Income',1,33, 'Y', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,88);
+values (9,88);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,88);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,88);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,88);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,88);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,88);
+values (11,88);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,88);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JackKnightZ382', 'JackKnightZ382@turnerAshby.edu', 'STUD');
+values ('DavidGodwinZ933', 'DavidGodwinZ933@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (89, 'Jack', 'Knight', 'Z', '7603 Allison Pine Apt. 486', 'USA','East Carl','VA','20041','Junior', 2.85, 21, 992,'Caucasian','male','Middle Income',6,32, 'N', 'Y', 'img/student.jpg', 15);
+values (89, 'David', 'Godwin', 'Z', '46487 Nancy Camp Suite 284', 'USA','North Kathryn','VA','20041','Junior', 2.02, 18, 1355,'Caucasian','male','Middle Income',3,30, 'N', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,89);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,89);
+values (7,89);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,89);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,89);
+values (9,89);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,89);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,89);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,89);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JamesMckameyO492', 'JamesMckameyO492@broadway.edu', 'STUD');
+values ('MaryMishouG632', 'MaryMishouG632@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (90, 'James', 'Mckamey', 'O', '01587 Meyer Prairie', 'USA','Jacobside','VA','20040','Senior', 1.57, 24, 702,'Caucasian','male','Higher Income',11,33, 'Y', 'N', 'img/student.jpg', 16);
+values (90, 'Mary', 'Mishou', 'G', '0333 William Rapid Suite 303', 'USA','East Michellebury','VA','20041','Sophomore', 1.69, 0, 0,'African American','female','Lower Income',9,6, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,90);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,90);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,90);
+values (11,90);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,90);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,90);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MaryDelacruzJ692', 'MaryDelacruzJ692@Louisa.edu', 'STUD');
+values ('YolandaPowellF658', 'YolandaPowellF658@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (91, 'Mary', 'Delacruz', 'J', '688 Hart Glens Suite 456', 'USA','Butlerbury','VA','20040','Junior', 2.69, 23, 1341,'Caucasian','female','Middle Income',5,28, 'Y', 'Y', 'img/student.jpg', 12);
+values (91, 'Yolanda', 'Powell', 'F', '3728 Sarah Road', 'USA','North Joshuahaven','VA','20041','Senior', 1.94, 17, 787,'Caucasian','female','Higher Income',9,33, 'Y', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,91);
+values (10,91);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,91);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,91);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,91);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,91);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,91);
+values (5,91);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,91);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,91);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('PhillipBlalockV299', 'PhillipBlalockV299@Louisa.edu', 'STUD');
+values ('SandraHennesseyQ637', 'SandraHennesseyQ637@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (92, 'Phillip', 'Blalock', 'V', '914 Brock Mountains Suite 174', 'USA','Lake Daniel','VA','20040','Sophomore', 1.75, 0, 0,'Hispanic','male','Middle Income',12,5, 'Y', 'N', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,92);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,92);
+values (92, 'Sandra', 'Hennessey', 'Q', '3006 Maldonado Lights', 'USA','Port Cynthia','VA','20040','Freshmen', 3.19, 0, 0,'Caucasian','female','Higher Income',0,0, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,92);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,92);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,92);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CarolNguyenF795', 'CarolNguyenF795@turnerAshby.edu', 'STUD');
+values ('MatthewArnoldX93', 'MatthewArnoldX93@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (93, 'Carol', 'Nguyen', 'F', '06602 Charles Divide Apt. 514', 'USA','Kellymouth','VA','20041','Junior', 3.53, 25, 1554,'Pacific Islander','female','Higher Income',2,31, 'N', 'N', 'img/student.jpg', 15);
+values (93, 'Matthew', 'Arnold', 'X', '473 Alexandra Overpass', 'USA','Port Scottchester','VA','20041','Senior', 3.02, 0, 0,'African American','male','Middle Income',0,0, 'N', 'Y', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,93);
+values (5,93);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,93);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,93);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RobertJonesM92', 'RobertJonesM92@broadway.edu', 'STUD');
+values ('RosaHayslipW789', 'RosaHayslipW789@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (94, 'Robert', 'Jones', 'M', '98084 Andrew Expressway', 'USA','Wellschester','VA','20040','Senior', 3.43, 0, 0,'Pacific Islander','male','Higher Income',0,0, 'N', 'N', 'img/student.jpg', 16);
+values (94, 'Rosa', 'Hayslip', 'W', '44953 Daniel Locks', 'USA','New Adrienne','VA','20041','Junior', 2.49, 26, 1152,'Hispanic','female','Middle Income',14,21, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,94);
+values (5,94);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,94);
+values (1,94);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,94);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,94);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,94);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JodyMintonU198', 'JodyMintonU198@spotswood.edu', 'STUD');
+values ('ValentinPolandY38', 'ValentinPolandY38@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (95, 'Jody', 'Minton', 'U', '87313 Alexis Locks Suite 260', 'USA','Kurtside','VA','20040','Senior', 1.75, 22, 1272,'Caucasian','female','Lower Income',14,26, 'Y', 'N', 'img/student.jpg', 14);
+values (95, 'Valentin', 'Poland', 'Y', '4021 Roberts Run', 'USA','Jessicaborough','VA','20041','Senior', 3.96, 27, 1457,'Asian','male','Lower Income',2,40, 'Y', 'Y', 'img/student.jpg', 16);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,95);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,95);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('AlbertHooverJ844', 'AlbertHooverJ844@turnerAshby.edu', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (96, 'Albert', 'Hoover', 'J', '52672 Schwartz Roads', 'USA','West Jameston','VA','20040','Freshmen', 2.43, 0, 0,'Hispanic','male','Middle Income',14,11, 'Y', 'N', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,96);
+values (4,95);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,95);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,95);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('BrandonGlesenerI530', 'BrandonGlesenerI530@rockingham.k12.va.us', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (96, 'Brandon', 'Glesener', 'I', '00160 Williams Trafficway Suite 734', 'USA','West Brittanyshire','VA','20040','Senior', 1.81, 17, 1094,'Caucasian','male','Middle Income',8,25, 'N', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,96);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,96);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,96);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,96);
+values (1,96);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('SadieBarronV976', 'SadieBarronV976@harrisonburg.edu', 'STUD');
+values ('MarshaMcfaddinA538', 'MarshaMcfaddinA538@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (97, 'Sadie', 'Barron', 'V', '1776 Monica Fork Apt. 362', 'USA','Teresastad','VA','20040','Freshmen', 2.61, 0, 0,'African American','female','Middle Income',2,18, 'N', 'N', 'img/student.jpg', 17);
+values (97, 'Marsha', 'Mcfaddin', 'A', '83488 Elizabeth Highway', 'USA','East Billymouth','VA','20040','Sophomore', 1.86, 0, 0,'Caucasian','female','Lower Income',15,7, 'N', 'Y', 'img/student.jpg', 17);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,97);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,97);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,97);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,97);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,97);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,97);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,97);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,97);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,97);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,97);
+values (6,97);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,97);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('CharlesBeardT118', 'CharlesBeardT118@Louisa.edu', 'STUD');
+values ('BrianBurmeisterL64', 'BrianBurmeisterL64@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (98, 'Charles', 'Beard', 'T', '2966 Campbell Knoll', 'USA','South Kristy','VA','20040','Junior', 1.66, 20, 1076,'African American','male','Middle Income',11,25, 'Y', 'Y', 'img/student.jpg', 12);
+values (98, 'Brian', 'Burmeister', 'L', '90315 Oconnor Fords Suite 862', 'USA','Grantton','VA','20040','Junior', 2.76, 23, 1343,'African American','male','Higher Income',5,21, 'N', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,98);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,98);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,98);
+values (11,98);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,98);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,98);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,98);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,98);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,98);
+values (3,98);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (10,98);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,98);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RobertCookV165', 'RobertCookV165@harrisonburg.edu', 'STUD');
+values ('AlvinDixonI772', 'AlvinDixonI772@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (99, 'Robert', 'Cook', 'V', '6545 Jackson Green Apt. 166', 'USA','South Sara','VA','20041','Freshmen', 3.22, 0, 0,'Asian','male','Higher Income',0,0, 'N', 'N', 'img/student.jpg', 17);
+values (99, 'Alvin', 'Dixon', 'I', '811 Park Rest', 'USA','Port Jamesfort','VA','20040','Junior', 2.53, 33, 1529,'Caucasian','male','Lower Income',2,30, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,99);
+values (11,99);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RobertElliottL216', 'RobertElliottL216@turnerAshby.edu', 'STUD');
+values ('LizWilliamsA400', 'LizWilliamsA400@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (100, 'Robert', 'Elliott', 'L', '8895 Mason Extension Apt. 029', 'USA','Reneeburgh','VA','20040','Sophomore', 3.8, 0, 0,'Caucasian','male','Higher Income',3,21, 'Y', 'Y', 'img/student.jpg', 15);
+values (100, 'Liz', 'Williams', 'A', '59380 Theresa Terrace Suite 571', 'USA','Lake Roberttown','VA','20041','Sophomore', 1.06, 0, 0,'Hispanic','female','Middle Income',14,1, 'Y', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,100);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,100);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,100);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,100);
+values (9,100);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,100);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,100);
+values (11,100);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('EdithHorstmanZ954', 'EdithHorstmanZ954@harrisonburg.edu', 'STUD');
+values ('DavidLunaE293', 'DavidLunaE293@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (101, 'Edith', 'Horstman', 'Z', '92642 Michael Track', 'USA','East Jenniferfurt','VA','20040','Junior', 3.08, 0, 0,'Caucasian','female','Middle Income',0,0, 'Y', 'N', 'img/student.jpg', 17);
+values (101, 'David', 'Luna', 'E', '50668 John Haven Apt. 764', 'USA','Port Williamton','VA','20040','Junior', 2.91, 26, 1200,'Caucasian','male','Middle Income',7,33, 'N', 'N', 'img/student.jpg', 12);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,101);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (11,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,101);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,101);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('LouisSchmidtA858', 'LouisSchmidtA858@spotswood.edu', 'STUD');
+values ('MatthewBoxI238', 'MatthewBoxI238@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (102, 'Louis', 'Schmidt', 'A', '292 Reynolds Spur', 'USA','Lake Jason','VA','20040','Junior', 1.84, 18, 822,'Caucasian','male','Middle Income',15,24, 'Y', 'Y', 'img/student.jpg', 14);
+values (102, 'Matthew', 'Box', 'I', '87331 Norris Trail Apt. 939', 'USA','Ortegamouth','VA','20041','Freshmen', 2.94, 0, 0,'Hispanic','third party','Middle Income',5,12, 'Y', 'N', 'img/student.jpg', 12);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,102);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,102);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,102);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (6,102);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,102);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,102);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('BillyShislerY45', 'BillyShislerY45@rockingham.k12.va.us', 'STUD');
+values ('DawnOwensT324', 'DawnOwensT324@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (103, 'Billy', 'Shisler', 'Y', '4799 Stephanie Springs', 'USA','South Jasonhaven','VA','20040','Sophomore', 3.03, 0, 0,'Caucasian','male','Lower Income',0,0, 'N', 'N', 'img/student.jpg', 13);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,103);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,103);
+values (103, 'Dawn', 'Owens', 'T', '234 White Throughway Suite 721', 'USA','Elizabethstad','VA','20040','Junior', 2.31, 16, 1339,'Caucasian','female','Lower Income',3,22, 'N', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,103);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,103);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,103);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,103);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (3,103);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,103);
+values (10,103);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,103);
+values (1,103);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('AdamStewartP586', 'AdamStewartP586@harrisonburg.edu', 'STUD');
+values ('JohnBarnardX82', 'JohnBarnardX82@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (104, 'Adam', 'Stewart', 'P', '430 Barbara Shoal', 'USA','Lake Karla','VA','20041','Sophomore', 1.22, 0, 0,'Caucasian','male','Lower Income',15,2, 'Y', 'Y', 'img/student.jpg', 17);
+values (104, 'John', 'Barnard', 'X', '497 Riley Lane Apt. 534', 'USA','Port Nicole','VA','20040','Freshmen', 2.1, 0, 0,'Caucasian','male','Higher Income',15,7, 'N', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,104);
+values (2,104);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,104);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,104);
+values (10,104);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('RaymondSheehanC922', 'RaymondSheehanC922@turnerAshby.edu', 'STUD');
+values ('DerrickCarsonQ347', 'DerrickCarsonQ347@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (105, 'Raymond', 'Sheehan', 'C', '86570 Michael Lights Suite 590', 'USA','Clinechester','VA','20040','Freshmen', 3.05, 0, 0,'African American','male','Higher Income',0,0, 'N', 'N', 'img/student.jpg', 15);
+values (105, 'Derrick', 'Carson', 'Q', '047 Lewis Landing', 'USA','Langchester','VA','20040','Junior', 2.78, 34, 1318,'Caucasian','male','Middle Income',7,30, 'Y', 'N', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,105);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,105);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,105);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,105);
+values (9,105);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ManuelaAdamsO137', 'ManuelaAdamsO137@turnerAshby.edu', 'STUD');
+values ('FrankKaletaF821', 'FrankKaletaF821@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (106, 'Manuela', 'Adams', 'O', '74803 Smith Lights', 'USA','Port Dalton','VA','20041','Freshmen', 3.63, 0, 0,'Asian','third party','Middle Income',2,19, 'Y', 'N', 'img/student.jpg', 15);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,106);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,106);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,106);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,106);
+values (106, 'Frank', 'Kaleta', 'F', '58080 Cunningham Trail Apt. 763', 'USA','North Robert','VA','20041','Freshmen', 2.48, 0, 0,'Caucasian','male','Middle Income',15,13, 'N', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (5,106);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,106);
+values (4,106);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,106);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,106);
+values (3,106);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('AlvaroBrownX578', 'AlvaroBrownX578@harrisonburg.edu', 'STUD');
+values ('LeonardWillinghamK167', 'LeonardWillinghamK167@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (107, 'Alvaro', 'Brown', 'X', '24080 Ashley Mills', 'USA','East Anthonyport','VA','20040','Junior', 1.96, 16, 900,'Pacific Islander','male','Higher Income',12,25, 'Y', 'N', 'img/student.jpg', 17);
+values (107, 'Leonard', 'Willingham', 'K', '3446 Anne Neck', 'USA','Mcknightside','VA','20041','Senior', 3.87, 32, 1461,'Caucasian','male','Lower Income',0,36, 'Y', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,107);
+values (11,107);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,107);
+values (7,107);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (1,107);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,107);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,107);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,107);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,107);
+values (9,107);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MiguelKuntzD754', 'MiguelKuntzD754@Louisa.edu', 'STUD');
+values ('SherriClaytonR421', 'SherriClaytonR421@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (108, 'Miguel', 'Kuntz', 'D', '766 Ruiz Crescent', 'USA','Schwartzport','VA','20041','Junior', 2.24, 24, 839,'Caucasian','third party','Middle Income',6,30, 'Y', 'N', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,108);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,108);
+values (108, 'Sherri', 'Clayton', 'R', '9949 Pamela Hollow Apt. 528', 'USA','Zacharyhaven','VA','20041','Freshmen', 2.51, 0, 0,'Caucasian','female','Higher Income',5,19, 'Y', 'Y', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,108);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,108);
+values (1,108);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,108);
+values (10,108);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,108);
+values (11,108);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,108);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,108);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MaryBalderasH359', 'MaryBalderasH359@rockingham.k12.va.us', 'STUD');
+values ('RobertGarciaC54', 'RobertGarciaC54@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (109, 'Mary', 'Balderas', 'H', '292 Jason Spurs Suite 329', 'USA','North Robertfurt','VA','20041','Junior', 3.7, 32, 1290,'Caucasian','female','Higher Income',2,33, 'Y', 'N', 'img/student.jpg', 13);
+values (109, 'Robert', 'Garcia', 'C', '839 Crystal Gateway', 'USA','Erinside','VA','20040','Junior', 2.99, 30, 1300,'Caucasian','male','Lower Income',7,31, 'Y', 'N', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,109);
+values (5,109);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,109);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,109);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,109);
+values (11,109);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (4,109);
-insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ShaunDavisQ684', 'ShaunDavisQ684@broadway.edu', 'STUD');
-insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (110, 'Shaun', 'Davis', 'Q', '21340 Freeman Glen', 'USA','Jamesborough','VA','20041','Sophomore', 3.3, 0, 0,'Caucasian','male','Middle Income',0,0, 'Y', 'N', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,110);
+values (2,109);
+insert into userEntity (UserName, EmailAddress, EntityType)
+values ('BobbyTennonJ436', 'BobbyTennonJ436@spotswood.edu', 'STUD');
+insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
+values (110, 'Bobby', 'Tennon', 'J', '8142 Trujillo View Suite 738', 'USA','Port Stephen','VA','20041','Junior', 2.01, 24, 1010,'Caucasian','male','Middle Income',4,27, 'Y', 'N', 'img/student.jpg', 14);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,110);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (8,110);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (9,110);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,110);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,110);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,110);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,110);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MarthaBeasleyL906', 'MarthaBeasleyL906@turnerAshby.edu', 'STUD');
+values ('ThomasWoodworthK768', 'ThomasWoodworthK768@rockingham.k12.va.us', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (111, 'Martha', 'Beasley', 'L', '277 Margaret Springs', 'USA','Jessemouth','VA','20041','Freshmen', 2.51, 0, 0,'African American','female','Higher Income',7,20, 'N', 'N', 'img/student.jpg', 15);
+values (111, 'Thomas', 'Woodworth', 'K', '13896 David Run', 'USA','South Jamiemouth','VA','20040','Senior', 3.3, 0, 0,'Caucasian','third party','Lower Income',0,0, 'Y', 'Y', 'img/student.jpg', 13);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (12,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,111);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,111);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('JamesNixA498', 'JamesNixA498@rockingham.k12.va.us', 'STUD');
+values ('EmmaCarranzaX536', 'EmmaCarranzaX536@Louisa.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (112, 'James', 'Nix', 'A', '354 Ellis Causeway', 'USA','Kimberlymouth','VA','20040','Senior', 3.97, 29, 1291,'Hispanic','male','Lower Income',3,35, 'Y', 'N', 'img/student.jpg', 13);
+values (112, 'Emma', 'Carranza', 'X', '3986 Wu Plains', 'USA','East Abigailburgh','VA','20040','Junior', 2.84, 27, 1004,'Caucasian','female','Middle Income',6,34, 'Y', 'Y', 'img/student.jpg', 12);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,112);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,112);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (2,112);
+values (3,112);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,112);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,112);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,112);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ArthurHarrisL396', 'ArthurHarrisL396@Louisa.edu', 'STUD');
+values ('JamieEdmondsO976', 'JamieEdmondsO976@broadway.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (113, 'Arthur', 'Harris', 'L', '468 Danielle Estate Apt. 727', 'USA','Wrightton','VA','20041','Junior', 3.74, 26, 1439,'Caucasian','third party','Higher Income',2,30, 'Y', 'N', 'img/student.jpg', 12);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,113);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,113);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,113);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,113);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (7,113);
+values (113, 'Jamie', 'Edmonds', 'O', '3713 Cynthia Plains', 'USA','Tylerhaven','VA','20040','Sophomore', 3.17, 0, 0,'Caucasian','male','Lower Income',0,0, 'N', 'Y', 'img/student.jpg', 16);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (6,113);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (9,113);
+values (10,113);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (5,113);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,113);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (3,113);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ArthurWittyV101', 'ArthurWittyV101@rockingham.k12.va.us', 'STUD');
+values ('PatrickBrownH870', 'PatrickBrownH870@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (114, 'Arthur', 'Witty', 'V', '308 Christy Islands', 'USA','Port Deanna','VA','20040','Junior', 3.49, 0, 0,'Caucasian','male','Middle Income',0,0, 'Y', 'Y', 'img/student.jpg', 13);
+values (114, 'Patrick', 'Brown', 'H', '6741 Austin Crescent', 'USA','Lake Lisafort','VA','20041','Sophomore', 2.34, 0, 0,'African American','third party','Middle Income',6,17, 'Y', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,114);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (8,114);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,114);
+values (4,114);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('MaryBrownO324', 'MaryBrownO324@rockingham.k12.va.us', 'STUD');
+values ('ChristopherOakesF719', 'ChristopherOakesF719@harrisonburg.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (115, 'Mary', 'Brown', 'O', '2702 Heather Lane', 'USA','South Kenneth','VA','20040','Freshmen', 1.63, 0, 0,'Caucasian','female','Lower Income',12,14, 'N', 'N', 'img/student.jpg', 13);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (10,115);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,115);
+values (115, 'Christopher', 'Oakes', 'F', '9088 Ellis Meadow Suite 615', 'USA','West Jasmine','VA','20041','Junior', 3.1, 0, 0,'Pacific Islander','male','Lower Income',0,0, 'Y', 'N', 'img/student.jpg', 17);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (7,115);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (2,115);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (9,115);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (1,115);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (11,115);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('LillianEatonJ591', 'LillianEatonJ591@spotswood.edu', 'STUD');
+values ('RheaPefferkornB304', 'RheaPefferkornB304@spotswood.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (116, 'Lillian', 'Eaton', 'J', '165 Foster Pines', 'USA','Lynchport','VA','20041','Senior', 3.83, 35, 1191,'Pacific Islander','female','Lower Income',0,43, 'Y', 'N', 'img/student.jpg', 14);
+values (116, 'Rhea', 'Pefferkorn', 'B', '91648 Mendez Plains Apt. 486', 'USA','Thomasfurt','VA','20040','Junior', 2.08, 23, 1189,'Caucasian','female','Lower Income',15,29, 'Y', 'N', 'img/student.jpg', 14);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,116);
+values (1,116);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (3,116);
+values (2,116);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,116);
+values (9,116);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,116);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,116);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,116);
 insert into userEntity (UserName, EmailAddress, EntityType)
-values ('ArnoldStokleyD244', 'ArnoldStokleyD244@spotswood.edu', 'STUD');
+values ('MichaelCastroY14', 'MichaelCastroY14@turnerAshby.edu', 'STUD');
 insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender, IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)
-values (117, 'Arnold', 'Stokley', 'D', '42775 Gonzalez Circle', 'USA','North Douglas','VA','20040','Freshmen', 2.57, 0, 0,'Caucasian','male','Lower Income',1,11, 'N', 'N', 'img/student.jpg', 14);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (6,117);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (12,117);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (5,117);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (4,117);
-insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (11,117);
+values (117, 'Michael', 'Castro', 'Y', '159 Heather Mills Suite 965', 'USA','Samanthaville','VA','20040','Junior', 2.92, 28, 1038,'Asian','male','Middle Income',1,34, 'Y', 'Y', 'img/student.jpg', 15);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (8,117);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (4,117);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (10,117);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (7,117);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
+values (12,117);
+insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
 values (2,117);
 insert into StudentInterestGroups (InterestGroupID, StudentEntityID)
-values (1,117);
+values (6,117);
 --1
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
@@ -1826,206 +1768,206 @@ insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
 values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'P', '03-21-2019');insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
 values(1, 18, 1, 'P', 'Y');insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(10, 18, 3, 'P', 'Y');
+values(9, 18, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (1, 18,'This was an ok experience with this organization, I have been with better');
+values (1, 18,'I had a great time working with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (1, 8,'This student was extrodinary! This student is always welcome back here');
+values (1, 8,'Great student, and they definetely fit in with this organization!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(4, 21, 1, 'P', 'Y');
+values(7, 21, 5, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (2, 21,'I had a good time with this organization');
+values (2, 21,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (2, 1,'Great student, and they definetely fit in with this organization!');
+values (2, 7,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(6, 24, 3, 'P', 'Y');
+values(6, 24, 1, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (3, 24,'I had a great time working with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (3, 3,'Great student, and they definetely fit in with this organization!');
+values (3, 3,'Average student, did the necessary requirements to complete this task');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(8, 27, 1, 'P', 'Y');
+values(17, 27, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (4, 27,'I had a great time working with this organization');
+values (4, 27,'I did not have a good time with this organization, it was all busy work...');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (4, 7,'Exemplar student! We need more people like this student');
+values (4, 6,'This student was extrodinary! This student is always welcome back here');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(1, 30, 1, 'P', 'Y');
+values(7, 30, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (5, 30,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (5, 8,'Average student, did the necessary requirements to complete this task');
+values (5, 7,'Average student, did the necessary requirements to complete this task');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 33, 1, 'P', 'Y');
+values(12, 33, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (6, 33,'This was an ok experience with this organization, I have been with better');
+values (6, 33,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (6, 4,'Exemplar student! We need more people like this student');
+values (6, 1,'Great student, and they definetely fit in with this organization!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(2, 36, 1, 'P', 'Y');
+values(15, 36, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (7, 36,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (7, 4,'This student was extrodinary! This student is always welcome back here');
+values (7, 4,'Average student, did the necessary requirements to complete this task');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(14, 39, 5, 'P', 'Y');
+values(12, 39, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (8, 39,'I wish the organization gave me more work so I could learn and do more');
+values (8, 39,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (8, 3,'Great student, and they definetely fit in with this organization!');
+values (8, 1,'Good student, and a very quick learner! I can see the potential from this student!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(9, 42, 3, 'P', 'Y');
+values(15, 42, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (9, 42,'I had a great time working with this organization');
+values (9, 42,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (9, 8,'Good student, and a very quick learner! I can see the potential from this student!');
+values (9, 4,'Average student, did the necessary requirements to complete this task');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(7, 45, 3, 'P', 'Y');
+values(10, 45, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (10, 45,'This was a great work experience, it fit with my goals!');
+values (10, 45,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (10, 7,'Average student, did the necessary requirements to complete this task');
+values (10, 8,'Good student, and a very quick learner! I can see the potential from this student!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 48, 5, 'P', 'Y');
+values(6, 48, 1, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (11, 48,'I did not have a good time with this organization, it was all busy work...');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (11, 4,'Average student, did the necessary requirements to complete this task');
+values (11, 3,'Great student, and they definetely fit in with this organization!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(6, 51, 3, 'P', 'Y');
+values(17, 51, 5, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (12, 51,'I wish the organization gave me more work so I could learn and do more');
+values (12, 51,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (12, 3,'This student was extrodinary! This student is always welcome back here');
+values (12, 6,'Good student, and a very quick learner! I can see the potential from this student!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(9, 54, 2, 'P', 'Y');
+values(15, 54, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (13, 54,'I had a great time working with this organization');
+values (13, 54,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (13, 8,'Exemplar student! We need more people like this student');
+values (13, 4,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(10, 57, 5, 'P', 'Y');
+values(12, 57, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (14, 57,'This was an ok experience with this organization, I have been with better');
+values (14, 57,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (14, 8,'Good student, and a very quick learner! I can see the potential from this student!');
+values (14, 1,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(11, 60, 2, 'P', 'Y');
+values(1, 60, 5, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (15, 60,'I had a great time working with this organization');
+values (15, 60,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
 values (15, 8,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(16, 63, 1, 'P', 'Y');
+values(12, 63, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (16, 63,'I had a great time working with this organization');
+values (16, 63,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (16, 5,'Average student, did the necessary requirements to complete this task');
+values (16, 1,'This particular student was on their phone too long.');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(11, 66, 5, 'P', 'Y');
+values(1, 66, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (17, 66,'I wish the organization gave me more work so I could learn and do more');
+values (17, 66,'I did not have a good time with this organization, it was all busy work...');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (17, 8,'Average student, did the necessary requirements to complete this task');
+values (17, 8,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 69, 4, 'P', 'Y');
+values(3, 69, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (18, 69,'This was a great work experience, it fit with my goals!');
+values (18, 69,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (18, 4,'This particular student was on their phone too long.');
+values (18, 2,'This particular student was on their phone too long.');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(12, 72, 3, 'P', 'Y');
+values(1, 72, 1, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (19, 72,'I had a good time with this organization');
+values (19, 72,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (19, 1,'This particular student was on their phone too long.');
+values (19, 8,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(8, 75, 2, 'P', 'Y');
+values(3, 75, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (20, 75,'I did not have a good time with this organization, it was all busy work...');
+values (20, 75,'I had a great time working with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (20, 7,'This particular student was on their phone too long.');
+values (20, 2,'This student was extrodinary! This student is always welcome back here');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(6, 78, 1, 'P', 'Y');
+values(12, 78, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (21, 78,'I had a good time with this organization');
+values (21, 78,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (21, 3,'Good student, and a very quick learner! I can see the potential from this student!');
+values (21, 1,'Great student, and they definetely fit in with this organization!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 81, 2, 'P', 'Y');
+values(17, 81, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (22, 81,'This was a great work experience, it fit with my goals!');
+values (22, 81,'I had a great time working with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (22, 4,'Good student, and a very quick learner! I can see the potential from this student!');
+values (22, 6,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(13, 84, 3, 'P', 'Y');
+values(2, 84, 5, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (23, 84,'This was a great work experience, it fit with my goals!');
+values (23, 84,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (23, 2,'Good student, and a very quick learner! I can see the potential from this student!');
+values (23, 4,'This student was extrodinary! This student is always welcome back here');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(6, 87, 1, 'P', 'Y');
+values(12, 87, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (24, 87,'This was a great work experience, it fit with my goals!');
+values (24, 87,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (24, 3,'Great student, and they definetely fit in with this organization!');
+values (24, 1,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(14, 90, 4, 'P', 'Y');
+values(11, 90, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (25, 90,'I wish the organization gave me more work so I could learn and do more');
+values (25, 90,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (25, 3,'This student was extrodinary! This student is always welcome back here');
+values (25, 8,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(7, 93, 3, 'P', 'Y');
+values(17, 93, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (26, 93,'I had a good time with this organization');
+values (26, 93,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (26, 7,'Average student, did the necessary requirements to complete this task');
+values (26, 6,'This particular student was on their phone too long.');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(16, 96, 1, 'P', 'Y');
+values(6, 96, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (27, 96,'I wish the organization gave me more work so I could learn and do more');
+values (27, 96,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (27, 5,'Average student, did the necessary requirements to complete this task');
+values (27, 3,'Good student, and a very quick learner! I can see the potential from this student!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 99, 1, 'P', 'Y');
+values(8, 99, 5, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (28, 99,'I wish the organization gave me more work so I could learn and do more');
+values (28, 99,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (28, 4,'Good student, and a very quick learner! I can see the potential from this student!');
+values (28, 7,'Average student, did the necessary requirements to complete this task');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(15, 102, 1, 'P', 'Y');
+values(9, 102, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (29, 102,'I had a great time working with this organization');
+values (29, 102,'This was a great work experience, it fit with my goals!');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (29, 4,'Exemplar student! We need more people like this student');
+values (29, 8,'Exemplar student! We need more people like this student');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(16, 105, 5, 'P', 'Y');
+values(13, 105, 4, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (30, 105,'This was an ok experience with this organization, I have been with better');
+values (30, 105,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (30, 5,'Exemplar student! We need more people like this student');
+values (30, 2,'Great student, and they definetely fit in with this organization!');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(14, 108, 4, 'P', 'Y');
+values(6, 108, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (31, 108,'I had a great time working with this organization');
+values (31, 108,'This was an ok experience with this organization, I have been with better');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (31, 3,'Exemplar student! We need more people like this student');
+values (31, 3,'This particular student was on their phone too long.');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(12, 111, 5, 'P', 'Y');
+values(10, 111, 1, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
-values (32, 111,'I did not have a good time with this organization, it was all busy work...');
+values (32, 111,'I wish the organization gave me more work so I could learn and do more');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (32, 1,'This student was extrodinary! This student is always welcome back here');
+values (32, 8,'This student was extrodinary! This student is always welcome back here');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(9, 114, 2, 'P', 'Y');
+values(2, 114, 2, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (33, 114,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (33, 8,'Good student, and a very quick learner! I can see the potential from this student!');
+values (33, 4,'This particular student was on their phone too long.');
 insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(3, 117, 3, 'P', 'Y');
+values(17, 117, 3, 'P', 'Y');
 insert into StudentComment (LogID, StudentEntityID, Comment)
 values (34, 117,'I had a good time with this organization');
 insert into OrganizationComment (LogID, OrganizationEntityID, Comment)
-values (34, 2,'This particular student was on their phone too long.');
+values (34, 6,'This student was extrodinary! This student is always welcome back here');

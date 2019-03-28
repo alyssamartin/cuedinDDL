@@ -355,7 +355,7 @@ for i in range (amount_of_students):
     student_grade_level = student_grade_level_list[random.randint(0,3)]
 
     ###Generate GPA, This is going to be a key metric for a lot of test scores, and absences.
-    student_gpa = round(random.uniform(1.0,4.0), 2)
+    student_gpa = float(random.randrange(100, 400))/100
 
     if student_grade_level == "Senior" or student_grade_level == "Junior":
         ###generate student SAT scores
