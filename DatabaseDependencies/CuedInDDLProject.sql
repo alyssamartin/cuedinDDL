@@ -285,7 +285,7 @@ Create table ApplicationRequest (
 ApplicationID int Identity (1,1),
 StudentEntityID int,
 JobListingID int,
-ApprovedFlag varchar (10),
+ApprovedFlag varchar (1),
 primary key (ApplicationID),
 Foreign key (StudentEntityID) references Student (StudentEntityID),
 Foreign key (JobListingID) references JobListing (JobListingID)

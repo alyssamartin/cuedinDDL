@@ -418,5 +418,4 @@ insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription,
 values (24, 'Walmart Community Award', 'Award given to high school student who gives back to the community. Essay required', 1000, 1500, 1, 09-15-2019, 1/02/2019, 6, 'P', '03-21-2019');
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'P', '03-21-2019');insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)
-values(1, 18, 1, 'P', 'Y');
+values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'P', '03-21-2019');
