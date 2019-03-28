@@ -113,6 +113,7 @@ DaysAbsent int not null,
 HoursOfWorkPlaceExp int not null, --possible stored trigger on update of our new tables
 StudentAthleteFlag varchar (3) not null,
 ParentEntityID int null, --parent might not be associated with anything
+StudentImage varchar (100),
 SchoolEntityID int not null, --student needs to be associated with a school 
 primary key (StudentEntityID),
 Foreign key (StudentEntityID) references UserEntity (UserEntityID),

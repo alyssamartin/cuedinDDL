@@ -436,6 +436,7 @@ for i in range (amount_of_students):
         "HoursOfWorkPlaceExp": hours_tracked,
         "StudentAthleteFlag": student_athlete_status,
         "SchoolEntityID": student_school_id,
+        "StudentImage" : "img/student.jpg",
         "StudentInterest": student_interest_group_linkages
 
     }
@@ -452,13 +453,13 @@ for i in range (amount_of_students):
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
-    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, SchoolEntityID)\n"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentImage,SchoolEntityID)\n"
     student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
     student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +"," + "'" + student_dict["StudentAthleteFlag"] + "', "+str(student_dict["SchoolEntityID"]) + ");"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] + "', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
 
     print(student_insert)
 
