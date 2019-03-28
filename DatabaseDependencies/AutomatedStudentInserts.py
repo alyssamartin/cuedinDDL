@@ -3,7 +3,6 @@ import names
 from faker import Faker
 import string
 
-
 def user_entity_insert (entity_username, entity_email, entity_type):
 
     user_entity_insert = " "
@@ -420,6 +419,14 @@ for i in range (amount_of_students):
         student_employment = "Y"
     else:
         student_employment = "N"
+    
+    student_graduation_track = " "
+
+
+    if student_gpa <2.00:
+        student_graduation_track = "N"
+    else:
+        student_graduation_track = "Y"
 
     
     ###putting data into a dictionary for organization and ease of use.
@@ -445,6 +452,7 @@ for i in range (amount_of_students):
         "DaysAbsent": days_absent,
         "HoursOfWorkPlaceExp": hours_tracked,
         "StudentAthleteFlag": student_athlete_status,
+        "StudentGraduationTrack": student_graduation_track,
         "StudentEmploymentFlag": student_employment,
         "SchoolEntityID": student_school_id,
         "StudentImage" : "img/student.jpg",
@@ -464,13 +472,13 @@ for i in range (amount_of_students):
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
-    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentEmploymentFlag, StudentImage,SchoolEntityID)\n"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentGraduationTrack, StudentEmploymentFlag, StudentImage,SchoolEntityID)\n"
     student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
     student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '" + student_dict["StudentEmploymentFlag"]+"', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '"+ student_dict["StudentGraduationTrack"] + "', '" + student_dict["StudentEmploymentFlag"]+"', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
 
     print(student_insert)
 
@@ -587,4 +595,6 @@ for student in range (0,len(student_id_list),20):
 
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
+
+
 
