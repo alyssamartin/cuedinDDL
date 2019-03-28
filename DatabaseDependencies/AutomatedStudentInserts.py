@@ -289,7 +289,7 @@ student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 student_id_list = [] 
 
 #Student Inserts 
-amount_of_students = 1
+amount_of_students = 100
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
