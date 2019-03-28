@@ -103,7 +103,7 @@ City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
 StudentGradeLevel varchar (25) not null,
-StudentGPA decimal not null,
+StudentGPA float not null,
 StudentACTScore int null,
 StudentSATScore int null,
 StudentEthnicity varchar (30) null, --PC datafield
