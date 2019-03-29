@@ -1,3 +1,4 @@
+drop table SchoolApproval
 drop table ApplicationRequest
 drop table OrganizationComment
 drop table StudentComment
