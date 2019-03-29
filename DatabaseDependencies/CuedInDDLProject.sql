@@ -71,11 +71,9 @@ State varchar (50) not null,
 ZipCode int not null,
 SchoolEmployeeEntityType varchar (5) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
-UserEntityID int not null,
 primary key (SchoolEmployeeEntityID),
 Foreign key (SchoolEmployeeEntityID) references UserEntity(UserEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID),
-Foreign key (UserEntityID) references UserEntity (UserEntityID)
 );
 
 --References the UserEntity Table
