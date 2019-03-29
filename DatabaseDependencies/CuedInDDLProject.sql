@@ -291,3 +291,13 @@ primary key (ApplicationID),
 Foreign key (StudentEntityID) references Student (StudentEntityID),
 Foreign key (JobListingID) references JobListing (JobListingID)
 );
+
+Create table SchoolApproval (
+SchoolEntityID int,
+OpportunityEntityID int,
+ApprovedFlag varchar(1)
+primary key (SchoolEntityID, OpportunityEntityID),
+Foreign key (SchoolEntityID) references school (SchoolEntityID),
+Foreign key (OpportunityEntityID) references opportunityEntity(OpportunityEntityID)
+
+);
