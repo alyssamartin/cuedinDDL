@@ -192,7 +192,7 @@ org_street_address_list = ["108 South Main Street","182 Neff Avenue","2031 Dyerl
 org_state = "VA"
 org_zip_code_list = ["22801", "22801", "22801", "22801", "22801", "22801", "22801", "22827","22801","22801","22802"] 
 org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "Harrisonburg", "Harrisonburg", "Harrisonburg", "Elkton", "Harrisonburg", "Harrisonburg", "Harrisonburg"] 
-org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.img", "img/convergentAI.img"]
+org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.jpg", "img/convergentAI.jpg"]
 org_url_list = ["www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
 
 org_primary_keys = list(range(1,len(org_name_list) + 1))
