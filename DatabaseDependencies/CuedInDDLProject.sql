@@ -69,7 +69,7 @@ Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
-SchoolEmployeeEntityType varchar (5) not null, --CON, ADMIN, TEACHER
+SchoolEmployeeEntityType varchar (10) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
 primary key (SchoolEmployeeEntityID),
 Foreign key (SchoolEmployeeEntityID) references UserEntity(UserEntityID),
