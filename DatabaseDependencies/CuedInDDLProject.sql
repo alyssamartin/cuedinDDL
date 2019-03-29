@@ -60,7 +60,7 @@ Foreign key (SchoolEntityID) references UserEntity (UserEntityID)
 
 --References the SchoolTable. 
 Create table SchoolEmployee(
-SchoolEmployeeEntityID int identity (1,1) not null,
+SchoolEmployeeEntityID int not null,
 FirstName varchar (50) not null,
 LastName varchar (50) not null,
 MiddleName varchar (50) null,
@@ -73,6 +73,7 @@ SchoolEmployeeEntityType varchar (5) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
 UserEntityID int not null,
 primary key (SchoolEmployeeEntityID),
+Foreign key (SchoolEmployeeEntityID) references UserEntity(UserEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID),
 Foreign key (UserEntityID) references UserEntity (UserEntityID)
 );
