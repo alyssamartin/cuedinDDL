@@ -2,7 +2,7 @@
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (1,'Athletic Trainer Intern', 'Assist head athletic trainer in day-to-day tasks', 'Internship', 'Harrisonburg VA', '6/30/2019', '3/3/2019' ,  getDate(),'Y',5, 8)
+values (1,'Athletic Trainer Intern', 'Assist head athletic trainer in day-to-day tasks', 'Internship', 'Harrisonburg VA', '6/30/2019', '3/3/2019' ,  getDate(),'Y',5, 10)
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,1),
@@ -14,7 +14,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (2,'Administrative Assisant', 'Handling office tasks', 'Job Shadowing', 'Harrisonburg VA', '9/3/2019', '1/3/2019', getDate(),'P',17,4);
+values (2,'Administrative Assisant', 'Handling office tasks', 'Job Shadowing', 'Harrisonburg VA', '9/3/2019', '1/3/2019', getDate(),'P',17,3);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,2),
@@ -34,7 +34,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (4,'Store Manager (Shadow)', 'Oversee daily operations including training staff and working with vendors', 'Job Shadowing', 'Harrisonburg VA', '6/7/2019', '1/5/2019', getDate(),'Y',15, 1);
+values (4,'Store Manager (Shadow)', 'Oversee daily operations including training staff and working with vendors', 'Job Shadowing', 'Harrisonburg VA', '6/7/2019', '1/5/2019', getDate(),'Y',15, 6);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,4);
@@ -111,7 +111,7 @@ insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 --11
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (11,'Cardiology Department Shadow', 'Shadow head of cardiology', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/22/2019', getDate(),'P',15, 8);
+values (11,'Cardiology Department Shadow', 'Shadow head of cardiology', 'Job Shadowing', 'Harrisonburg, VA', '7/11/2019', '3/22/2019', getDate(),'P',15, 10);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,11),
@@ -239,7 +239,7 @@ INSERT INTO [dbo].[JobListing]
            ,getdate()
            ,'P'
            ,3
-           ,4)
+           ,6)
 GO
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
@@ -396,7 +396,7 @@ INSERT INTO [dbo].[Scholarship]
            ,2
            ,'12-15-2019'
            ,'03-05-2019'
-           ,3
+           ,6
            ,'P'
            ,GETDATE())
 GO
@@ -417,7 +417,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
-values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, 05-15-2020, 01/10/2019 ,3, 'P', '03-21-2019');
+values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, 05-15-2020, 01/10/2019 ,5, 'P', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,23),
 (3,23);
