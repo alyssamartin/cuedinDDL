@@ -406,25 +406,25 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (21, 'Apprenticeship Tuition Assistance', 'Reimbursement to apprentices after 2 years in the program', 3000, 12000, 1, 08-12-2019, 1/02/2019, 1, 'Y', '03-21-2019');
+values (21, 'Apprenticeship Tuition Assistance', 'Reimbursement to apprentices after 2 years in the program', 3000, 12000, 1, '08-12-2019', '1/02/2019', 1, 'Y', '03-21-2019');
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
-values (22, 'Future Arconics', 'Full-ride if student signs contract to commit to 3 years at Arconic after college', 5000, 60000, 1, 08-12-2019, 01/03/2019, 3, 'P', '03-21-2019');
+values (22, 'Future Arconics', 'Full-ride if student signs contract to commit to 3 years at Arconic after college', 5000, 60000, 1, '08-12-2019', '01/03/2019', 3, 'P', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (8,22),
 (7,22);
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
-values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, 05-15-2020, 01/10/2019 ,5, 'Y', '03-21-2019');
+values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, '05-15-2020', '01/10/2019' ,5, 'Y', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,23),
 (3,23);
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (24, 'Walmart Community Award', 'Award given to high school student who gives back to the community. Essay required', 1000, 1500, 1, 09-15-2019, 1/02/2019, 6, 'P', '03-21-2019');
+values (24, 'Walmart Community Award', 'Award given to high school student who gives back to the community. Essay required', 1000, 1500, 1, '09-15-2019', '1/02/2019', 6, 'P', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (2,24),
 (3,24);
@@ -432,4 +432,4 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'N', '03-21-2019');
+values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, '10-28-2019', '1/01/2019' ,7, 'N', '03-21-2019');
