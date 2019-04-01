@@ -396,7 +396,7 @@ INSERT INTO [dbo].[Scholarship]
            ,2
            ,'12-15-2019'
            ,'03-05-2019'
-           ,6
+           ,3
            ,'P'
            ,GETDATE())
 GO
@@ -410,7 +410,7 @@ values (21, 'Apprenticeship Tuition Assistance', 'Reimbursement to apprentices a
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
-values (22, 'Future Arconics', 'Full-ride if student signs contract to commit to 3 years at Arconic after college', 5000, 60000, 1, 08-12-2019, 01/03/2019, 1, 'P', '03-21-2019');
+values (22, 'Future Arconics', 'Full-ride if student signs contract to commit to 3 years at Arconic after college', 5000, 60000, 1, 08-12-2019, 01/03/2019, 3, 'P', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (8,22),
 (7,22);
