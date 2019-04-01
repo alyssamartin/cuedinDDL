@@ -17,6 +17,9 @@ def days_absent_generator (student_gpa):
     if student_gpa >= 3.5 and student_gpa <= 4.0:
         days_absent = random.randint(0,5)
     
+    elif student_gpa < 3.5 and student_gpa >= 3.0:
+        days_absent = random.randint(0,5)
+    
     elif student_gpa < 3.0 and student_gpa >= 2.5:
         days_absent = random.randint(0,7)
     
@@ -37,7 +40,10 @@ def hours_tracked_generator (student_grade_level, student_gpa):
     if student_grade_level == "Freshmen":
         if student_gpa >= 3.5 and student_gpa <= 4.0:
             hours_tracked = random.randint(15,20)
-        
+
+        elif student_gpa < 3.5 and student_gpa >= 3.0:
+            hours_tracked = random.randint(13,20)
+            
         elif student_gpa < 3.0 and student_gpa >= 2.5:
             hours_tracked = random.randint(10,20)
         
@@ -53,6 +59,9 @@ def hours_tracked_generator (student_grade_level, student_gpa):
     if student_grade_level == "Sophomore":
         if student_gpa >= 3.5 and student_gpa <= 4.0:
             hours_tracked = random.randint(20,25)
+        
+        elif student_gpa < 3.5 and student_gpa >= 3.0:
+            hours_tracked = random.randint(18,25)
         
         elif student_gpa < 3.0 and student_gpa >= 2.5:
             hours_tracked = random.randint(15,25)
@@ -70,6 +79,9 @@ def hours_tracked_generator (student_grade_level, student_gpa):
         if student_gpa >= 3.5 and student_gpa <= 4.0:
             hours_tracked = random.randint(25,35)
         
+        elif student_gpa < 3.5 and student_gpa >= 3.0:
+            hours_tracked = random.randint(23,35)
+
         elif student_gpa < 3.0 and student_gpa >= 2.5:
             hours_tracked = random.randint(20,35)
         
@@ -85,6 +97,9 @@ def hours_tracked_generator (student_grade_level, student_gpa):
     if student_grade_level == "Senior":
         if student_gpa >= 3.5 and student_gpa <= 4.0:
             hours_tracked = random.randint(35,45)
+        
+        elif student_gpa < 3.5 and student_gpa >= 3.0:
+            hours_tracked = random.randint(32,45)
         
         elif student_gpa < 3.0 and student_gpa >= 2.5:
             hours_tracked = random.randint(30,45)
@@ -107,6 +122,9 @@ def sat_scores_generator (student_gpa):
     if student_gpa >= 3.5 and student_gpa <= 4.0:
         sat_score = random.randint(1150,1600)
     
+    elif student_gpa < 3.5 and student_gpa >= 3.0:
+        sat_score = random.randint(1100,1550)
+
     elif student_gpa < 3.0 and student_gpa >= 2.5:
         sat_score = random.randint(900,1550)
     
@@ -128,6 +146,9 @@ def act_scores_generator (student_gpa):
 
     if student_gpa >= 3.5 and student_gpa <= 4.0:
         act_score = random.randint(25,35)
+
+    elif student_gpa < 3.5 and student_gpa >= 3.0:
+        act_score = random.randint(23,35)
     
     elif student_gpa < 3.0 and student_gpa >= 2.5:
         act_score = random.randint(20,35)
