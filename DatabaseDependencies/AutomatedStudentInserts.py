@@ -637,10 +637,7 @@ for i in range (0,amount_of_students,5):
 for student in range (0,len(student_id_list),20):
     student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag)"
     student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "');"
-    
+
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
-
-
-
