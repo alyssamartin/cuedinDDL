@@ -287,6 +287,7 @@ ApplicationID int Identity (1,1),
 StudentEntityID int,
 JobListingID int,
 ApprovedFlag varchar (1),
+LastUpdated datetime,
 primary key (ApplicationID),
 Foreign key (StudentEntityID) references Student (StudentEntityID),
 Foreign key (JobListingID) references JobListing (JobListingID)

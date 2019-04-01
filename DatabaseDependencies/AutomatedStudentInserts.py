@@ -319,16 +319,16 @@ for i in range (amount_of_students):
     print(studentID)
     ###Determining Gender over here
     ###Determining names based off of genders
-    ###kids will have boy or girl names. but 10% chance someone is a third party gender
+    ###kids will have boy or girl names. but 10% chance someone is an other gender
     gender_flag = random.randint(0,1) 
     third_party_gender_flag = random.randint(1,100)
 
     ###0 means female 
     if gender_flag == 0:
 
-        ##The if block that determines if they want to be a third gender 
+        ##The if block that determines if they want to be an other gender 
         if third_party_gender_flag <= 10:
-            student_gender = "third party"
+            student_gender = "Other"
         else:
         ##Female
             student_gender = "Female"
@@ -338,9 +338,9 @@ for i in range (amount_of_students):
     ###1 means male
     elif gender_flag == 1:
 
-        ##The if block that determines if they want to be a third gender
+        ##The if block that determines if they want to be an other gender
         if third_party_gender_flag <= 10:
-            student_gender = "third party"
+            student_gender = "Other"
         else:
         ###Male
             student_gender  = "Male"
@@ -635,8 +635,8 @@ for i in range (0,amount_of_students,5):
 ###Inserts for student Job Application approvals from faculty
 ###Step by 20 so not all student's submit an application.
 for student in range (0,len(student_id_list),20):
-    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag)"
-    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "');"
+    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag, LastUpdated)"
+    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "',GETDATE());"
 
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:

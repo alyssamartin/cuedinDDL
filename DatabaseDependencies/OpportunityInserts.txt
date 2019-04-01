@@ -43,7 +43,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (5,'Automation Engineer Shadow', 'Shadow lead engineer to design, program, simulate, and test automated machinery', 'Job Shadowing', 'Elkton, VA', '5/6/2019', '3/4/2019', getDate(),'Y',30, 11);
+values (5,'Automation Engineer Shadow', 'Shadow lead engineer to design, program, simulate, and test automated machinery', 'Job Shadowing', 'Elkton, VA', '5/6/2019', '3/4/2019', getDate(),'N',30, 11);
 
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
@@ -88,7 +88,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (9,'ED Technician', 'Assist doctors in treating patients', 'Clinical', 'Harrisonburg, VA', '6/4/2019', '3/22/2019', getDate(),'P',21, 8);
+values (9,'ED Technician', 'Assist doctors in treating patients', 'Clinical', 'Harrisonburg, VA', '6/4/2019', '3/22/2019', getDate(),'Y',21, 8);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,9),
@@ -100,7 +100,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 insert into OpportunityEntity (OpportunityType) values ('JOB');
 
 insert into JobListing (JobListingID, JobTitle, JobDescription, JobType, Location, Deadline, postingDate, LastUpdated, Approved, NumOfApplicants, OrganizationID)
-values (10,'Psych Technician', 'Performs treatment following instructions', 'Clinical', 'Harrisonburg, VA', '5/4/2019', '3/25/2019', getDate(),'P',10, 8);
+values (10,'Psych Technician', 'Performs treatment following instructions', 'Clinical', 'Harrisonburg, VA', '5/4/2019', '3/25/2019', getDate(),'Y',10, 8);
 
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (3,10),
@@ -366,7 +366,7 @@ INSERT INTO [dbo].[Scholarship]
            ,'10-01-2019'
            ,'01-05-2019'
            ,5
-           ,'P'
+           ,'Y'
            ,GETDATE())
 GO
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
@@ -406,7 +406,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (21, 'Apprenticeship Tuition Assistance', 'Reimbursement to apprentices after 2 years in the program', 3000, 12000, 1, 08-12-2019, 1/02/2019, 1, 'P', '03-21-2019');
+values (21, 'Apprenticeship Tuition Assistance', 'Reimbursement to apprentices after 2 years in the program', 3000, 12000, 1, 08-12-2019, 1/02/2019, 1, 'Y', '03-21-2019');
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
@@ -417,7 +417,7 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate,organizationID, approved, lastUpdated)
-values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, 05-15-2020, 01/10/2019 ,5, 'P', '03-21-2019');
+values (23, 'Jack Browns Loyalty', 'Award to high school student who dines at Jack Browns 100 times before high school graduation', 100, 100, 5, 05-15-2020, 01/10/2019 ,5, 'Y', '03-21-2019');
 insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VALUES
 (1,23),
 (3,23);
@@ -432,4 +432,4 @@ insert into OpportunityInterestGroups (InterestGroupID, OpportunityEntityID) VAL
 
 insert into opportunityEntity(opportunityType) values ('SCHOL')
 insert into scholarship (scholarshipID, scholarshipName, scholarshipDescription, scholarshipMin, scholarshipMax, scholarshipQuantity, scholarshipDueDate, PostingDate, organizationID, approved, lastUpdated)
-values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'P', '03-21-2019');
+values (25, 'High School Employee of the Month', 'Award given each month to a high school student who goes above and beyond on the job', 300, 500, 1, 10-28-2019, 1/01/2019 ,7, 'N', '03-21-2019');
