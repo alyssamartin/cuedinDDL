@@ -246,7 +246,6 @@ for i in range(len(org_primary_keys)):
 #parallel array!
 #parallell arrays for hs and their emails for UserEntity
 
-###fake information generator 
 
 school_list = ["Louisa County High School", "East Rockingham County High School", "Spotswood High School", "Turner Ashby High School", "Broadway High School" , "Harrisonburg High School"]
 school_email_list = ["Louisa@Louisa.edu" , "erhsattendance@rockingham.k12.va.us", "SpotsWood@spotswood.edu" , "TurnerAshby@turnerAshby.edu", "Broadway@broadway.edu" ,"Harrisonburg@harrisonburg.edu"]
@@ -279,16 +278,14 @@ for i in range (len(school_list)):
         input_file.write(school_insert + "\n")
 
 
-
-
-###Array of Interest
+###Paralell Array of Interest Groups
 interest_list = ["Agriculture, Food and Natural Resources","Business and Marketing", "Hospitality and Human Services", "Public Safety"]
 interest_list.extend (["Architecture and Construction", "Education and Training", "Information Technology", "STEM"])
 interest_list.extend(["Arts, A/V, Technology, and Communications", "Health Science", "Manufacturing", "Transportation"])
+###Generate the primary keys for these guys
 interest_list_id = list(range(1, 13))
 
-### insert into list
-
+###Interest Group Inserts 
 for i in range (len(interest_list_id)):
 
     interest_group_insert = "insert into InterestGroups (InterestGroupName)\n"
@@ -299,17 +296,21 @@ for i in range (len(interest_list_id)):
 
 
 
-
+###Student Grade Level Generation
 ###Array of grade levels students can be
 student_grade_level_list = ["Freshmen", "Sophomore", "Junior", "Senior"]
 
 ###Array of the student income levels
 student_income_level_list = ["Low Income" ,"Middle Income", "High Income"]
 
+###Store all primary keys of students in here for later usage (comments and log hours).
 student_id_list = [] 
 
-#Student Inserts 
+
+###Student Inserts 
+###Amount of students we want to have
 amount_of_students = 1000
+
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
     studentID = studentID + 1
@@ -325,12 +326,12 @@ for i in range (amount_of_students):
     ###0 means female 
     if gender_flag == 0:
 
-        ##The if block that determines if they want to be a third gender (no choice, it's python's choice)
+        ##The if block that determines if they want to be a third gender 
         if third_party_gender_flag <= 10:
             student_gender = "third party"
         else:
         ##Female
-            student_gender = "female"
+            student_gender = "Female"
         student_first_name = names.get_first_name(gender='female')
         student_last_name = names.get_last_name()
 
@@ -341,23 +342,26 @@ for i in range (amount_of_students):
         if third_party_gender_flag <= 10:
             student_gender = "third party"
         else:
-            student_gender  = "male"
+        ###Male
+            student_gender  = "Male"
 
         student_first_name = names.get_first_name(gender='male')
         student_last_name = names.get_last_name()
 
-
+    ###Get middle initial here
     student_middle_initial = random.choice(string.ascii_uppercase)
     
+    ###full name for testing and debugging purposes
     student_full_name = student_first_name + student_last_name
-    ##Generate student username
+
+    ###Generate student username
     student_user_name = student_full_name + student_middle_initial + str(random.randint(0,1000))
 
     ###Generate student's school for email and further use...
     student_school_index = random.randint(0,len(school_list) -1)
     student_school = school_list[student_school_index]
 
-    ###foreign key for student school. have to add 1 because
+    ###Foreign key for student school
     student_school_id = school_primary_key_list[student_school_index]
     
     ##generate student emailAddress
@@ -377,18 +381,21 @@ for i in range (amount_of_students):
     ###Generate GPA, This is going to be a key metric for a lot of test scores, and absences.
     student_gpa = float(random.randrange(100, 400))/100
 
+    ###Only Upper Level Classmen take the SAT.
     if student_grade_level == "Senior" or student_grade_level == "Junior":
-        ###generate student SAT scores
+
+        ###Generate student SAT scores
         student_sat = sat_scores_generator(student_gpa)
 
+        ###not all but some students take the ACT 
         take_act_flag = random.randint(1,100)
         
         if take_act_flag >=1 or take_act_flag <=75:
-            ###generate student act scores
+            ###Generate student act scores
             student_act = act_scores_generator(student_gpa)
         
         else:
-            #### do a nullif if it is 0
+           
             student_act = 0
     
     else:
@@ -396,7 +403,6 @@ for i in range (amount_of_students):
         student_act = 0
         
     ### Assigns student income level
-    ### do we want to just do it randomly? 
     ### majority are going to be middle 50%
     ### lower going to be  30%
     ### higher going to be around 20%
@@ -405,17 +411,20 @@ for i in range (amount_of_students):
 
     student_athlete_flag = random.randint (1,100)
 
+    ###62% of students are usually student athletes. 
     if student_athlete_flag >= 1 and student_athlete_flag <=62:
         student_athlete_status = "Y"
     
+    ###Not a Student Athlete
     else:
         student_athlete_status = "N"
-        
+    
+    ###Etnicity generator. 
     student_ethnicity_flag = random.randint(1,100) 
     student_ethnicity = student_ethnicity_generator(student_ethnicity_flag)
 
 
-###Interest Group data
+    ###Interest Group data
     ###Shuffle the list of interest groups
     random.shuffle(interest_list_id)
 
@@ -425,25 +434,31 @@ for i in range (amount_of_students):
     ###random number of how many groups they wanna be apart of
     student_amount_of_interested = random.randint(1,8)
 
+    ###Students can have 1-8 interest, and they are randomly generated. 
     for i in range (0,student_amount_of_interested):
         student_interest_group_linkages.append(interest_list_id[i])
 
+    ###Hours of work based learning is based on their GPA, and grade level
     hours_tracked = hours_tracked_generator (student_grade_level,student_gpa)
 
+    ###Just based on GPA
     days_absent = days_absent_generator(student_gpa)
 
-
+    ###Randomly picked if students are currently employed or not.
     student_employment_flag = random.randint(1,100)
     student_employment = " "
 
+    ###40% chance that students are employed 
     if student_employment_flag <=40:
         student_employment = "Y"
     else:
         student_employment = "N"
     
+
+    ###Initialize a graduation track var
     student_graduation_track = " "
 
-
+    ###if student has below a 2.00 assume they are not on track.
     if student_gpa <2.00:
         student_graduation_track = "N"
     else:
@@ -483,13 +498,14 @@ for i in range (amount_of_students):
 
     print(student_dict)
 
+
     ###student/user Entity Insert
     student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD")
 
+    ###insert the string into a textfile
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(student_entity_insert + "\n")
 
-    print(student_entity_insert)
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
@@ -501,7 +517,7 @@ for i in range (amount_of_students):
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
     student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '"+ student_dict["StudentGraduationTrack"] + "', '" + student_dict["StudentEmploymentFlag"]+"', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
 
-    print(student_insert)
+
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(student_insert + "\n")
@@ -513,32 +529,30 @@ for i in range (amount_of_students):
         student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
         student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ");"
 
-        print(student_interest_insert)
-
         with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_interest_insert + "\n")
 
-### job listing stuff here
+
+
+
+##### Opportunity Inserts start here #####
 def opporunitiy_entity_insert (opp_type):
 
     opportunity_insert = "insert into OpportunityEntity (OpportunityType) values ('"+ opp_type+ "')"
 
     return opportunity_insert
 
-
-
-
-
+###Static array of organization ID's, and JobListings, must be in this specific order to 
+###Have logically sound Opportunities. 
 OrganizationID = ["8","4","2","1","7","3","7","7","8","8","8","1","2","3","4","5","6"]
 job_listing_id_list = list(range(1,18))
 
-
+###Seperate file of Opportunity Inserts, going to append this data to the textfile
+###Do this so users can just copy and paste one text file into SQL server. 
 with open('OpportunityInserts.txt', 'r') as inserts:
     with open('generatedinserts.txt', 'a') as generator:
         for line in inserts:
             generator.write(line)
-
-
 
 ###Array of possible student comments
 student_comments = ["This was a great work experience, it fit with my goals!"]
@@ -560,8 +574,7 @@ organization_comments.append("Good student, and a very quick learner! I can see 
 hours_requested_hours = list(range(1,6))
 
 ###list of primary keys from organizations
-print(org_primary_keys)
-print(student_id_list)
+###Log ID is incremented by 1 everytime it is inserted.
 logID = 0
 for i in range (0,amount_of_students,5):
     ##studentID of I will be requesting log hours
@@ -569,40 +582,49 @@ for i in range (0,amount_of_students,5):
     ###log id for comment tables
     logID += 1
 
+    ###comments are randomly picked from the array. 
     index = random.randint(0,len(job_listing_id_list) -1) 
     job_id_loghrs = job_listing_id_list[index]
+
+    ###picks student ID's from their PK list, depends on the step of the For loop. 
     student_id_loghrs = student_id_list[i]
     req_hours = hours_requested_hours[random.randint(0,len(hours_requested_hours)-1) ]
+
     ###orgCommentTable
-    student_comment = student_comments[random.randint(0,len(student_comments) -1) ]
+    student_comment = student_comments[random.randint(0,len(student_comments) -1)]
+
     ###Org comment table
     organization_comment = organization_comments[random.randint(0,len(organization_comments) -1) ]
 
 
-
+    ###Dictionary for organization Purposes. Log Hour inserts get messy
+    ### so consolidating these data fields into a dictionary is crucial
     log_dict = {
         "LogID" : logID,
         "JobListingID": job_id_loghrs,
         "StudentEntityID": student_id_loghrs,
         "HoursRequested": req_hours,
-        "ApprovedFlag": "P",
         "OrganizationComment": organization_comment,
         "StudentComment": student_comment,
         "OrganizationEntityID": OrganizationID[index]
     }
 
+
+    ###Log hours insert
     log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
     log_hours_insert += "'P', 'Y');"
 
-    print(log_hours_insert)
-
+  
+    ###Student comment insert
     student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment)\n"
     student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "');"
 
+    ###Organization comment insert 
     organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment)\n"
     organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "');"
 
+    ###append these strings in this particular order to our text file.
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(log_hours_insert + "\n")
             input_file.write(student_comment_insert + "\n")
@@ -610,10 +632,13 @@ for i in range (0,amount_of_students,5):
 
 
 ###ApplicationREQ INSERTS
+###Inserts for student Job Application approvals from faculty
+###Step by 20 so not all student's submit an application.
 for student in range (0,len(student_id_list),20):
     student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag)"
     student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "');"
-
+    
+    ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
 
