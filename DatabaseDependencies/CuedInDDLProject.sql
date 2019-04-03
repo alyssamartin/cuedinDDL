@@ -33,8 +33,8 @@ Primary Key (UserEntityID)
 --PasswordTable
 create table Password (
 PasswordID int not null,
-PasswordHash varchar(255) not null,
-PasswordSalt varchar(100) not null,
+PasswordHash varchar(MAX) not null,
+PasswordSalt varchar(MAX) not null,
 UserEntityID int not null,
 LastUpdated datetime,
 Primary Key (PasswordID),
