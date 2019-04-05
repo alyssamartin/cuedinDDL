@@ -33,8 +33,8 @@ Primary Key (UserEntityID)
 --PasswordTable
 create table Password (
 PasswordID int not null,
-PasswordHash varchar(255) not null,
-PasswordSalt varchar(100) not null,
+PasswordHash varchar(MAX) not null,
+PasswordSalt varchar(MAX) not null,
 UserEntityID int not null,
 LastUpdated datetime,
 Primary Key (PasswordID),
@@ -53,28 +53,26 @@ City varchar (50) not null,
 State varchar (50) not null,
 SchoolCounty varchar (50) not null,
 ZipCode int not null,
---insert a school image here possibly!
 primary key (SchoolEntityID),
 Foreign key (SchoolEntityID) references UserEntity (UserEntityID)
 );
 
 --References the SchoolTable. 
 Create table SchoolEmployee(
-SchoolEmployeeEntityID int identity (1,1) not null,
-FirstName varchar (50),
+SchoolEmployeeEntityID int not null,
+FirstName varchar (50) not null,
 LastName varchar (50) not null,
-MiddleName varchar (50) not null,
+MiddleName varchar (50) null,
 StreetAddress varchar (50) not null,
 Country varchar (50) not null,
 City varchar (50) not null,
 State varchar (50) not null,
 ZipCode int not null,
-SchoolEmployeeEntityType varchar (5) not null, --CON, ADMIN, TEACHER
+SchoolEmployeeEntityType varchar (10) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
-UserEntityID int not null,
 primary key (SchoolEmployeeEntityID),
+Foreign key (SchoolEmployeeEntityID) references UserEntity(UserEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID),
-Foreign key (UserEntityID) references UserEntity (UserEntityID)
 );
 
 --References the UserEntity Table
@@ -288,6 +286,7 @@ ApplicationID int Identity (1,1),
 StudentEntityID int,
 JobListingID int,
 ApprovedFlag varchar (1),
+LastUpdated datetime,
 primary key (ApplicationID),
 Foreign key (StudentEntityID) references Student (StudentEntityID),
 Foreign key (JobListingID) references JobListing (JobListingID)
