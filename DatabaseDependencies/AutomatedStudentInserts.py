@@ -630,6 +630,7 @@ for i in range (0,amount_of_students,5):
             input_file.write(student_comment_insert + "\n")
             input_file.write(organization_comment_insert + "\n")
 
+opportunity_id_list = list(range(1,26))
 
 ###ApplicationREQ INSERTS
 ###Inserts for student Job Application approvals from faculty
@@ -641,3 +642,22 @@ for student in range (0,len(student_id_list),20):
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
+
+for school_cursor in range (len(school_primary_key_list)):
+    for opportunity_cursor in range (len(opportunity_id_list)):
+
+        approval_school_flag = " "
+
+        chance = random.randint(1,3)
+        if chance == 1:
+            approval_school_flag = 'Y'
+        else:
+            approval_school_flag = 'P'
+
+
+        school_approval_insert_string = "Insert into SchoolAproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
+        school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "');"
+        print(school_approval_insert_string)
+
+        with open('generatedinserts.txt', 'a') as input_file:
+            input_file.write(school_approval_insert_string + "\n") 
