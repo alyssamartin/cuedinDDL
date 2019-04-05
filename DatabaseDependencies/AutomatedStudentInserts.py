@@ -547,6 +547,9 @@ def opporunitiy_entity_insert (opp_type):
 OrganizationID = ["8","4","2","1","7","3","7","7","8","8","8","1","2","3","4","5","6"]
 job_listing_id_list = list(range(1,18))
 
+opportunity_id_list = list(range(1,26))
+
+
 ###Seperate file of Opportunity Inserts, going to append this data to the textfile
 ###Do this so users can just copy and paste one text file into SQL server. 
 with open('OpportunityInserts.txt', 'r') as inserts:
@@ -641,3 +644,22 @@ for student in range (0,len(student_id_list),20):
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
+
+for school_cursor in range (len(school_primary_key_list)):
+    for opportunity_cursor in range (len(opportunity_id_list)):
+
+        approval_school_flag = " "
+
+        chance = random.randint(1,3)
+        if chance == 1:
+            approval_school_flag = 'Y'
+        else:
+            approval_school_flag = 'P'
+
+
+        school_approval_insert_string = "Insert into SchoolAproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
+        school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "');"
+        print(school_approval_insert_string)
+
+        with open('generatedinserts.txt', 'a') as input_file:
+            input_file.write(school_approval_insert_string + "\n")
