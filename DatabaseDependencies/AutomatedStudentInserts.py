@@ -547,6 +547,9 @@ def opporunitiy_entity_insert (opp_type):
 OrganizationID = ["8","4","2","1","7","3","7","7","8","8","8","1","2","3","4","5","6"]
 job_listing_id_list = list(range(1,18))
 
+opportunity_id_list = list(range(1,26))
+
+
 ###Seperate file of Opportunity Inserts, going to append this data to the textfile
 ###Do this so users can just copy and paste one text file into SQL server. 
 with open('OpportunityInserts.txt', 'r') as inserts:
