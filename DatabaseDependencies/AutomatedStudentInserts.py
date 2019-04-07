@@ -659,7 +659,7 @@ for school_cursor in range (len(school_primary_key_list)):
             approval_school_flag = 'P'
 
 
-        school_approval_insert_string = "Insert into SchoolAproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
+        school_approval_insert_string = "Insert into SchoolApproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
         school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "');"
         print(school_approval_insert_string)
 
