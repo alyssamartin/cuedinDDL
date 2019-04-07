@@ -255,6 +255,7 @@ school_city_list = ["Mineral", "Elkton", "Penn Laird", "Bridgewater", "Broadway"
 school_state = "VA"
 school_county_list = ["Louisa County", "Rockingham County", "Rockingham County", "Rockingham County", "Rockingham County", "Harrisonburg City Public Schools"]
 school_zipcode_list = ["23117","22827","22846","22812","22815", "22801"]
+school_twitter_handle =  ["LouisaCountyVA","ERHS_PTSA","SHSChargers","TA_FCA","BHSGobblers","hhsmedianow"]
 school_primary_key_list = list(range(len(org_primary_keys) + 1, len(org_primary_keys) + len(school_list) + 1))
 
 for i in range (0,len(school_primary_key_list)):
