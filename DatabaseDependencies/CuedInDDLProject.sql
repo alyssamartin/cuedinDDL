@@ -53,6 +53,7 @@ City varchar (50) not null,
 State varchar (50) not null,
 SchoolCounty varchar (50) not null,
 ZipCode int not null,
+TwitterHandle varchar (80) null,
 primary key (SchoolEntityID),
 Foreign key (SchoolEntityID) references UserEntity (UserEntityID)
 );

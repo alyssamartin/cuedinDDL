@@ -214,7 +214,9 @@ org_state = "VA"
 org_zip_code_list = ["22801", "22801", "22801", "22801", "22801", "22801", "22801", "22827","22801","22801","22802"] 
 org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "Harrisonburg", "Harrisonburg", "Harrisonburg", "Elkton", "Harrisonburg", "Harrisonburg", "Harrisonburg"] 
 org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.jpg", "img/convergentAI.jpg"]
-org_url_list = ["www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
+org_url_list = ["https://www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
+org_twitter_handle = [" ", " ", "Arconicexeter", " ", "JackBrownsJoint","Walmart", "FoodLionNews", "Merck", " ", " ","ConvergentAI"]
+org_twitter_link = [" ", " ", " ", ]
 
 org_primary_keys = list(range(1,len(org_name_list) + 1))
 
@@ -256,7 +258,9 @@ school_state = "VA"
 school_county_list = ["Louisa County", "Rockingham County", "Rockingham County", "Rockingham County", "Rockingham County", "Harrisonburg City Public Schools"]
 school_zipcode_list = ["23117","22827","22846","22812","22815", "22801"]
 school_twitter_handle =  ["LouisaCountyVA","ERHS_PTSA","SHSChargers","TA_FCA","BHSGobblers","hhsmedianow"]
+school_twitter_link = []
 school_primary_key_list = list(range(len(org_primary_keys) + 1, len(org_primary_keys) + len(school_list) + 1))
+
 
 for i in range (0,len(school_primary_key_list)):
     print(school_primary_key_list[i])
