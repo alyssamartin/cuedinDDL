@@ -26,6 +26,8 @@ create table UserEntity (
 UserEntityID int identity(1,1) not null,
 UserName varchar(50) not null,
 EmailAddress varchar (255) not null,
+TwitterHandle varchar (255) null,
+TwitterLink varchar (max) null,
 EntityType varchar (10) not null,
 Primary Key (UserEntityID)
 );
