@@ -8,7 +8,7 @@ def user_entity_insert (entity_username, entity_email, entity_type,twitter_handl
     user_entity_insert = " "
 
     user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink)\n"
-    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' ');"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' '));"
 
     return user_entity_insert
 def days_absent_generator (student_gpa):
