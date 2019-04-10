@@ -3,12 +3,12 @@ import names
 from faker import Faker
 import string
 
-def user_entity_insert (entity_username, entity_email, entity_type):
+def user_entity_insert (entity_username, entity_email, entity_type,twitter_handle,twitter_link):
 
     user_entity_insert = " "
 
-    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
-    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "');"
+    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink)\n"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' ');"
 
     return user_entity_insert
 def days_absent_generator (student_gpa):
@@ -216,14 +216,14 @@ org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "H
 org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.jpg", "img/convergentAI.jpg"]
 org_url_list = ["https://www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
 org_twitter_handle = [" ", " ", "Arconicexeter", " ", "JackBrownsJoint","Walmart", "FoodLionNews", "Merck", " ", " ","ConvergentAI"]
-org_twitter_link = [" ", " ", " ", ]
+org_twitter_link = [" ", " ", " ", "https://twitter.com/Arconicexeter?ref_src=twsrc%5Etfw"," ", "https://twitter.com/JackBrownsJoint?ref_src=twsrc%5Etfw", "https://twitter.com/Walmart?ref_src=twsrc%5Etfw","https://twitter.com/FoodLionNews?ref_src=twsrc%5Etfw","https://twitter.com/Merck?ref_src=twsrc%5Etfw"," "," ","https://twitter.com/ConvergentAI?ref_src=twsrc%5Etfw"]
 
 org_primary_keys = list(range(1,len(org_name_list) + 1))
 
 
 
 for i in range(len(org_primary_keys)):
-    org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG")
+    org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG",org_twitter_handle[i], org_twitter_link[i])
     print(org_entity_insert)
 
 
@@ -257,8 +257,8 @@ school_city_list = ["Mineral", "Elkton", "Penn Laird", "Bridgewater", "Broadway"
 school_state = "VA"
 school_county_list = ["Louisa County", "Rockingham County", "Rockingham County", "Rockingham County", "Rockingham County", "Harrisonburg City Public Schools"]
 school_zipcode_list = ["23117","22827","22846","22812","22815", "22801"]
-school_twitter_handle =  ["LouisaCountyVA","ERHS_PTSA","SHSChargers","TA_FCA","BHSGobblers","hhsmedianow"]
-school_twitter_link = []
+school_twitter_handle =  ["LouisaCountyVA","ERHS_PTSA","SHSChargers","TA_FCA"," ","hhsmedianow"]
+school_twitter_link = ["https://twitter.com/LouisaCountyVA?ref_src=twsrc%5Etfw","https://twitter.com/ERHS_PTSA?ref_src=twsrc%5Etfw","https://twitter.com/SHSChargers?ref_src=twsrc%5Etfw","https://twitter.com/TA_FCA?ref_src=twsrc%5Etfw", " ", "https://twitter.com/hhsmedianow?ref_src=twsrc%5Etfw"]
 school_primary_key_list = list(range(len(org_primary_keys) + 1, len(org_primary_keys) + len(school_list) + 1))
 
 
@@ -272,7 +272,7 @@ for i in range (0,len(school_primary_key_list)):
 for i in range (len(school_list)): 
     ###insert into user entity first then we can go into school
     
-    school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL")
+    school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL",school_twitter_handle[i],school_twitter_link[i])
     ###inserting into the school entity
     school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
@@ -505,7 +505,7 @@ for i in range (amount_of_students):
 
 
     ###student/user Entity Insert
-    student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD")
+    student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD", " ", " ")
 
     ###insert the string into a textfile
     with open('generatedinserts.txt', 'a') as input_file:
