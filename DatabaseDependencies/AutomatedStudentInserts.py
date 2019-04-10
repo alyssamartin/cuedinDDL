@@ -216,7 +216,7 @@ org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "H
 org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.jpg", "img/convergentAI.jpg"]
 org_url_list = ["https://www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
 org_twitter_handle = [" ", " ", "Arconicexeter", " ", "JackBrownsJoint","Walmart", "FoodLionNews", "Merck", " ", " ","ConvergentAI"]
-org_twitter_link = [" ", " ", " ", "https://twitter.com/Arconicexeter?ref_src=twsrc%5Etfw"," ", "https://twitter.com/JackBrownsJoint?ref_src=twsrc%5Etfw", "https://twitter.com/Walmart?ref_src=twsrc%5Etfw","https://twitter.com/FoodLionNews?ref_src=twsrc%5Etfw","https://twitter.com/Merck?ref_src=twsrc%5Etfw"," "," ","https://twitter.com/ConvergentAI?ref_src=twsrc%5Etfw"]
+org_twitter_link = [" ", " ", "https://twitter.com/Arconicexeter?ref_src=twsrc%5Etfw"," ", "https://twitter.com/JackBrownsJoint?ref_src=twsrc%5Etfw", "https://twitter.com/Walmart?ref_src=twsrc%5Etfw","https://twitter.com/FoodLionNews?ref_src=twsrc%5Etfw","https://twitter.com/Merck?ref_src=twsrc%5Etfw"," "," ","https://twitter.com/ConvergentAI?ref_src=twsrc%5Etfw"]
 
 org_primary_keys = list(range(1,len(org_name_list) + 1))
 
