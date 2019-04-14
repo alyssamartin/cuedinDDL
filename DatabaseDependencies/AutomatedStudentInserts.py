@@ -314,7 +314,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 1000
+amount_of_students = 2263
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
@@ -656,11 +656,13 @@ for school_cursor in range (len(school_primary_key_list)):
 
         approval_school_flag = " "
 
-        chance = random.randint(1,3)
-        if chance == 1:
+        chance = random.randint(1,6)
+        if chance == 1 or chance == 3:
             approval_school_flag = 'Y'
-        else:
+        elif chance == 4 or chance == 5:
             approval_school_flag = 'P'
+        else:
+            approval_school_flag = 'N'
 
 
         school_approval_insert_string = "Insert into SchoolApproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
