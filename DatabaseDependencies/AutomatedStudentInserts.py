@@ -292,7 +292,7 @@ for i in range (len(school_list)):
     ###inserting into the school entity
     school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode, LastUpdated)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
-    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + "GETDATE());"
+    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ",GETDATE());"
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(school_entity_insert + "\n")
