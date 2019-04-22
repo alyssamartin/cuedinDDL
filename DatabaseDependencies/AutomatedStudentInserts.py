@@ -7,8 +7,8 @@ def user_entity_insert (entity_username, entity_email, entity_type,twitter_handl
 
     user_entity_insert = " "
 
-    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink)\n"
-    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' '));"
+    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink, LastUpdated)\n"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' '), GETDATE());"
 
     return user_entity_insert
 def days_absent_generator (student_gpa):
@@ -227,9 +227,9 @@ for i in range(len(org_primary_keys)):
     print(org_entity_insert)
 
 
-    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)\n"
+    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink, LastUpdated)\n"
     org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + org_street_address_list[i] + "', '"
-    org_insert += "USA', '" + org_city_list[i]+ "', 'VA', " + str(org_zip_code_list[i]) + ",'"+org_image_list[i] +"','"+org_url_list[i]+"');"
+    org_insert += "USA', '" + org_city_list[i]+ "', 'VA', " + str(org_zip_code_list[i]) + ",'"+org_image_list[i] +"','"+org_url_list[i]+"',GETDATE());"
 
     print(org_entity_insert)
     print(org_insert)
@@ -274,9 +274,9 @@ for i in range (len(school_list)):
     
     school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL",school_twitter_handle[i],school_twitter_link[i])
     ###inserting into the school entity
-    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
+    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode, LastUpdated)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
-    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ");"
+    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + "GETDATE());"
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(school_entity_insert + "\n")
@@ -531,11 +531,12 @@ for i in range (amount_of_students):
     ####student Interest Group Insert
     for i in range (len(student_interest_group_linkages)):
         
-        student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
-        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ");"
+        student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID, LastUpdated)\n"
+        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ",GETDATE());"
 
         with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_interest_insert + "\n")
+        
 
 
 
@@ -543,7 +544,7 @@ for i in range (amount_of_students):
 ##### Opportunity Inserts start here #####
 def opporunitiy_entity_insert (opp_type):
 
-    opportunity_insert = "insert into OpportunityEntity (OpportunityType) values ('"+ opp_type+ "')"
+    opportunity_insert = "insert into OpportunityEntity (OpportunityType,LastUpdated) values ('"+ opp_type+ "',GETDATE())"
 
     return opportunity_insert
 
@@ -566,13 +567,13 @@ with open('OpportunityInserts.txt', 'r') as inserts:
 student_comments = ["This was a great work experience, it fit with my goals!"]
 student_comments.append("I had a great time working with this organization")
 student_comments.append("I had a good time with this organization")
-student_comments.append("I wish the organization gave me more work so I could learn and do more")
-student_comments.append("This was an ok experience with this organization, I have been with better")
+student_comments.append("I wish this organization gave me more work so I could learn and do more")
+student_comments.append("This was an ok experience. I have done better")
 student_comments.append("I did not have a good time with this organization, it was all busy work...")
 
 ###Array of possible Organization Comments
-organization_comments = ["This student was extrodinary! This student is always welcome back here"]
-organization_comments.append("Great student, and they definetely fit in with this organization!")
+organization_comments = ["This student was extraordinary! This student is always welcome back here"]
+organization_comments.append("Great student, and they definitely fit in with this organization!")
 organization_comments.append("Exemplar student! We need more people like this student")
 organization_comments.append("This particular student was on their phone too long.")
 organization_comments.append("Average student, did the necessary requirements to complete this task")
@@ -619,18 +620,18 @@ for i in range (0,amount_of_students,5):
 
 
     ###Log hours insert
-    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)\n"
+    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, LastUpdated)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'P', 'Y');"
+    log_hours_insert += "'P', 'Y',GETDATE());"
 
   
     ###Student comment insert
-    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment)\n"
-    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "');"
+    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment, LastUpdated)\n"
+    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + ",'GETDATE());"
 
     ###Organization comment insert 
-    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment)\n"
-    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "');"
+    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment, LastUpdated)\n"
+    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "',GETDATE());"
 
     ###append these strings in this particular order to our text file.
     with open('generatedinserts.txt', 'a') as input_file:
@@ -665,8 +666,8 @@ for school_cursor in range (len(school_primary_key_list)):
             approval_school_flag = 'N'
 
 
-        school_approval_insert_string = "Insert into SchoolApproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag) \n"
-        school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "');"
+        school_approval_insert_string = "Insert into SchoolApproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag,LastUpdated) \n"
+        school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "',GETDATE());"
         print(school_approval_insert_string)
 
         with open('generatedinserts.txt', 'a') as input_file:
