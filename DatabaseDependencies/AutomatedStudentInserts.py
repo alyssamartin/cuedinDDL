@@ -330,7 +330,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 100 
+amount_of_students = 2263 
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
