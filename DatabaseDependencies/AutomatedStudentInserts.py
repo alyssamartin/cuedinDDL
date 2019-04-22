@@ -1,14 +1,30 @@
 import random
+from random import randrange
 import names 
 from faker import Faker
 import string
+from datetime import datetime
+from datetime import timedelta
+import datetime
 
-def user_entity_insert (entity_username, entity_email, entity_type):
+def random_date(start, end):
+    """
+    This function will return a random datetime between two datetime 
+    objects.
+    """
+
+    delta = end - start
+    int_delta = (delta.days * 24 * 60 * 60) + delta.seconds
+    random_second = randrange(int_delta)
+    return start + timedelta(seconds=random_second)
+
+
+def user_entity_insert (entity_username, entity_email, entity_type,twitter_handle,twitter_link):
 
     user_entity_insert = " "
 
-    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType)\n"
-    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type + "');"
+    user_entity_insert = "insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink, LastUpdated)\n"
+    user_entity_insert +="values ('" + entity_username + "', '" + entity_email + "', '"+ entity_type +"'," + "Nullif('"+twitter_handle +"', ' '), " + "Nullif('"+ twitter_link + "',' '), GETDATE());"
 
     return user_entity_insert
 def days_absent_generator (student_gpa):
@@ -214,20 +230,22 @@ org_state = "VA"
 org_zip_code_list = ["22801", "22801", "22801", "22801", "22801", "22801", "22801", "22827","22801","22801","22802"] 
 org_city_list = ["Harrisonburg","Harrisonburg","Harrisonburg","Harrisonburg", "Harrisonburg", "Harrisonburg", "Harrisonburg", "Elkton", "Harrisonburg", "Harrisonburg", "Harrisonburg"] 
 org_image_list = ["img/withSimplicity.jpg", "img/kanis.jpg", "img/arconic.jpg","img/greenhummingbird.jpg", "img/jackbrowns.jpg", "img/walmart.jpg", "img/foodlion.jpg", "img/merck.jpg", "img/jenzabar.jpg", "img/healthandrehab.jpg", "img/convergentAI.jpg"]
-org_url_list = ["www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
+org_url_list = ["https://www.withsimplicityllc.com", "https://www.kandiscakesandbakeshop.com/", "https://www.arconic.com/global/en/home.asp","http://www.greenhummingbird.net/","https://www.jackbrownsjoint.com/", "https://www.walmart.com/","https://foodlion.com", "https://www.merck.com", "https://jenzabar.com", "https://www.mfa.net/center/harrisonburg-health-rehabilitation-center", "http://convergentai.com/"]
+org_twitter_handle = [" ", " ", "Arconicexeter", " ", "JackBrownsJoint","Walmart", "FoodLionNews", "Merck", " ", " ","ConvergentAI"]
+org_twitter_link = [" ", " ", "https://twitter.com/Arconicexeter?ref_src=twsrc%5Etfw"," ", "https://twitter.com/JackBrownsJoint?ref_src=twsrc%5Etfw", "https://twitter.com/Walmart?ref_src=twsrc%5Etfw","https://twitter.com/FoodLionNews?ref_src=twsrc%5Etfw","https://twitter.com/Merck?ref_src=twsrc%5Etfw"," "," ","https://twitter.com/ConvergentAI?ref_src=twsrc%5Etfw"]
 
 org_primary_keys = list(range(1,len(org_name_list) + 1))
 
 
 
 for i in range(len(org_primary_keys)):
-    org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG")
+    org_entity_insert = user_entity_insert(org_name_list[i].replace(" ", "")+ str(random.randint(1,100)), org_name_list[i].replace(" ", "") + "@gmail.com", "ORG",org_twitter_handle[i], org_twitter_link[i])
     print(org_entity_insert)
 
 
-    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink)\n"
+    org_insert = "insert into Organization (OrganizationEntityID, OrganizationName, OrganizationDescription, StreetAddress, Country, City, State, ZipCode, Image, ExternalLink, LastUpdated)\n"
     org_insert += " values (" + str(org_primary_keys[i]) + ", '" + org_name_list[i] + "', '" + org_description_list[i] + "', '" + org_street_address_list[i] + "', '"
-    org_insert += "USA', '" + org_city_list[i]+ "', 'VA', " + str(org_zip_code_list[i]) + ",'"+org_image_list[i] +"','"+org_url_list[i]+"');"
+    org_insert += "USA', '" + org_city_list[i]+ "', 'VA', " + str(org_zip_code_list[i]) + ",'"+org_image_list[i] +"','"+org_url_list[i]+"',GETDATE());"
 
     print(org_entity_insert)
     print(org_insert)
@@ -255,7 +273,10 @@ school_city_list = ["Mineral", "Elkton", "Penn Laird", "Bridgewater", "Broadway"
 school_state = "VA"
 school_county_list = ["Louisa County", "Rockingham County", "Rockingham County", "Rockingham County", "Rockingham County", "Harrisonburg City Public Schools"]
 school_zipcode_list = ["23117","22827","22846","22812","22815", "22801"]
+school_twitter_handle =  ["LouisaCountyVA","ERHS_PTSA","SHSChargers","TA_FCA"," ","hhsmedianow"]
+school_twitter_link = ["https://twitter.com/LouisaCountyVA?ref_src=twsrc%5Etfw","https://twitter.com/ERHS_PTSA?ref_src=twsrc%5Etfw","https://twitter.com/SHSChargers?ref_src=twsrc%5Etfw","https://twitter.com/TA_FCA?ref_src=twsrc%5Etfw", " ", "https://twitter.com/hhsmedianow?ref_src=twsrc%5Etfw"]
 school_primary_key_list = list(range(len(org_primary_keys) + 1, len(org_primary_keys) + len(school_list) + 1))
+
 
 for i in range (0,len(school_primary_key_list)):
     print(school_primary_key_list[i])
@@ -267,11 +288,11 @@ for i in range (0,len(school_primary_key_list)):
 for i in range (len(school_list)): 
     ###insert into user entity first then we can go into school
     
-    school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL")
+    school_entity_insert = user_entity_insert(school_list[i].replace(" ","") + str(random.randint(1,100)), school_email_list[i], "SCHL",school_twitter_handle[i],school_twitter_link[i])
     ###inserting into the school entity
-    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode)\n"
+    school_insert = "insert into school (schoolEntityID, schoolName, StreetAddress, Country, City, State, SchoolCounty, ZipCode, LastUpdated)\n"
     school_insert += " values (" + str(school_primary_key_list[i])+ ", '" + school_list[i] + "','" + school_street_address_list[i] + "','"
-    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ");"
+    school_insert += school_country+ "','"+ school_city_list[i] + "','"+ school_state + "','" +  school_county_list[i] + "'," + school_zipcode_list[i] + ",GETDATE());"
 
     with open('generatedinserts.txt', 'a') as input_file:
         input_file.write(school_entity_insert + "\n")
@@ -309,7 +330,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 1000
+amount_of_students = 2263 
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
@@ -500,7 +521,7 @@ for i in range (amount_of_students):
 
 
     ###student/user Entity Insert
-    student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD")
+    student_entity_insert = user_entity_insert(student_dict["StudentUserName"], student_dict["StudentEmailAddress"], "STUD", " ", " ")
 
     ###insert the string into a textfile
     with open('generatedinserts.txt', 'a') as input_file:
@@ -526,11 +547,12 @@ for i in range (amount_of_students):
     ####student Interest Group Insert
     for i in range (len(student_interest_group_linkages)):
         
-        student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID)\n"
-        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ");"
+        student_interest_insert = "insert into StudentInterestGroups (InterestGroupID, StudentEntityID, LastUpdated)\n"
+        student_interest_insert +="values (" + str(student_interest_group_linkages[i]) + "," + str(student_dict["StudentEntityID"]) + ",GETDATE());"
 
         with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_interest_insert + "\n")
+        
 
 
 
@@ -538,7 +560,7 @@ for i in range (amount_of_students):
 ##### Opportunity Inserts start here #####
 def opporunitiy_entity_insert (opp_type):
 
-    opportunity_insert = "insert into OpportunityEntity (OpportunityType) values ('"+ opp_type+ "')"
+    opportunity_insert = "insert into OpportunityEntity (OpportunityType,LastUpdated) values ('"+ opp_type+ "',GETDATE())"
 
     return opportunity_insert
 
@@ -546,6 +568,9 @@ def opporunitiy_entity_insert (opp_type):
 ###Have logically sound Opportunities. 
 OrganizationID = ["8","4","2","1","7","3","7","7","8","8","8","1","2","3","4","5","6"]
 job_listing_id_list = list(range(1,18))
+
+opportunity_id_list = list(range(1,26))
+
 
 ###Seperate file of Opportunity Inserts, going to append this data to the textfile
 ###Do this so users can just copy and paste one text file into SQL server. 
@@ -558,13 +583,13 @@ with open('OpportunityInserts.txt', 'r') as inserts:
 student_comments = ["This was a great work experience, it fit with my goals!"]
 student_comments.append("I had a great time working with this organization")
 student_comments.append("I had a good time with this organization")
-student_comments.append("I wish the organization gave me more work so I could learn and do more")
-student_comments.append("This was an ok experience with this organization, I have been with better")
+student_comments.append("I wish this organization gave me more work so I could learn and do more")
+student_comments.append("This was an ok experience. I have done better")
 student_comments.append("I did not have a good time with this organization, it was all busy work...")
 
 ###Array of possible Organization Comments
-organization_comments = ["This student was extrodinary! This student is always welcome back here"]
-organization_comments.append("Great student, and they definetely fit in with this organization!")
+organization_comments = ["This student was extraordinary! This student is always welcome back here"]
+organization_comments.append("Great student, and they definitely fit in with this organization!")
 organization_comments.append("Exemplar student! We need more people like this student")
 organization_comments.append("This particular student was on their phone too long.")
 organization_comments.append("Average student, did the necessary requirements to complete this task")
@@ -611,33 +636,69 @@ for i in range (0,amount_of_students,5):
 
 
     ###Log hours insert
-    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval)\n"
+    d1 = datetime.datetime.strptime('1/1/2019', '%m/%d/%Y')
+    d2 = datetime.datetime.strptime('4/28/2019', '%m/%d/%Y')
+
+
+    randomDate = random_date(d1, d2)
+
+    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, RequestedDate,LastUpdated)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'P', 'Y');"
+    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' ,GETDATE());"
 
   
     ###Student comment insert
-    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment)\n"
-    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "');"
+    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment, LastUpdated)\n"
+    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "',GETDATE());"
 
     ###Organization comment insert 
-    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment)\n"
-    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "');"
+    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment, LastUpdated)\n"
+    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "',GETDATE());"
 
     ###append these strings in this particular order to our text file.
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(log_hours_insert + "\n")
-            input_file.write(student_comment_insert + "\n")
+            input_file.write(student_comment_insert + "\n") 
             input_file.write(organization_comment_insert + "\n")
 
+opportunity_id_list = list(range(1,26))
 
 ###ApplicationREQ INSERTS
 ###Inserts for student Job Application approvals from faculty
 ###Step by 20 so not all student's submit an application.
 for student in range (0,len(student_id_list),20):
-    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag, LastUpdated)"
-    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "',GETDATE());"
+    ###need to calculate dates in a good range
+
+    d1 = datetime.datetime.strptime('1/1/2019', '%m/%d/%Y')
+    d2 = datetime.datetime.strptime('4/28/2019', '%m/%d/%Y')
+
+
+    randomDate = random_date(d1, d2)
+
+    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag, RequestedDate ,LastUpdated)"
+    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", " + "'P', '" + str(randomDate) +"',GETDATE());"
 
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(student_app_req_insert + "\n")
+
+for school_cursor in range (len(school_primary_key_list)):
+    for opportunity_cursor in range (len(opportunity_id_list)):
+
+        approval_school_flag = " "
+
+        chance = random.randint(1,6)
+        if chance == 1 or chance == 3:
+            approval_school_flag = 'Y'
+        elif chance == 4 or chance == 5:
+            approval_school_flag = 'P'
+        else:
+            approval_school_flag = 'N'
+
+
+        school_approval_insert_string = "Insert into SchoolApproval (SchoolEntityID, OpportunityEntityID, ApprovedFlag,LastUpdated) \n"
+        school_approval_insert_string += "Values (" + str(school_primary_key_list[school_cursor]) + ", " + str(opportunity_id_list[opportunity_cursor]) + ",'"+ approval_school_flag + "',GETDATE());"
+        print(school_approval_insert_string)
+
+        with open('generatedinserts.txt', 'a') as input_file:
+            input_file.write(school_approval_insert_string + "\n") 
