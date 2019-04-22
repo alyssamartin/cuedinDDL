@@ -330,7 +330,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 100
+amount_of_students = 100 
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
@@ -649,7 +649,7 @@ for i in range (0,amount_of_students,5):
   
     ###Student comment insert
     student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment, LastUpdated)\n"
-    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + ",'GETDATE());"
+    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "',GETDATE());"
 
     ###Organization comment insert 
     organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment, LastUpdated)\n"
@@ -658,7 +658,7 @@ for i in range (0,amount_of_students,5):
     ###append these strings in this particular order to our text file.
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(log_hours_insert + "\n")
-            input_file.write(student_comment_insert + "\n")
+            input_file.write(student_comment_insert + "\n") 
             input_file.write(organization_comment_insert + "\n")
 
 opportunity_id_list = list(range(1,26))
