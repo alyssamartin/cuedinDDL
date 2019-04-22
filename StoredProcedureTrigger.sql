@@ -28,7 +28,7 @@ end
 
 if @CounselorApproval = ' +  '''Y''' + 'and @StudentEmploymentFlag = ' + '''N''' + '
 begin 
-update Student set [StudentEmploymentFlag] = ' + '''Y''' + 'where StudentEntityID = @StudentEntityID
+update Student set [StudentEmploymentFlag] = ' + '''Y''' + ', Student.LastUpdated = GETDATE()  where StudentEntityID = @StudentEntityID
 end 
 end'
 
