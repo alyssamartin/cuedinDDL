@@ -1,7 +1,23 @@
 import random
+from random import randrange
 import names 
 from faker import Faker
 import string
+from datetime import datetime
+from datetime import timedelta
+import datetime
+
+def random_date(start, end):
+    """
+    This function will return a random datetime between two datetime 
+    objects.
+    """
+
+    delta = end - start
+    int_delta = (delta.days * 24 * 60 * 60) + delta.seconds
+    random_second = randrange(int_delta)
+    return start + timedelta(seconds=random_second)
+
 
 def user_entity_insert (entity_username, entity_email, entity_type,twitter_handle,twitter_link):
 
@@ -314,7 +330,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 2263
+amount_of_students = 10
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
@@ -620,9 +636,15 @@ for i in range (0,amount_of_students,5):
 
 
     ###Log hours insert
-    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, LastUpdated)\n"
+    d1 = datetime.datetime.strptime('1/1/2019', '%m/%d/%Y')
+    d2 = datetime.datetime.strptime('4/28/2019', '%m/%d/%Y')
+
+
+    randomDate = random_date(d1, d2)
+
+    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, RequestedDate,LastUpdated)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'P', 'Y',GETDATE());"
+    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' ,GETDATE());"
 
   
     ###Student comment insert
@@ -645,8 +667,16 @@ opportunity_id_list = list(range(1,26))
 ###Inserts for student Job Application approvals from faculty
 ###Step by 20 so not all student's submit an application.
 for student in range (0,len(student_id_list),20):
-    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag, LastUpdated)"
-    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", '" + "P" + "',GETDATE());"
+    ###need to calculate dates in a good range
+
+    d1 = datetime.datetime.strptime('1/1/2019', '%m/%d/%Y')
+    d2 = datetime.datetime.strptime('4/28/2019', '%m/%d/%Y')
+
+
+    randomDate = random_date(d1, d2)
+
+    student_app_req_insert = "insert into ApplicationRequest (StudentEntityID, JobListingID, ApprovedFlag, RequestedDate ,LastUpdated)"
+    student_app_req_insert += "values(" + str(student_id_list[student]) + ", " + str(job_listing_id_list[random.randint(0,len(job_listing_id_list) -1)]) + ", " + "'P', '" + str(randomDate) +"',GETDATE());"
 
     ###Append to our text file
     with open('generatedinserts.txt', 'a') as input_file:
