@@ -330,7 +330,7 @@ student_id_list = []
 
 ###Student Inserts 
 ###Amount of students we want to have
-amount_of_students = 2263 
+amount_of_students = 100
 
 studentID = len(org_primary_keys) + len(school_list) 
 for i in range (amount_of_students):
@@ -485,6 +485,28 @@ for i in range (amount_of_students):
     else:
         student_graduation_track = "Y"
 
+
+    ###Student ELL and First Generation Students
+
+    ###Student ELL
+    student_ell_flag = random.randint(1,100)
+    student_ell_status = " "
+
+    if student_ell_flag <= 80:
+        student_ell_status = "N"
+    else:
+        student_ell_status = "Y"
+    
+    ###Student First Generation Students
+    student_first_gen_flag = random.randint (1,100)
+    student_first_gen_status = " "
+
+    if student_first_gen_flag <= 75:
+        student_first_gen_status = "N"
+    else:
+        student_first_gen_status = "Y"
+
+
     
     ###putting data into a dictionary for organization and ease of use.
     student_dict = {
@@ -513,7 +535,9 @@ for i in range (amount_of_students):
         "StudentEmploymentFlag": student_employment,
         "SchoolEntityID": student_school_id,
         "StudentImage" : "img/student.jpg",
-        "StudentInterest": student_interest_group_linkages
+        "StudentInterest": student_interest_group_linkages,
+        "StudentELLStatus": student_ell_status,
+        "StudentFirstGeneration": student_first_gen_status
 
     }
 
@@ -530,13 +554,14 @@ for i in range (amount_of_students):
     ###student Insert 
     student_insert = "insert into student (StudentEntityID, FirstName, LastName, MiddleInitial, StreetAddress, Country,City, State,"
     student_insert += "ZipCode, StudentGradeLevel, StudentGPA, StudentACTScore, StudentSATScore, StudentEthnicity, StudentGender,"
-    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentGraduationTrack, StudentEmploymentFlag, StudentImage,SchoolEntityID)\n"
+    student_insert += " IncomeLevel, DaysAbsent, HoursOfWorkPlaceExp, StudentAthleteFlag, StudentGraduationTrack, StudentEmploymentFlag, StudentImage,SchoolEntityID, LastUpdated, StudentELLStatus, StudentFirstGenerationCollege)\n"
     student_insert += "values (" + str(student_dict["StudentEntityID"]) + ", '" + student_dict["FirstName"] + "', '"
     student_insert += student_dict["LastName"] +"', '" + student_dict["MiddleInitial"] + "', '" + student_dict["StreetAddress"] + "', '"
     student_insert += student_dict["Country"] + "','" + student_dict["City"] + "','" + student_dict["State"] + "','" + student_dict["ZipCode"] + "','"
     student_insert += student_dict["StudentGradeLevel"] +"', " + str(student_dict["StudentGPA"]) + ", " + str(student_dict["StudentACTScore"]) + ", " + str(student_dict["StudentSATScore"]) + ",'"
     student_insert += student_dict["StudentEthnicity"] +"','" + student_dict["StudentGender"] + "','" + student_dict["IncomeLevel"] +  "'," + str(student_dict["DaysAbsent"]) + ","
-    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '"+ student_dict["StudentGraduationTrack"] + "', '" + student_dict["StudentEmploymentFlag"]+"', '" + student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ");"
+    student_insert += str(student_dict["HoursOfWorkPlaceExp"]) +", '" + student_dict["StudentAthleteFlag"] +"', '"+ student_dict["StudentGraduationTrack"] + "', '" + student_dict["StudentEmploymentFlag"]+"', '"
+    student_insert += student_dict["StudentImage"]+ "', " +str(student_dict["SchoolEntityID"]) + ", GETDATE(), '" + student_dict["StudentELLStatus"] + "', '" + student_dict["StudentFirstGeneration"] + "');"
 
 
 
