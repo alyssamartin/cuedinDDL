@@ -6,7 +6,6 @@ drop table LogHours
 drop table OpportunityInterestGroups
 drop table Scholarship
 drop table JobListing
-drop table UserChecklist
 drop table OpportunityEntity
 drop table Organization
 drop table StudentInterestGroups
@@ -150,18 +149,6 @@ OpportunityType varchar(6) not null, --JOB HE SCHOL
 LastUpdated datetime,
 Primary Key (OpportunityEntityID),
 );
-
-
---
-Create table UserChecklist (
-UserEntityID int not null,
-OpportunityEntityID int not null,
-Primary Key (UserEntityID, OpportunityEntityID),
-Foreign Key (UserEntityID) references UserEntity (UserEntityID),
-Foreign Key (OpportunityEntityID) references OpportunityEntity (OpportunityEntityID),
-);
-
-
 
 --JobListing Table references the OpportunityEntity Table
 Create Table JobListing (

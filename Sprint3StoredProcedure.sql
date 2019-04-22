@@ -40,6 +40,7 @@ EmailAddress varchar (255) not null,
 TwitterHandle varchar (255) null,
 TwitterLink varchar (max) null,
 EntityType varchar (10) not null,
+LastUpdated datetime,
 Primary Key (UserEntityID)
 );
 
@@ -66,6 +67,7 @@ City varchar (50) not null,
 State varchar (50) not null,
 SchoolCounty varchar (50) not null,
 ZipCode int not null,
+LastUpdated datetime,
 primary key (SchoolEntityID),
 Foreign key (SchoolEntityID) references UserEntity (UserEntityID)
 );
@@ -83,24 +85,10 @@ State varchar (50) not null,
 ZipCode int not null,
 SchoolEmployeeEntityType varchar (10) not null, --CON, ADMIN, TEACHER
 SchoolEntityID int not null,
+LastUpdated datetime,
 primary key (SchoolEmployeeEntityID),
 Foreign key (SchoolEmployeeEntityID) references UserEntity(UserEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID),
-);
-
---References the UserEntity Table
-Create table Parent (
-ParentEntityID int not null,
-FirstName varchar (50),
-LastName varchar (50) not null,
-MiddleName varchar (50) not null,
-StreetAddress varchar (50) not null,
-Country varchar (50) not null,
-City varchar (50) not null,
-State varchar (50) not null,
-ZipCode int not null,
-primary key (ParentEntityID),
-Foreign key (ParentEntityID) references UserEntity (UserEntityID)
 );
 
 --References the userEntity, and 
@@ -126,12 +114,13 @@ HoursOfWorkPlaceExp int not null, --possible stored trigger on update of our new
 StudentEmploymentFlag varchar (1) not null,
 StudentAthleteFlag varchar (1) not null,
 StudentGraduationTrack varchar (1) not null,
-ParentEntityID int null, --parent might not be associated with anything
 StudentImage varchar (100),
+StudentELLStatus varchar(1),
+StudentFirstGenerationCollege varchar(1),
 SchoolEntityID int not null, --student needs to be associated with a school 
+LastUpdated datetime,
 primary key (StudentEntityID),
 Foreign key (StudentEntityID) references UserEntity (UserEntityID),
-Foreign key (ParentEntityID) references Parent (ParentEntityID),
 Foreign key (SchoolEntityID) references School (SchoolEntityID)
 );
 
@@ -139,6 +128,7 @@ Foreign key (SchoolEntityID) references School (SchoolEntityID)
 Create table InterestGroups(
 InterestGroupID int identity(1,1),
 InterestGroupName varchar (90),
+LastUpdated datetime,
 primary key (InterestGroupID)
 );
 
@@ -147,6 +137,7 @@ create table StudentInterestGroups(
 InterestGroupID int,
 StudentEntityID int,
 primary key (InterestGroupID, StudentEntityID),
+LastUpdated datetime,
 Foreign key (InterestGroupID) references InterestGroups (InterestGroupID),
 Foreign key (StudentEntityID) references Student (StudentEntityID)
 );
@@ -163,6 +154,7 @@ State varchar (50) not null,
 ZipCode int not null,
 Image varchar(50),
 ExternalLink varchar (100),
+LastUpdated datetime,
 primary key (OrganizationEntityID),
 Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 );
@@ -170,20 +162,9 @@ Foreign key (OrganizationEntityID) references UserEntity (UserEntityID)
 Create table OpportunityEntity (
 OpportunityEntityID int identity(1,1) not null,
 OpportunityType varchar(6) not null, --JOB HE SCHOL
+LastUpdated datetime,
 Primary Key (OpportunityEntityID),
 );
-
-
---
-Create table UserChecklist (
-UserEntityID int not null,
-OpportunityEntityID int not null,
-Primary Key (UserEntityID, OpportunityEntityID),
-Foreign Key (UserEntityID) references UserEntity (UserEntityID),
-Foreign Key (OpportunityEntityID) references OpportunityEntity (OpportunityEntityID),
-);
-
-
 
 --JobListing Table references the OpportunityEntity Table
 Create Table JobListing (
@@ -195,7 +176,6 @@ Location varchar(255) not null,
 Deadline datetime not null,
 PostingDate datetime not null,
 LastUpdated datetime not null,
---Approved varchar(3) not null,
 NumOfApplicants int not null,
 OrganizationID int not null,
 Primary Key (JobListingID),
@@ -213,53 +193,16 @@ ScholarshipQuantity int not null,
 PostingDate datetime not null,
 ScholarshipDueDate datetime not null,
 OrganizationID int not null,
---Approved varchar(3) not null,
 LastUpdated datetime not null,
 Primary key (ScholarshipID),
 foreign Key (ScholarshipID) references OpportunityEntity(OpportunityEntityID),
 Foreign Key (OrganizationID) references Organization (OrganizationEntityID)
 ) ;
 
---References the OpportunityEntity Table
-Create table HigherEducation (
-HigherEducationID int not null,
-EducationInsitutionName varchar(50) not null,
-ApplicationDueDate datetime not null,
-StreetAddress varchar (50) not null,
-Country varchar (50) not null,
-City varchar (50) not null,
-State varchar (50) not null,
-ZipCode int not null,
-InstateTutition money not null,
-OutOfStateTutition money not null,
-UnversityType varchar(10), --This will be a subtype discriminator TS or UNIV
-Image varchar (100),
-ExternalLink varchar (100),
-Primary Key (HigherEducationID),
-Foreign Key (HigherEducationID) references OpportunityEntity (OpportunityEntityID)
-);
-
-Create Table University (
-UnversityID int not null,
-GPARequirement decimal not null,
-SATRequirement int not null,
-ACTRequirement int not null,
-Primary Key (UnversityID),
-Foreign Key (UnversityID) references HigherEducation (HigherEducationID),
-) ;
- 
---Technical school table references the HigherEducation Table
-Create Table TechnicalSchool (
-TechnicalSchoolID int not null,
-TechnicalSchoolSkill varchar(50) not null,
-Description varchar(50) not null,
-Primary Key (TechnicalSchoolID),
-Foreign Key (TechnicalSchoolID) references HigherEducation (HigherEducationID),
-);
-
 Create table OpportunityInterestGroups (
 InterestGroupID int,
 OpportunityEntityID int,
+LastUpdated datetime,
 primary key (InterestGroupID, OpportunityEntityID),
 Foreign key (InterestGroupID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
@@ -269,6 +212,7 @@ Create Table StudentComment (
 LogID int,
 StudentEntityID int,
 Comment varchar (255),
+LastUpdated datetime,
 primary Key(LogID, StudentEntityID),
 Foreign Key (StudentEntityID) references student (StudentEntityID)
 );
@@ -277,6 +221,7 @@ Create Table OrganizationComment (
 LogID int,
 OrganizationEntityID int,
 Comment varchar (255),
+LastUpdated datetime,
 primary Key(LogID, OrganizationEntityID),
 Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
 );
@@ -288,6 +233,8 @@ HoursRequested int,
 CounselorApproval varchar (10),
 OrganizationApproval varchar(10),
 StudentEntityID int,
+RequestedDate datetime,
+LastUpdated datetime,
 Primary key (LogID),
 Foreign key (JobListingID) references JobListing (JobListingID),
 Foreign key (StudentEntityID) references Student (StudentEntityID)
@@ -300,6 +247,7 @@ StudentEntityID int,
 JobListingID int,
 ApprovedFlag varchar (1),
 LastUpdated datetime,
+RequestedDate datetime,
 primary key (ApplicationID),
 Foreign key (StudentEntityID) references Student (StudentEntityID),
 Foreign key (JobListingID) references JobListing (JobListingID)
@@ -308,12 +256,14 @@ Foreign key (JobListingID) references JobListing (JobListingID)
 Create table SchoolApproval (
 SchoolEntityID int,
 OpportunityEntityID int,
-ApprovedFlag varchar(1)
+ApprovedFlag varchar(1),
+LastUpdated datetime,
 primary key (SchoolEntityID, OpportunityEntityID),
 Foreign key (SchoolEntityID) references school (SchoolEntityID),
 Foreign key (OpportunityEntityID) references opportunityEntity(OpportunityEntityID)
 
 );
+
 
 insert into userEntity (UserName, EmailAddress, EntityType, TwitterHandle, TwitterLink)
 values ('withSimplicity87', 'withSimplicity@gmail.com', 'ORG',Nullif(' ', ' '), Nullif(' ',' '));
