@@ -1,7 +1,6 @@
 drop table SchoolApproval
 drop table ApplicationRequest
-drop table OrganizationComment
-drop table StudentComment
+
 drop table LogHours
 drop table OpportunityInterestGroups
 drop table Scholarship

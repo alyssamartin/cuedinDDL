@@ -669,7 +669,7 @@ for i in range (0,amount_of_students,5):
 
     log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, RequestedDate, OrganizationComment, StudentComment, LastUpdated)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' " + " '" + log_dict["OrganizationComment"] + "', '" + log_dict["StudentComment"] + "' , GETDATE());"
+    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' ,'" + log_dict["OrganizationComment"] + "', '" + log_dict["StudentComment"] + "' , GETDATE());"
 
   
     # ###Student comment insert
