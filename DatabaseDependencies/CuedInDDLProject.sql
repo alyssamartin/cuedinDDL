@@ -192,31 +192,16 @@ Foreign key (InterestGroupID) references InterestGroups,
 Foreign key (OpportunityEntityID) references OpportunityEntity
 );
 
-Create Table StudentComment (
-LogID int,
-StudentEntityID int,
-Comment varchar (255),
-LastUpdated datetime,
-primary Key(LogID, StudentEntityID),
-Foreign Key (StudentEntityID) references student (StudentEntityID)
-);
 
-Create Table OrganizationComment (
-LogID int,
-OrganizationEntityID int,
-Comment varchar (255),
-LastUpdated datetime,
-primary Key(LogID, OrganizationEntityID),
-Foreign Key (OrganizationEntityID) references Organization (OrganizationEntityID)
-);
+
 
 Create Table LogHours (
 LogID int identity(1,1),
-JobListingID int, 
 HoursRequested int,
 CounselorApproval varchar (10),
 OrganizationApproval varchar(10),
 StudentEntityID int,
+JobListingID int, 
 RequestedDate datetime,
 LastUpdated datetime,
 Primary key (LogID),

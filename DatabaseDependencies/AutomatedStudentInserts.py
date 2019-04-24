@@ -667,27 +667,25 @@ for i in range (0,amount_of_students,5):
 
     randomDate = random_date(d1, d2)
 
-    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, RequestedDate,LastUpdated)\n"
+    log_hours_insert = "insert into LogHours (JobListingID, StudentEntityID, HoursRequested, CounselorApproval, OrganizationApproval, RequestedDate, OrganizationComment, StudentComment, LastUpdated)\n"
     log_hours_insert += "values(" + str(log_dict["JobListingID"]) + ", " + str(log_dict["StudentEntityID"]) + ", " + str(log_dict["HoursRequested"]) + ", "
-    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' ,GETDATE());"
+    log_hours_insert += "'P', 'Y', '"+str(randomDate)+"' " + " '" + log_dict["OrganizationComment"] + "', '" + log_dict["StudentComment"] + "' , GETDATE());"
 
   
-    ###Student comment insert
-    student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment, LastUpdated)\n"
-    student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "',GETDATE());"
+    # ###Student comment insert
+    # student_comment_insert = "insert into StudentComment (LogID, StudentEntityID, Comment, LastUpdated)\n"
+    # student_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["StudentEntityID"]) + ",'" + log_dict["StudentComment"] + "',GETDATE());"
 
-    ###Organization comment insert 
-    organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment, LastUpdated)\n"
-    organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "',GETDATE());"
+    # ###Organization comment insert 
+    # organization_comment_insert = "insert into OrganizationComment (LogID, OrganizationEntityID, Comment, LastUpdated)\n"
+    # organization_comment_insert += "values (" + str(log_dict["LogID"]) + ", " + str(log_dict["OrganizationEntityID"]) + ",'" + log_dict["OrganizationComment"] + "',GETDATE());"
 
     ###append these strings in this particular order to our text file.
     with open('generatedinserts.txt', 'a') as input_file:
             input_file.write(log_hours_insert + "\n")
-            input_file.write(student_comment_insert + "\n") 
-            input_file.write(organization_comment_insert + "\n")
+           
 
 opportunity_id_list = list(range(1,26))
-
 ###ApplicationREQ INSERTS
 ###Inserts for student Job Application approvals from faculty
 ###Step by 20 so not all student's submit an application.
