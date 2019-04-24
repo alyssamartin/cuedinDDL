@@ -356,6 +356,13 @@ for i in range (amount_of_students):
         student_first_name = names.get_first_name(gender='female')
         student_last_name = names.get_last_name()
 
+        student_image_flag = random.randint(1,2)
+
+        if student_image_flag == 1:
+            student_image_string = "img/female1"
+        else:
+            student_image_string = "img/female2"
+
     ###1 means male
     elif gender_flag == 1:
 
@@ -368,6 +375,13 @@ for i in range (amount_of_students):
 
         student_first_name = names.get_first_name(gender='male')
         student_last_name = names.get_last_name()
+
+        student_image_flag = random.randint(1,2)
+
+        if student_image_flag == 1:
+            student_image_string = "img/male1"
+        else:
+            student_image_string = "img/male2"
 
     ###Get middle initial here
     student_middle_initial = random.choice(string.ascii_uppercase)
@@ -507,6 +521,8 @@ for i in range (amount_of_students):
         student_first_gen_status = "Y"
 
 
+
+
     
     ###putting data into a dictionary for organization and ease of use.
     student_dict = {
@@ -534,7 +550,7 @@ for i in range (amount_of_students):
         "StudentGraduationTrack": student_graduation_track,
         "StudentEmploymentFlag": student_employment,
         "SchoolEntityID": student_school_id,
-        "StudentImage" : "img/student.jpg",
+        "StudentImage" : student_image_string,
         "StudentInterest": student_interest_group_linkages,
         "StudentELLStatus": student_ell_status,
         "StudentFirstGeneration": student_first_gen_status
