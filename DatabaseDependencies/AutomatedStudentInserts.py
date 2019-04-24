@@ -359,9 +359,9 @@ for i in range (amount_of_students):
         student_image_flag = random.randint(1,2)
 
         if student_image_flag == 1:
-            student_image_string = "img/female1"
+            student_image_string = "img/female1.jpg"
         else:
-            student_image_string = "img/female2"
+            student_image_string = "img/female2.jpg"
 
     ###1 means male
     elif gender_flag == 1:
@@ -379,9 +379,9 @@ for i in range (amount_of_students):
         student_image_flag = random.randint(1,2)
 
         if student_image_flag == 1:
-            student_image_string = "img/male1"
+            student_image_string = "img/male1.jpg"
         else:
-            student_image_string = "img/male2"
+            student_image_string = "img/male2.jpg"
 
     ###Get middle initial here
     student_middle_initial = random.choice(string.ascii_uppercase)
